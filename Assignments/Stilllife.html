@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>CSS Still Life</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="assets/css/main.css" type="text/css" />
+</head>
+
+<body>
+    <div class="stage">
+
+		<!-- Camera -->
+
+    	<div id="square"></div>
+    	<div id="square_02"></div>
+    	<div id="square_03"></div>
+    	<div id="circle"></div>
+    	<div id="circle_02"></div>
+    	<div id="circle_03"></div>
+    	<div id="circle_04"></div>
+    	<div id="circle_05"></div>
+    	<div id="trapezoid"></div>
+    	<div id="trapezoid_02"></div>
+    	<div id="trapezoid_03"></div>
+    	<div id="trapezoid_04"></div>
+    	<div id="trapezoid_05"></div>
+    	<div id="parallelogram"></div>
+    	<div id="parallelogram_02"></div>
+    	<div id="oval"></div>
+    	<div id="oval_02"></div>
+
+    	<!-- Candle -->
+    	<div id="oval_03"></div>
+    	<div id="oval_04"></div>
+    	<div id="rectangle"></div>
+    	<div id="triangle-up"></div>
+
+
+    </div>
+</body>
+
+<style>
+
+body {
+	background: #cccccc;
+}
+
+.stage {
+	width: 900px;
+	height: 556px;
+	margin: 100px auto;
+	background: white;
+	position: relative;
+}
+
+#square {
+	width: 150px;
+	height: 120px;
+	background: linear-gradient(180deg, rgb(44%, 44%, 44%) 80%, rgb(32%, 32%, 32%));
+	top: 100px;
+	left: 50px;
+	position: absolute;
+	z-index: 3;
+}
+
+#square_02 {
+	width: 160px;
+	height: 160px;
+	background: linear-gradient(90deg, rgb(44%, 44%, 44%), rgb(22%, 22%, 22%));
+	top: 150px;
+	left: 120px;
+	position: absolute;
+	z-index: 3;
+}
+
+#square_03 {
+	width: 125px;
+	height: 160px;
+	background: rgb(20%, 20%, 20%);
+	top: 100px;
+	left: 95px;
+	position: absolute;
+	z-index: 1;
+}
+
+#oval {
+	width: 200px;
+	height: 40px;
+	background: linear-gradient(180deg, rgb(80%, 80%, 80%), rgb(25%, 25%, 25%));
+	-moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+	top: 294px;
+	left: 80px;
+	position: absolute;
+}
+
+#oval_02 {
+	width: 60px;
+	height: 30px;
+	background: rgba(95%, 95%, 95%, 0.8);
+	-moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+	transform: rotate(220deg);
+	top: 300px;
+	left: 40px;
+	position: absolute;
+	z-index: 9;
+}
+
+#oval_03 {
+	width: 20px;
+	height: 15px;
+	background: white;
+	-moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+	position: absolute;
+	top: 240px;
+	left: 90px;
+	transform: rotate(30deg);
+	z-index: 10;
+}
+
+#circle {
+	width: 150px;
+	height: 150px;
+	background: rgb(0%, 0%, 0%);
+	border-radius: 150px;
+	top: 213px;
+	left: 20px;
+	position: absolute;
+	z-index: 8;
+}
+
+#circle_02 {
+	width: 150px;
+	height: 220px;
+	background: linear-gradient(180deg, rgb(160, 160, 160), black);
+	border-radius: 150px;
+	top: 123px;
+	left: 25px;
+	position: absolute;
+	z-index: 1;
+}
+
+#circle_03 {
+	width: 170px;
+	height: 160px;
+	background: rgb(18%, 18%, 18%);
+	border-radius: 150px;
+	top: 190px;
+	left: 35px;
+	position: absolute;
+	z-index: 4;
+}
+
+#circle_04 {
+	width: 124px;
+	height: 120px;
+	background: rgb(60%, 60%, 250%);
+	border-radius: 150px;
+	top: 226px;
+	left: 34px;
+	position: absolute;
+	z-index: 8;
+}
+
+#trapezoid {
+	border-bottom: 10px solid rgb(42%, 42%, 42%);
+	border-left: 30px solid transparent;
+	border-right: -80px solid transparent;
+	top: 90px;
+	left: 50px;
+	position: absolute;
+	height: 0;
+	width: 120px;
+	z-index: 3;
+}
+
+#trapezoid_02 {
+	border-bottom: 30px solid rgb(20%, 20%, 20%);
+	border-left: 80px solid transparent;
+	border-right: -80px solid transparent;
+	top: 80px;
+	left: 50px;
+	position: absolute;
+	height: 0;
+	width: 90px;
+	z-index: 1;
+}
+
+#trapezoid_03 {
+	border-bottom: 14px solid rgb(26%, 26%, 26%);
+	border-left: -10px solid transparent;
+	border-right: 10px solid transparent;
+	top: 118px;
+	left: 32px;
+	position: absolute;
+	transform: rotate(90deg);
+	height: 0;
+	width: 40px;
+	z-index: 3;
+}
+
+#parallelogram {
+	width: 148px;
+	height: 20px;
+	-webkit-transform: skew(-20deg);
+	   -moz-transform: skew(20deg);
+	     -o-transform: skew(15deg);
+	     top: 150px;
+	left: 48px;
+	top: 145px;
+	position: absolute;
+	background: rgb(26%, 26%, 26%);
+	z-index: 6;
+}
+
+#parallelogram_02 {
+	width: 240px;
+	height: 30px;
+	-webkit-transform: skew(-20deg);
+	   -moz-transform: skew(20deg);
+	     -o-transform: skew(15deg);
+	border-radius: 10px;
+	     top: 150px;
+	left: 38px;
+	top: 145px;
+	position: absolute;
+	background: rgb(22%, 22%, 22%);
+	z-index: 4;
+}
+
+#trapezoid_05 {
+	border-bottom: 20px solid rgb(48%, 48%, 48%);
+	border-left: 20px solid transparent;
+	border-right: 0px solid transparent;
+	top: 120px;
+	left: 157px;
+	position: absolute;
+	transform: rotate(270deg);
+	height: 0;
+	width: 46px;
+	z-index: 4;
+}
+
+#clip {
+	width: 150px;
+	height: 150px;
+	background: green;
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+	top: 203px;
+	left: 690px;
+	position: absolute;
+}
+
+/* begin candle */
+
+#rectangle {
+	width: 200px;
+	height: 340px;
+	background: red;
+	position: absolute;
+	top: 120px;
+	left: 240px;
+	z-index: 9;
+}
+
+#oval_04 {
+	width: 160px;
+	height: 80px;
+	background: red;
+	-moz-border-radius: 100px / 50px;
+	-webkit-border-radius: 100px / 50px;
+	border-radius: 100px / 50px;
+	position: absolute;
+	top: 20px;
+	left: 260px;
+}
+
+#triangle-up {
+	width: 0;
+	height: 20px;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	border-bottom: 100px solid red;
+	position: absolute;
+	top: 0px;
+	left: 236px;
+}
+
+
+
+</style>
+
+</html>
