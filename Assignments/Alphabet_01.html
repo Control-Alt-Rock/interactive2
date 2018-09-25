@@ -1,0 +1,4190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<title>Alphabet_01</title>
+  	<style>
+      body 
+
+#myGrid {
+        margin: 40px;
+        
+        display: grid;
+        color: black;
+      
+        grid-template-rows: 240px 240px 240px 240px 240px 240px 240px;
+        grid-template-columns: 240px 240px 240px 240px 240px 240px 240px;
+        grid-gap: 20px;
+      }
+
+#A{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  transform: scale(0.8);
+  position: relative;
+  left: 10px;
+}
+
+#ASquare_01 {
+  width: 44px;
+  height: 200px;
+  background: black;
+  transform: rotate(16deg);
+  z-index: 3;
+}
+
+#ASquare_02 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 4px;
+  height: 6px;
+  background: black;
+  z-index: 3;
+  position: absolute;
+  top: 199px;
+  left: 12px;
+}
+
+#AParallelogram_01 {
+  width: 50px;
+  height: 65px;
+  -webkit-transform: skew(80deg);
+  -moz-transform: skew(60deg);
+  -o-transform: skew(30deg);
+  background: black;
+  position: relative;
+  transform: rotate(-20deg);
+  top: -186px;
+  left: 32px;
+}
+
+#ATriangle_01 {
+  width: 8px;
+  height: 0;
+  border-bottom: 50px solid black;
+  border-right: 60px solid transparent;
+  transform: rotate(70deg);
+  position: relative;
+  top: -259px;
+  left: 68px;
+}
+
+#ATriangle_02 {
+  width: 0px;
+  height: 0;
+  border-bottom: 80px solid black;
+  border-right: 26px solid transparent;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 113px;
+  left: 88px;
+}
+
+#ATriangle_03 {
+  width: 0px;
+  height: 0;
+  border-bottom: 80px solid black;
+  border-right: 26px solid transparent;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 154px;
+  left: 134px;
+}
+
+#ATriangle_03 {
+  width: 2px;
+  height: 0;
+  border-bottom: 33px solid black;
+  border-right: 26px solid transparent;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 133px;
+  left: 34px;
+}
+
+#ATriangle_04 {
+  width: 30px;
+  height: 0;
+  border-bottom: 16px solid black;
+  border-right: 13px solid transparent;
+  position: absolute;
+  top: 189px;
+  left: -26.65px;
+}
+
+#ATriangle_05 {
+  width: 170px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 20px solid transparent;
+  position: absolute;
+  transform: rotate(270deg);
+  top: 90px;
+  left: 50px;
+}
+
+#ATrapezoid_01 {
+  width: 120px;
+  height: 56px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  background: black;
+  position: relative;
+  top: -230px;
+  left: 30px;
+}
+
+#B{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  transform: scale(0.6);
+  top: 24px;
+  position: relative;
+  left: -20px;
+}
+
+#BTrapezoid_01{
+  width: 60px;
+  height: 80px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(0deg);
+  -o-transform: skew(0deg);
+  background: black;
+  position: absolute;
+  top: 126px;
+  left: 0px;
+}
+
+#BTrapezoid_02 {
+  border-bottom: 60px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  transform: rotate(180deg);
+  top: 48px;
+  left: 0px;
+}
+
+#BTrapezoid_03 {
+  border-bottom: 140px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 60px;
+  width: 40px;
+  position: absolute;
+  top: -152px;
+  left: 0px;
+}
+
+#BTrapezoid_04 {
+  border-bottom: 60px solid black;
+  border-left: 40px solid transparent;
+  border-right: 20px solid transparent;
+  height: 60px;
+  width: 40px;
+  position: absolute;
+  top: 86px;
+  left: 120px;
+  z-index: 6;
+}
+
+#BTrapezoid_05 {
+  border-bottom: 100px solid black;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  transform: rotate(30deg);
+  height: 20px;
+  width: 40px;
+  position: absolute;
+  top: 74px;
+  left: 176px;
+}
+
+#BTrapezoid_06 {
+  border-bottom: 100px solid black;
+  border-left: 60px solid transparent;
+  border-right: 10px solid transparent;
+  transform: rotate(-98deg);
+  height: 12px;
+  width: 16px;
+  position: absolute;
+  top: 18px;
+  left: 149px;
+}
+
+#BSquare_01 {
+  width: 50px;
+  height: 80px;
+  background: black;
+  z-index: 3;
+  position: absolute;
+  top: 126px;
+  left: 40px;
+}
+
+#BSquare_02 {
+  width: 50px;
+  height: 80px;
+  background: white;
+  transform: rotate(40deg);
+  z-index: 5;
+  position: absolute;
+  top: 160px;
+  left: 80px;
+}
+
+#BTriangle_01 {
+  width: 21px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 60px solid transparent;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(270deg);
+  position: absolute;
+  top: 146px;
+  left: 69px;
+}
+
+#BTriangle_02 {
+  width: 60px;
+  height: 0;
+  border-bottom: 80px solid black;
+  border-right: 60px solid transparent;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(310deg);
+  position: absolute;
+  top: -90px;
+  left: 120px;
+}
+
+#C{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  transform: scale(0.48);
+  position: relative;
+  top: 108px;
+  left: 0px;
+}
+
+#CSquare_01{
+  width: 160px;
+  height: 45px;
+  background: black;
+  position: absolute;
+  top: 35px;
+  left: 52px;
+}
+
+#CSquare_02{
+  width: 160px;
+  height: 60px;
+  background: black;
+  position: absolute;
+  transform: rotate(-64deg);
+  top: -36px;
+  left: 140px;
+}
+
+#CSquare_03{
+  width: 260px;
+  height: 60px;
+  background: white;
+  position: absolute;
+  top: 60px;
+  left: -24px;
+  z-index: 4;
+}
+
+#CSquare_04{
+  width: 80px;
+  height: 200px;
+  background: black;
+  position: absolute;
+  transform: rotate(-10deg);
+  top: -140px;
+  left: -40px;
+  z-index: 1;
+}
+
+#CSquare_05{
+  width: 76px;
+  height: 200px;
+  background: black;
+  position: absolute;
+  transform: rotate(20deg);
+  top: -330px;
+  left: -26px;
+  z-index: 1;
+}
+
+#CSquare_06{
+  width: 76px;
+  height: 200px;
+  background: white;
+  position: absolute;
+  transform: rotate(-96deg);
+  top: -400px;
+  left: -26px;
+  z-index: 4;
+}
+
+#CSquare_07{
+  width: 38px;
+  height: 34px;
+  background: black;
+  position: absolute;
+  transform: rotate(-100deg);
+  top: -150px;
+  left: -59px;
+  z-index: 4;
+}
+
+#CSquare_08{
+  width: 200px;
+  height: 180px;
+  background: white;
+  position: absolute;
+  top: -230px;
+  left: 140px;
+  z-index: 4;
+}
+
+#CTriangle_01{
+  width: 0;
+  height: 140px;
+  border-left: 26px solid transparent;
+  border-right: 26px solid transparent;
+  border-bottom: 200px solid black;
+  transform: rotate(-15deg);
+  position: absolute;
+  top: -262px;
+  left: 7px;
+}
+
+#CTriangle_02{
+  width: 0;
+  height: 140px;
+  border-left: 26px solid transparent;
+  border-right: 26px solid transparent;
+  border-bottom: 200px solid black;
+  position: absolute;
+  top: -260px;
+  left: 0px;
+}
+
+#CTriangle_03{
+  width: 10px;
+  height: 82px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 180px solid black;
+  transform: rotate(57deg);
+  position: absolute;
+  top: -158px;
+  left: 160px;
+}
+
+#CTriangle_04{
+  width: 10px;
+  height: 82px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 180px solid black;
+  position: absolute;
+  transform: rotate(60deg);
+  top: -417px;
+  left: 73px;
+  z-index: 6;
+}
+
+#CTriangle_05{
+  width: 70px;
+  border-left: 28px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 70px solid black;
+  transform: rotate(20deg);
+  position: absolute;
+  top: -305px;
+  left: 117px;
+}
+
+#CTrapezoid_01{
+  border-bottom: 100px solid black;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0;
+  width: 100px;
+}
+
+#CTrapezoid_02{
+  border-bottom: 70px solid black;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  transform: rotate(82deg);
+  height: 0;
+  width: 100px;
+  position: absolute;
+  top: -154px;
+  left: 180px;
+}
+
+#D{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  transform: scale(0.6);
+  top: 24px;
+  position: relative;
+  left: -20px;
+}
+
+#DTrapezoid_01{
+  width: 60px;
+  height: 80px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(0deg);
+  -o-transform: skew(0deg);
+  background: black;
+  position: absolute;
+  top: 126px;
+  left: 0px;
+}
+
+#DTrapezoid_02 {
+  border-bottom: 60px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  transform: rotate(180deg);
+  top: 48px;
+  left: 0px;
+}
+
+#DTrapezoid_03 {
+  border-bottom: 140px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 60px;
+  width: 40px;
+  position: absolute;
+  top: -152px;
+  left: 0px;
+}
+
+#DTrapezoid_04 {
+  border-bottom: 60px solid black;
+  border-left: 40px solid transparent;
+  border-right: 20px solid transparent;
+  height: 60px;
+  width: 40px;
+  position: absolute;
+  top: 86px;
+  left: 120px;
+  z-index: 6;
+}
+
+#DTrapezoid_05 {
+  border-bottom: 100px solid black;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  transform: rotate(30deg);
+  height: 20px;
+  width: 40px;
+  position: absolute;
+  top: 74px;
+  left: 176px;
+}
+
+#DTrapezoid_06 {
+  border-bottom: 100px solid black;
+  border-left: 60px solid transparent;
+  border-right: 10px solid transparent;
+  transform: rotate(98deg);
+  height: 12px;
+  width: 16px;
+  position: absolute;
+  top: -100px;
+  left: 149px;
+}
+
+#DTrapezoid_07 {
+  border-bottom: 40px solid black;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  transform: rotate(-96deg);
+  height: 20px;
+  width: 64px;
+  position: absolute;
+  top: -70px;
+  left: 66px;
+}
+
+#DSquare_01 {
+  width: 50px;
+  height: 80px;
+  background: black;
+  z-index: 3;
+  position: absolute;
+  top: 126px;
+  left: 40px;
+}
+
+#DSquare_02 {
+  width: 50px;
+  height: 80px;
+  background: white;
+  transform: rotate(40deg);
+  z-index: 5;
+  position: absolute;
+  top: 160px;
+  left: 80px;
+}
+
+#DTriangle_01 {
+  width: 21px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 60px solid transparent;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(270deg);
+  position: absolute;
+  top: 146px;
+  left: 69px;
+}
+
+#DTriangle_02 {
+  width: 60px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 60px solid transparent;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(-260deg);
+  position: absolute;
+  top: 20px;
+  left: 160px;
+}
+
+#E{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  transform: scale(0.8);
+  position: relative;
+  left: 10px;
+}
+
+#ESquare_01 {
+  width: 44px;
+  height: 200px;
+  background: black;
+  transform: rotate(16deg);
+  z-index: 3;
+}
+
+#ESquare_02 {
+  width: 4px;
+  height: 6px;
+  background: black;
+  z-index: 3;
+  position: absolute;
+  top: 199px;
+  left: 12px;
+}
+
+#ESquare_03 {
+  width: 45px;
+  height: 12px;
+  background: black;
+  z-index: 3;
+  transform: rotate(-10deg);
+  position: absolute;
+  top: 42px;
+  left: 122px;
+}
+
+#ESquare_04 {
+  width: 26px;
+  height: 47px;
+  background: black;
+  z-index: 3;
+  transform: rotate(12deg);
+  position: absolute;
+  top: 2px;
+  left: 126px;
+}
+
+#EParallelogram_01 {
+  width: 50px;
+  height: 65px;
+  -webkit-transform: skew(80deg);
+  -moz-transform: skew(60deg);
+  -o-transform: skew(30deg);
+  background: black;
+  position: relative;
+  transform: rotate(-20deg);
+  top: -186px;
+  left: 32px;
+}
+
+#EParallelogram_02 {
+  width: 40px;
+  height: 40px;
+  -webkit-transform: skew(20deg);
+     -moz-transform: skew(20deg);
+       -o-transform: skew(80deg);
+  background: black;
+  position: absolute;
+  top: 0px;
+  left: 140px;
+}
+
+#ETriangle_01 {
+  width: 8px;
+  height: 0;
+  border-bottom: 50px solid black;
+  border-right: 60px solid transparent;
+  transform: rotate(70deg);
+  position: relative;
+  top: -259px;
+  left: 68px;
+}
+
+#ETriangle_02 {
+  width: 0px;
+  height: 0;
+  border-bottom: 80px solid black;
+  border-right: 26px solid transparent;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 113px;
+  left: 88px;
+}
+
+#ETriangle_03 {
+  width: 0px;
+  height: 0;
+  border-bottom: 80px solid black;
+  border-right: 26px solid transparent;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 154px;
+  left: 134px;
+}
+
+#ETriangle_03 {
+  width: 2px;
+  height: 0;
+  border-bottom: 33px solid black;
+  border-right: 26px solid transparent;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 133px;
+  left: 34px;
+}
+
+#ETriangle_04 {
+  width: 30px;
+  height: 0;
+  border-bottom: 16px solid black;
+  border-right: 40px solid transparent;
+  position: absolute;
+  top: 189px;
+  left: -26.65px;
+}
+
+#ETriangle_05 {
+  width: 0px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 80px solid transparent;
+  position: absolute;
+  transform: rotate(-0deg);
+  top: 165px;
+  left: 80px;
+}
+
+#ETriangle_06 {
+  width: 16px;
+  height: 0;
+  border-bottom: 120px solid black;
+  border-right: 4px solid transparent;
+  position: absolute;
+  transform: rotate(92deg);
+  top: 137px;
+  left: 25px;
+}
+
+#ETriangle_07 {
+  width: 0px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 80px solid transparent;
+  position: absolute;
+  transform: rotate(0deg) scaleX(-1);
+  top: 165px;
+  left: 0px;
+}
+
+#ETrapezoid_01 {
+  width: 120px;
+  height: 56px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  background: black;
+  position: relative;
+  top: -230px;
+  left: 30px;
+}
+
+#ETrapezoid_02 {
+  border-bottom: 10px solid black;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  transform: rotate(180deg);
+  width: 0px;
+  position: absolute;
+  top: 40px;
+  left: 147px;
+}
+
+#ETrapezoid_03 {
+  border-bottom: 40px solid black;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    transform: scaleX(-1) rotate(90deg);
+    width: 10px;
+    position: absolute;
+    top: 160px;
+    left: 115px;
+}
+
+#F{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  transform: scale(0.8);
+  position: relative;
+  left: 10px;
+}
+
+#FSquare_01 {
+  width: 44px;
+  height: 200px;
+  background: black;
+  transform: rotate(16deg);
+  z-index: 3;
+}
+
+#FSquare_02 {
+  width: 4px;
+  height: 6px;
+  background: black;
+  z-index: 3;
+  position: absolute;
+  top: 199px;
+  left: 12px;
+}
+
+#FSquare_03 {
+  width: 45px;
+  height: 12px;
+  background: black;
+  z-index: 3;
+  transform: rotate(-10deg);
+  position: absolute;
+  top: 42px;
+  left: 122px;
+}
+
+#FSquare_04 {
+  width: 26px;
+  height: 47px;
+  background: black;
+  z-index: 3;
+  transform: rotate(12deg);
+  position: absolute;
+  top: 2px;
+  left: 126px;
+}
+
+#FParallelogram_01 {
+  width: 50px;
+  height: 65px;
+  -webkit-transform: skew(80deg);
+  -moz-transform: skew(60deg);
+  -o-transform: skew(30deg);
+  background: black;
+  position: relative;
+  transform: rotate(-20deg);
+  top: -186px;
+  left: 32px;
+}
+
+#FParallelogram_02 {
+  width: 40px;
+  height: 40px;
+  -webkit-transform: skew(20deg);
+     -moz-transform: skew(20deg);
+       -o-transform: skew(80deg);
+  background: black;
+  position: absolute;
+  top: 0px;
+  left: 140px;
+}
+
+#FTriangle_01 {
+  width: 8px;
+  height: 0;
+  border-bottom: 50px solid black;
+  border-right: 60px solid transparent;
+  transform: rotate(70deg);
+  position: relative;
+  top: -259px;
+  left: 68px;
+}
+
+#FTriangle_02 {
+  width: 0px;
+  height: 0;
+  border-bottom: 80px solid black;
+  border-right: 26px solid transparent;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 113px;
+  left: 88px;
+}
+
+#FTriangle_03 {
+  width: 0px;
+  height: 0;
+  border-bottom: 80px solid black;
+  border-right: 26px solid transparent;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 154px;
+  left: 134px;
+}
+
+#FTriangle_03 {
+  width: 2px;
+  height: 0;
+  border-bottom: 33px solid black;
+  border-right: 26px solid transparent;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 133px;
+  left: 34px;
+}
+
+#FTriangle_04 {
+  width: 30px;
+  height: 0;
+  border-bottom: 16px solid black;
+  border-right: 13px solid transparent;
+  position: absolute;
+  top: 189px;
+  left: -26.65px;
+}
+
+#FTrapezoid_01 {
+  width: 120px;
+  height: 56px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  background: black;
+  position: relative;
+  top: -230px;
+  left: 30px;
+}
+
+#FTrapezoid_02 {
+  border-bottom: 10px solid black;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  transform: rotate(180deg);
+  width: 0px;
+  position: absolute;
+  top: 40px;
+  left: 147px;
+}
+
+#G{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  transform: scale(0.48);
+  position: relative;
+  top: 108px;
+  left: -20px;
+}
+
+#GSquare_01{
+  width: 160px;
+  height: 45px;
+  background: black;
+  position: absolute;
+  top: 35px;
+  left: 52px;
+}
+
+#GSquare_02{
+  width: 160px;
+  height: 60px;
+  background: black;
+  position: absolute;
+  transform: rotate(-64deg);
+  top: -36px;
+  left: 140px;
+}
+
+#GSquare_03{
+  width: 260px;
+  height: 60px;
+  background: white;
+  position: absolute;
+  top: 60px;
+  left: -24px;
+  z-index: 4;
+}
+
+#GSquare_04{
+  width: 80px;
+  height: 200px;
+  background: black;
+  position: absolute;
+  transform: rotate(-10deg);
+  top: -140px;
+  left: -40px;
+  z-index: 1;
+}
+
+#GSquare_05{
+  width: 76px;
+  height: 200px;
+  background: black;
+  position: absolute;
+  transform: rotate(20deg);
+  top: -330px;
+  left: -26px;
+  z-index: 1;
+}
+
+#GSquare_06{
+  width: 76px;
+  height: 200px;
+  background: white;
+  position: absolute;
+  transform: rotate(-96deg);
+  top: -400px;
+  left: -26px;
+  z-index: 4;
+}
+
+#GSquare_07{
+  width: 38px;
+  height: 34px;
+  background: black;
+  position: absolute;
+  transform: rotate(-100deg);
+  top: -150px;
+  left: -59px;
+  z-index: 4;
+}
+
+#GSquare_08{
+  width: 200px;
+  height: 180px;
+  background: white;
+  position: absolute;
+  top: -230px;
+  left: 140px;
+  z-index: 4;
+}
+
+#GTriangle_01{
+  width: 0;
+  height: 140px;
+  border-left: 26px solid transparent;
+  border-right: 26px solid transparent;
+  border-bottom: 200px solid black;
+  transform: rotate(-15deg);
+  position: absolute;
+  top: -262px;
+  left: 7px;
+}
+
+#GTriangle_02{
+  width: 0;
+  height: 140px;
+  border-left: 26px solid transparent;
+  border-right: 26px solid transparent;
+  border-bottom: 200px solid black;
+  position: absolute;
+  top: -260px;
+  left: 0px;
+}
+
+#GTriangle_03{
+  width: 10px;
+  height: 82px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 180px solid black;
+  transform: rotate(57deg);
+  position: absolute;
+  top: -158px;
+  left: 160px;
+}
+
+#GTriangle_04{
+  width: 10px;
+  height: 82px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 180px solid black;
+  position: absolute;
+  transform: rotate(60deg);
+  top: -417px;
+  left: 73px;
+  z-index: 6;
+}
+
+#GTriangle_05{
+  width: 70px;
+  border-left: 28px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 70px solid black;
+  transform: rotate(20deg);
+  position: absolute;
+  top: -305px;
+  left: 117px;
+}
+
+#GTrapezoid_01{
+  border-bottom: 100px solid black;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0;
+  width: 100px;
+}
+
+#GTrapezoid_02{
+  border-bottom: 70px solid black;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  transform: rotate(82deg);
+  height: 0;
+  width: 100px;
+  position: absolute;
+  top: -154px;
+  left: 180px;
+}
+
+#GTriangle_06 {
+  height: 0px;
+    border-bottom: 59px solid black;
+    border-right: 40px solid transparent;
+    position: absolute;
+    transform: scaleX(-1) rotate(90deg);
+    top: -80px;
+    left: 71px;
+    z-index: 4;
+}
+
+#GTriangle_07 {
+  height: 44px;
+  border-bottom: 40px solid black;
+  border-right: 120px solid transparent;
+  transform: rotate(180deg) scaleX(-1);
+  position: absolute;
+  top: -70px;
+  left: 120px;
+  z-index: 4;
+}
+
+#GTriangle_08 {
+  width: 60px;
+  height: 99px;
+  border-bottom: -200px solid white;
+  border-right: 80px solid transparent;
+  position: absolute;
+  top: 400px;
+  left: 500px;
+  z-index: 5
+}
+
+#GTrapezoid_03 {
+  width: 180px;
+  height: 100px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  background: black;
+  position: absolute;
+  top: -170px;
+  left: 80px;
+  z-index: 4;
+}
+
+
+#H{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  transform: scale(0.8);
+  position: absolute;
+  top: 140px;
+  left: 240px;
+}
+
+#HSquare_01 {
+  width: 25px;
+  height: 60px;
+  background: white;
+  position: absolute;
+  top: 331px;
+  left: 477px;
+  z-index: 4;
+}
+
+#HSquare_02 {
+  width: 120px;
+  height: 50px;
+  background: black;
+  position: absolute;
+  transform: rotate(-80deg);
+  top: 306px;
+  left: 416px;
+  z-index: 5;
+}
+
+#HSquare_03 {
+  width: 44px;
+  height: 30px;
+  background: black;
+  position: absolute;
+  top: 420px;
+  left: 430px;
+  z-index: 5;
+}
+
+#HTriangle_01 {
+  width: 0px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 34px solid transparent;
+  position: absolute;
+  top: 410px;
+  left: 470px;
+  z-index: 5;
+}
+
+#HTriangle_02 {
+  width: 0px;
+  height: 0;
+  border-bottom: 80px solid black;
+  border-right: 26px solid transparent;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 360px;
+  left: 550px;
+}
+
+#HTriangle_03 {
+  width: 0px;
+  height: 0;
+  border-bottom: 80px solid black;
+  border-right: 26px solid transparent;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 333px;
+  left: 497px;
+}
+
+#HTriangle_04 {
+  width: 0px;
+  height: 50px;
+  border-bottom: 80px solid white;
+  border-right: 26px solid transparent;
+  position: absolute;
+  top: 284px;
+  left: 500px;
+  z-index: 4
+}
+
+#HTriangle_05 {
+  width: 0px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 34px solid transparent;
+  position: absolute;
+  top: 256px;
+  left: 462px;
+}
+
+#HTriangle_06 {
+  width: 170px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 20px solid transparent;
+  position: absolute;
+  transform: rotate(270deg);
+  top: 338px;
+  left: 520px;
+}
+
+#HTrapezoid_01 {
+  width: 120px;
+  height: 56px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  background: black;
+  position: absolute;
+  top: 331px;
+  left: 493px;
+}
+
+#HParallelogram_01 {
+  width: 42px;
+  height: 20px;
+  -webkit-transform: skew(20deg);
+     -moz-transform: skew(20deg);
+       -o-transform: skew(20deg);
+  background: black;
+  position: absolute;
+  top: 256px;
+  left: 466px;
+}
+
+
+#I{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  transform: scale(0.55);
+  top: 30px;
+  position: relative;
+  left: 0px;
+}
+
+#ITrapezoid_01{
+  width: 60px;
+  height: 80px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(0deg);
+  -o-transform: skew(0deg);
+  background: black;
+  position: absolute;
+  top: 126px;
+  left: 40px;
+}
+
+#ITrapezoid_02 {
+  border-bottom: 60px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  transform: rotate(180deg);
+  top: 48px;
+  left: 40px;
+}
+
+#ITrapezoid_03 {
+  border-bottom: 140px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 60px;
+  width: 40px;
+  position: absolute;
+  top: -152px;
+  left: 40px;
+}
+
+#ITrapezoid_04 {
+  border-bottom: 120px solid black;
+  border-left: 60px solid transparent;
+  border-right: 20px solid transparent;
+  width: 40px;
+  position: absolute;
+  top: 86px;
+  left: 130px;
+  z-index: 6;
+}
+
+#ITrapezoid_05 {
+  border-bottom: 80px solid black;
+  border-left: 40px solid transparent;
+  border-right: 20px solid transparent;
+  transform: scaleX(-1) rotate(180deg);
+  width: 40px;
+  position: absolute;
+  top: -90px;
+  left: -40px;
+  z-index: 6;
+}
+
+#ITrapezoid_06 {
+  border-bottom: 80px solid black;
+  border-left: 40px solid transparent;
+  border-right: 20px solid transparent;
+  transform: scaleX(-1) rotate(180deg);
+  width: 40px;
+  position: absolute;
+  top: -90px;
+  left: 160px;
+  z-index: 6;
+}
+
+#ITrapezoid_07 {
+  border-bottom: 60px solid black;
+  border-left: 40px solid transparent;
+  border-right: 20px solid transparent;
+  height: 60px;
+  width: 40px;
+  position: absolute;
+  top: 86px;
+  left: 120px;
+  z-index: 6;
+}
+
+#ITrapezoid_08 {
+  border-bottom: 100px solid black;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  transform: rotate(30deg);
+  height: 20px;
+  width: 40px;
+  position: absolute;
+  top: 74px;
+  left: 176px;
+}
+
+#ITrapezoid_09 {
+  border-bottom: 100px solid black;
+  border-left: 60px solid transparent;
+  border-right: 10px solid transparent;
+  transform: rotate(-98deg);
+  height: 12px;
+  width: 16px;
+  position: absolute;
+  top: 18px;
+  left: 149px;
+}
+
+#ISquare_01 {
+  width: 50px;
+  height: 80px;
+  background: black;
+  z-index: 3;
+  position: absolute;
+  top: 126px;
+  left: 80px;
+}
+
+#ISquare_02 {
+  width: 50px;
+  height: 80px;
+  background: white;
+  transform: rotate(40deg);
+  z-index: 5;
+  position: absolute;
+  top: 160px;
+  left: 120px;
+}
+
+#ITriangle_01 {
+  width: 21px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 60px solid transparent;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(270deg);
+  position: absolute;
+  top: 146px;
+  left: 109px;
+}
+
+#ITriangle_02 {
+  width: 20px;
+  height: 0;
+  border-bottom: 80px solid black;
+  border-right: 60px solid transparent;
+  transform: rotate(180deg);
+  position: absolute;
+  top: -90px;
+  left: 120px;
+}
+
+#ITriangle_03 {
+  width: 0px;
+  height: 0;
+  border-bottom: 80px solid black;
+  border-right: 60px solid transparent;
+  transform: scaleX(-1) rotate(180deg);
+  position: absolute;
+  top: 126px;
+  left: -20px;
+}
+
+#J{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  transform: scale(0.6);
+  top: 30px;
+  position: relative;
+  left: 40px;
+}
+
+#JTrapezoid_01{
+  width: 60px;
+  height: 80px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(0deg);
+  -o-transform: skew(0deg);
+  background: black;
+  position: absolute;
+  top: 126px;
+  left: 40px;
+}
+
+#JTrapezoid_02 {
+  border-bottom: 60px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  transform: rotate(180deg);
+  top: 48px;
+  left: 40px;
+}
+
+#JTrapezoid_03 {
+  border-bottom: 140px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 60px;
+  width: 40px;
+  position: absolute;
+  top: -152px;
+  left: 40px;
+}
+
+#JTrapezoid_05 {
+  border-bottom: 80px solid black;
+  border-left: 40px solid transparent;
+  border-right: 20px solid transparent;
+  transform: scaleX(-1) rotate(180deg);
+  width: 40px;
+  position: absolute;
+  top: -90px;
+  left: -40px;
+  z-index: 6;
+}
+
+#JTrapezoid_06 {
+  border-bottom: 60px solid black;
+  border-left: 40px solid transparent;
+  border-right: 20px solid transparent;
+  transform: scaleX(-1) rotate(180deg);
+  width: 40px;
+  position: absolute;
+  top: -92px;
+  left: 140px;
+  z-index: 6;
+}
+
+#JTrapezoid_07 {
+  border-bottom: 140px solid black;
+  border-left: 40px solid transparent;
+  border-right: 20px solid transparent;
+  transform: scaleX(-1) rotate(40deg);
+  width: 40px;
+  position: absolute;
+  top: 48px;
+  left: -60px;
+  z-index: 6;
+}
+
+#JSquare_01 {
+  width: 50px;
+  height: 80px;
+  background: black;
+  z-index: 3;
+  position: absolute;
+  top: 126px;
+  left: 80px;
+}
+
+#JSquare_02 {
+  width: 50px;
+  height: 80px;
+  background: white;
+  transform: rotate(40deg);
+  z-index: 5;
+  position: absolute;
+  top: 160px;
+  left: 120px;
+}
+
+#JTriangle_01 {
+  width: 21px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 60px solid transparent;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(270deg);
+  position: absolute;
+  top: 146px;
+  left: 109px;
+}
+
+#JTriangle_02 {
+  border-bottom: 100px solid black;
+  border-left: 40px solid transparent;
+  border-right: 20px solid transparent;
+  transform: scaleX(-1) rotate(180deg);
+  position: absolute;
+  top: -92px;
+  left: 140px;
+  z-index: 6;
+}
+
+#K{
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  transform: scale(0.8);
+  position: relative;
+  left: 10px;
+}
+
+#KSquare_01 {
+  width: 44px;
+  height: 200px;
+  background: black;
+  transform: rotate(16deg);
+  z-index: 3;
+}
+
+#KSquare_02 {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  width: 4px;
+  height: 6px;
+  background: black;
+  z-index: 3;
+  position: absolute;
+  top: 199px;
+  left: 12px;
+}
+
+#KParallelogram_01 {
+  width: 50px;
+  height: 65px;
+  -webkit-transform: scaleX(-1) skew(20deg);
+  -moz-transform: skew(60deg);
+  -o-transform: skew(30deg);
+  background: black;
+  position: relative;
+  top: -190px;
+  left: 50px;
+}
+
+#KTriangle_01 {
+  width: 30px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 13px solid transparent;
+  transform: scaleX(-1) rotate(180deg);
+  position: absolute;
+  top: 120px;
+  left: 60px;
+}
+
+#KTriangle_02 {
+  width: 80px;
+  height: 0;
+  border-bottom: 20px solid black;
+  border-right: 60px solid transparent;
+  position: absolute;
+  top: 140px;
+  left: 60px;
+}
+
+#KTriangle_03 {
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 140px solid transparent;
+  transform: scaleX(-1) rotate(180deg);
+  position: absolute;
+  top: 100px;
+  left: 60px;
+}
+
+#KTriangle_04 {
+  width: 30px;
+  height: 0;
+  border-bottom: 16px solid black;
+  border-right: 13px solid transparent;
+  position: absolute;
+  top: 189px;
+  left: -26.65px;
+}
+
+#KTrapezoid_01 {
+  border-bottom: 60px solid black;
+  border-left: 70px solid transparent;
+  border-right: 20px solid transparent;
+  width: 40px;
+  position: absolute;
+  top: 48px;
+  left: 80px;
+  z-index: 6;
+}
+
+#KTrapezoid_02 {
+  border-bottom: 60px solid black;
+  border-left: 20px solid transparent;
+  border-right: 40px solid transparent;
+  transform: scaleX(-1) rotate(180deg);
+  width: 40px;
+  position: absolute;
+  top: 160px;
+  left: 100px;
+  z-index: 6;
+}
+
+#L{
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  transform: scale(0.6);
+  top: 24px;
+  position: relative;
+  left: -20px;
+}
+
+#LTrapezoid_01{
+  width: 60px;
+  height: 80px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(0deg);
+  -o-transform: skew(0deg);
+  background: black;
+  position: absolute;
+  top: 126px;
+  left: 0px;
+}
+
+#LTrapezoid_02 {
+  border-bottom: 60px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  transform: rotate(180deg);
+  top: 48px;
+  left: 0px;
+}
+
+#LTrapezoid_03 {
+  border-bottom: 140px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 60px;
+  width: 40px;
+  position: absolute;
+  top: -152px;
+  left: 0px;
+}
+
+#LSquare_01 {
+  width: 50px;
+  height: 80px;
+  background: black;
+  z-index: 3;
+  position: absolute;
+  top: 126px;
+  left: 40px;
+}
+
+#LTriangle_01 {
+  width: 21px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 60px solid transparent;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(270deg);
+  position: absolute;
+  top: 146px;
+  left: 69px;
+}
+
+#LTriangle_03 {
+  width: 30px;
+  height: 0;
+  border-bottom: 16px solid black;
+  border-right: 40px solid transparent;
+  position: absolute;
+  top: 190px;
+  left: 60px;
+}
+
+#LTriangle_04 {
+  width: 0px;
+  height: 0;
+  border-bottom: 60px solid black;
+  border-right: 100px solid transparent;
+  position: absolute;
+  transform: rotate(-0deg);
+  top: 146px;
+  left: 160px;
+  z-index: 5
+}
+
+#LTriangle_05 {
+  width: 16px;
+  height: 0;
+  border-bottom: 120px solid black;
+  border-right: 4px solid transparent;
+  position: absolute;
+  transform: rotate(92deg);
+  top: 137px;
+  left: 105px;
+  z-index: 5
+}
+
+#LTriangle_06 {
+  width: 0px;
+  height: 0;
+  border-bottom: 60px solid black;
+  border-right: 100px solid transparent;
+  position: absolute;
+  transform: rotate(-0deg) scaleX(-1);
+  top: 146px;
+  left: 60px;
+  z-index: 5
+}
+
+#LTrapezoid_04 {
+  border-bottom: 60px solid black;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  transform: scaleX(-1) rotate(93deg);
+  width: 30px;
+  position: absolute;
+  top: 104px;
+  left: 172px;
+}
+
+#M{
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  transform: scale(0.56);
+  top: 30px;
+  position: relative;
+  left: -52px;
+}
+
+#MPentagon_01 {
+    position: relative;
+    left: 45px;
+    top: -50px;
+    width: 54px;
+    border-width: 50px 18px 0;
+    transform: rotate(164deg) scale(1.4);
+    border-style: solid;
+    border-color: black transparent;
+}
+
+#MTriangle_01{
+  width: 0px;
+  height: 0;
+  border-bottom: 65px solid black;
+  border-right: 60px solid transparent;
+  position: absolute;
+  transform: rotate(-63deg) scale(1.4);
+  top: -24px;
+  left: 69px;
+}
+
+#MPentagon_02 {
+    position: relative;
+    left: 260px;
+    top: -150px;
+    width: 54px;
+    border-width: 100px 18px 0px;
+    transform: rotate(164deg) scale(1.2);
+    border-style: solid;
+    border-color: black transparent;
+}
+
+#MTriangle_02{
+  width: 0px;
+  height: 0;
+  border-bottom: 65px solid black;
+  border-right: 60px solid transparent;
+  position: absolute;
+  transform: rotate(-63.4deg) scale(1.2);
+  left: 293px;
+  top: -25px;
+}
+
+
+#MParallelogram_01{
+ width: 180px;
+  height: 68px;
+  -webkit-transform: scaleX(-1) rotate(40deg) skew(20deg) scale(1.2);
+  -moz-transform: skew(60deg);
+  -o-transform: skew(30deg);
+  background: black;
+  position: absolute;
+  top: -12px;
+  left: 168px;
+  z-index: 5;
+}
+
+#MTrapezoid_01{
+  border-bottom: 120px solid black;
+  border-left: 80px solid transparent;
+  border-right: 40px solid transparent;
+  width: 60px;
+  transform: scale(0.8);
+  position: absolute;
+  top: 92px;
+  left: 0px;
+}
+
+#MTrapezoid_02{
+  border-bottom: 80px solid black;
+  border-left: 20px solid transparent;
+  border-right: 60px solid transparent;
+  width: 80px;
+  transform: scale(0.8);
+  position: absolute;
+  top: 130px;
+  left: 230px;
+}
+
+#N{
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  transform: scale(0.56);
+  top: 30px;
+  position: relative;
+  left: -20px;
+}
+
+#NPentagon_01 {
+    position: relative;
+    left: 45px;
+    top: -50px;
+    width: 54px;
+    border-width: 50px 18px 0;
+    transform: rotate(164deg) scale(1.4);
+    border-style: solid;
+    border-color: black transparent;
+}
+
+#NTriangle_01{
+  width: 0px;
+  height: 0;
+  border-bottom: 65px solid black;
+  border-right: 60px solid transparent;
+  position: absolute;
+  transform: rotate(-63deg) scale(1.4);
+  top: -24px;
+  left: 69px;
+}
+
+#NTriangle_02 {
+  width: 280px;
+  height: 0;
+  border-bottom: 90px solid black;
+  border-right: 40px solid transparent;
+   transform: rotate(270deg);
+  position: absolute;
+  top: 0px;
+  left: 134px;
+}
+
+#NParallelogram_01{
+ width: 80px;
+  height: 68px;
+  -webkit-transform: scaleX(-1) rotate(90deg) skew(20deg) scale(1.2);
+  -moz-transform: skew(60deg);
+  -o-transform: skew(30deg);
+  background: black;
+  position: absolute;
+  top: 26px;
+  left: 168px;
+  z-index: 5;
+}
+
+#NTrapezoid_01{
+  border-bottom: 120px solid black;
+  border-left: 80px solid transparent;
+  border-right: 40px solid transparent;
+  width: 60px;
+  position: absolute;
+  top: 86px;
+  left: 0px;
+}
+
+#O{
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  transform: scale(0.45);
+  position: relative;
+  top: 100px;
+  left: 0px;
+}
+
+#OSquare_01{
+  width: 160px;
+  height: 45px;
+  background: black;
+  position: absolute;
+  top: 35px;
+  left: 52px;
+}
+
+#OSquare_02{
+  width: 160px;
+  height: 60px;
+  background: black;
+  position: absolute;
+  transform: rotate(-64deg);
+  top: -36px;
+  left: 140px;
+}
+
+#OSquare_03{
+  width: 260px;
+  height: 60px;
+  background: white;
+  position: absolute;
+  top: 60px;
+  left: -24px;
+  z-index: 4;
+}
+
+#OSquare_04{
+  width: 80px;
+  height: 200px;
+  background: black;
+  position: absolute;
+  transform: rotate(-10deg);
+  top: -140px;
+  left: -40px;
+  z-index: 1;
+}
+
+#OSquare_05{
+  width: 76px;
+  height: 200px;
+  background: black;
+  position: absolute;
+  transform: rotate(20deg);
+  top: -330px;
+  left: -26px;
+  z-index: 1;
+}
+
+#OSquare_06{
+  width: 76px;
+  height: 200px;
+  background: white;
+  position: absolute;
+  transform: rotate(-96deg);
+  top: -400px;
+  left: -26px;
+  z-index: 4;
+}
+
+#OSquare_07{
+  width: 38px;
+  height: 34px;
+  background: black;
+  position: absolute;
+  transform: rotate(-100deg);
+  top: -150px;
+  left: -59px;
+  z-index: 4;
+}
+
+#OSquare_08{
+  width: 60px;
+  height: 540px;
+  background: white;
+  position: absolute;
+  transform: rotate(38deg);
+  top: -320px;
+  left: 60px;
+  z-index: 4;
+}
+
+#OTriangle_01{
+  width: 0;
+  height: 140px;
+  border-left: 26px solid transparent;
+  border-right: 26px solid transparent;
+  border-bottom: 200px solid black;
+  transform: rotate(-15deg);
+  position: absolute;
+  top: -262px;
+  left: 7px;
+}
+
+#OTriangle_02{
+  width: 0;
+  height: 140px;
+  border-left: 26px solid transparent;
+  border-right: 26px solid transparent;
+  border-bottom: 200px solid black;
+  position: absolute;
+  top: -260px;
+  left: 0px;
+}
+
+#OTriangle_03{
+  width: 10px;
+  height: 82px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 180px solid black;
+  transform: rotate(57deg);
+  position: absolute;
+  top: -158px;
+  left: 160px;
+}
+
+#OTriangle_04{
+  width: 10px;
+  height: 82px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 180px solid black;
+  position: absolute;
+  transform: rotate(60deg);
+  top: -417px;
+  left: 73px;
+  z-index: 6;
+}
+
+#OTriangle_05{
+  width: 70px;
+  border-left: 28px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 70px solid black;
+  transform: rotate(20deg);
+  position: absolute;
+  top: -305px;
+  left: 117px;
+}
+
+#OTrapezoid_01{
+  border-bottom: 100px solid black;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0;
+  width: 100px;
+}
+
+#OTrapezoid_02{
+  border-bottom: 70px solid black;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  transform: rotate(82deg);
+  height: 0;
+  width: 100px;
+  position: absolute;
+  top: -154px;
+  left: 180px;
+}
+
+#P{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  transform: scale(0.6);
+  top: 24px;
+  position: relative;
+  left: -20px;
+}
+
+#PTrapezoid_01{
+  width: 60px;
+  height: 80px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(0deg);
+  -o-transform: skew(0deg);
+  background: black;
+  position: absolute;
+  top: 126px;
+  left: 0px;
+}
+
+#PTrapezoid_02 {
+  border-bottom: 60px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  transform: rotate(180deg);
+  top: 48px;
+  left: 0px;
+}
+
+#PTrapezoid_03 {
+  border-bottom: 140px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 60px;
+  width: 40px;
+  position: absolute;
+  top: -152px;
+  left: 0px;
+}
+
+#PSquare_01 {
+  width: 50px;
+  height: 80px;
+  background: black;
+  z-index: 3;
+  position: absolute;
+  top: 126px;
+  left: 40px;
+}
+
+#PSquare_02 {
+  width: 50px;
+  height: 80px;
+  background: white;
+  transform: rotate(40deg);
+  z-index: 5;
+  position: absolute;
+  top: 160px;
+  left: 80px;
+}
+
+#PTriangle_01 {
+  width: 21px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 60px solid transparent;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(270deg);
+  position: absolute;
+  top: 146px;
+  left: 69px;
+}
+
+#PTriangle_02 {
+  width: 60px;
+  height: 0;
+  border-bottom: 80px solid black;
+  border-right: 60px solid transparent;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(310deg);
+  position: absolute;
+  top: -82px;
+  left: 100px;
+}
+
+#PTrapezoid_04{
+  border-bottom: 100px solid black;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0;
+  width: 100px;
+  transform: scale(0.7);
+  position: absolute;
+  top: 23px;
+  left: 60px;
+}
+
+#PTrapezoid_05{
+  border-bottom: 70px solid black;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  transform: rotate(82deg) scale(0.7);
+  height: 0;
+  width: 100px;
+  position: absolute;
+  top: -20px;
+  left: 130px;
+}
+
+#Q{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  transform: scale(0.45);
+  position: relative;
+  top: 100px;
+  left: -20px;
+}
+
+#QSquare_01{
+  width: 160px;
+  height: 45px;
+  background: black;
+  position: absolute;
+  top: 35px;
+  left: 52px;
+}
+
+#QSquare_02{
+  width: 160px;
+  height: 60px;
+  background: black;
+  position: absolute;
+  transform: rotate(-64deg);
+  top: -36px;
+  left: 140px;
+}
+
+#QSquare_03{
+  width: 260px;
+  height: 60px;
+  background: white;
+  position: absolute;
+  top: 60px;
+  left: -24px;
+  z-index: 4;
+}
+
+#QSquare_04{
+  width: 80px;
+  height: 200px;
+  background: black;
+  position: absolute;
+  transform: rotate(-10deg);
+  top: -140px;
+  left: -40px;
+  z-index: 1;
+}
+
+#QSquare_05{
+  width: 76px;
+  height: 200px;
+  background: black;
+  position: absolute;
+  transform: rotate(20deg);
+  top: -330px;
+  left: -26px;
+  z-index: 1;
+}
+
+#QSquare_06{
+  width: 76px;
+  height: 200px;
+  background: white;
+  position: absolute;
+  transform: rotate(-96deg);
+  top: -400px;
+  left: -26px;
+  z-index: 4;
+}
+
+#QSquare_07{
+  width: 38px;
+  height: 34px;
+  background: black;
+  position: absolute;
+  transform: rotate(-100deg);
+  top: -150px;
+  left: -59px;
+  z-index: 4;
+}
+
+#QSquare_08{
+  width: 60px;
+  height: 540px;
+  background: white;
+  position: absolute;
+  transform: rotate(38deg);
+  top: -320px;
+  left: 60px;
+  z-index: 4;
+}
+
+#QTriangle_01{
+  width: 0;
+  height: 140px;
+  border-left: 26px solid transparent;
+  border-right: 26px solid transparent;
+  border-bottom: 200px solid black;
+  transform: rotate(-15deg);
+  position: absolute;
+  top: -262px;
+  left: 7px;
+}
+
+#QTriangle_02{
+  width: 0;
+  height: 140px;
+  border-left: 26px solid transparent;
+  border-right: 26px solid transparent;
+  border-bottom: 200px solid black;
+  position: absolute;
+  top: -260px;
+  left: 0px;
+}
+
+#QTriangle_03{
+  width: 10px;
+  height: 82px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 180px solid black;
+  transform: rotate(57deg);
+  position: absolute;
+  top: -158px;
+  left: 160px;
+}
+
+#QTriangle_04{
+  width: 10px;
+  height: 82px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 180px solid black;
+  position: absolute;
+  transform: rotate(60deg);
+  top: -417px;
+  left: 73px;
+  z-index: 6;
+}
+
+#QTriangle_05{
+  width: 70px;
+  border-left: 28px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 70px solid black;
+  transform: rotate(20deg);
+  position: absolute;
+  top: -305px;
+  left: 117px;
+}
+
+#QTrapezoid_01{
+  border-bottom: 100px solid black;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0;
+  width: 100px;
+}
+
+#QTrapezoid_02{
+  border-bottom: 70px solid black;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  transform: rotate(82deg);
+  height: 0;
+  width: 100px;
+  position: absolute;
+  top: -154px;
+  left: 180px;
+}
+
+#QTrapezoid_03{
+  border-bottom: 120px solid black;
+  border-left: 80px solid transparent;
+  border-right: 40px solid transparent;
+  width: 60px;
+  position: absolute;
+  top: -40px;
+  left: 166px;
+}
+
+#R{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  transform: scale(0.6);
+  top: 24px;
+  position: relative;
+  left: -20px;
+}
+
+#RTrapezoid_01{
+  width: 60px;
+  height: 80px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(0deg);
+  -o-transform: skew(0deg);
+  background: black;
+  position: absolute;
+  top: 126px;
+  left: 0px;
+}
+
+#RTrapezoid_02 {
+  border-bottom: 60px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  transform: rotate(180deg);
+  top: 48px;
+  left: 0px;
+}
+
+#RTrapezoid_03 {
+  border-bottom: 140px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 60px;
+  width: 40px;
+  position: absolute;
+  top: -152px;
+  left: 0px;
+}
+
+#RSquare_01 {
+  width: 50px;
+  height: 80px;
+  background: black;
+  z-index: 3;
+  position: absolute;
+  top: 126px;
+  left: 40px;
+}
+
+#RSquare_02 {
+  width: 50px;
+  height: 80px;
+  background: white;
+  transform: rotate(40deg);
+  z-index: 5;
+  position: absolute;
+  top: 160px;
+  left: 80px;
+}
+
+#RTriangle_01 {
+  width: 21px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 60px solid transparent;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(270deg);
+  position: absolute;
+  top: 146px;
+  left: 69px;
+}
+
+#RTriangle_02 {
+  width: 60px;
+  height: 0;
+  border-bottom: 80px solid black;
+  border-right: 60px solid transparent;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(310deg);
+  position: absolute;
+  top: -82px;
+  left: 100px;
+}
+
+#RTriangle_03 {
+  width: 100px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 80px solid transparent;
+  position: absolute;
+  top: 84px;
+  left: 120px;
+}
+
+#RTrapezoid_04{
+  border-bottom: 100px solid black;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0;
+  width: 100px;
+  transform: scale(0.7);
+  position: absolute;
+  top: 23px;
+  left: 60px;
+}
+
+#RTrapezoid_05{
+  border-bottom: 70px solid black;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  transform: rotate(82deg) scale(0.7);
+  height: 0;
+  width: 100px;
+  position: absolute;
+  top: -20px;
+  left: 130px;
+}
+
+#RTrapezoid_06 {
+  border-bottom: 80px solid black;
+  border-left: 40px solid transparent;
+  border-right: 60px solid transparent;
+  transform: scaleX(-1) rotate(180deg);
+  width: 40px;
+  position: absolute;
+  top: 124px;
+  left: 156px;
+  z-index: 6;
+}
+
+#S{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  transform: scale(0.45);
+  position: relative;
+  top: 106px;
+  left: -20px;
+}
+
+#SSquare_01{
+  width: 160px;
+  height: 45px;
+  background: black;
+  position: absolute;
+  top: 35px;
+  left: 52px;
+}
+
+#SSquare_02{
+  width: 160px;
+  height: 60px;
+  background: black;
+  position: absolute;
+  transform: rotate(-64deg);
+  top: -36px;
+  left: 140px;
+}
+
+#SSquare_03{
+  width: 260px;
+  height: 60px;
+  background: white;
+  position: absolute;
+  top: 60px;
+  left: -24px;
+  z-index: 4;
+}
+
+#SSquare_05{
+  width: 76px;
+  height: 200px;
+  background: black;
+  position: absolute;
+  transform: rotate(20deg);
+  top: -330px;
+  left: -26px;
+  z-index: 1;
+}
+
+#SSquare_06{
+  width: 76px;
+  height: 200px;
+  background: white;
+  position: absolute;
+  transform: rotate(-96deg);
+  top: -400px;
+  left: -26px;
+  z-index: 4;
+}
+
+#SSquare_08{
+  width: 60px;
+  height: 540px;
+  background: white;
+  position: absolute;
+  transform: rotate(38deg);
+  top: -320px;
+  left: 60px;
+  z-index: 4;
+}
+
+#STriangle_03{
+  width: 10px;
+  height: 82px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 180px solid black;
+  transform: rotate(57deg);
+  position: absolute;
+  top: -158px;
+  left: 160px;
+}
+
+#STriangle_04{
+  width: 10px;
+  height: 82px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 180px solid black;
+  position: absolute;
+  transform: rotate(60deg);
+  top: -417px;
+  left: 73px;
+  z-index: 6;
+}
+
+#STriangle_05{
+  width: 70px;
+  border-left: 28px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 70px solid black;
+  transform: rotate(20deg);
+  position: absolute;
+  top: -305px;
+  left: 117px;
+}
+
+#STriangle_06{
+  width: 70px;
+  border-left: 28px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 70px solid black;
+  transform: rotate(-120deg);
+  position: absolute;
+  top: -242px;
+  left: -60px;
+}
+
+#STrapezoid_01{
+  border-bottom: 100px solid black;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0;
+  width: 100px;
+}
+
+#STrapezoid_02{
+  border-bottom: 70px solid black;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  transform: rotate(82deg);
+  height: 0;
+  width: 100px;
+  position: absolute;
+  top: -154px;
+  left: 180px;
+}
+
+#STrapezoid_03{
+border-bottom: 80px solid black;
+    border-left: 40px solid transparent;
+    border-right: 60px solid transparent;
+    transform: scaleX(-1) rotate(180deg);
+    width: 40px;
+    position: absolute;
+    top: -120px;
+    left: 156px;
+    z-index: 6;
+}
+
+#SParallelogram_01{
+ width: 100px;
+  height: 68px;
+  -webkit-transform: skew(20deg) scale(1.2);
+  -moz-transform: skew(60deg);
+  -o-transform: skew(30deg);
+  background: black;
+  position: absolute;
+  top: -160px;
+  left: 128px;
+  z-index: 5;
+}
+
+  #STrapezoid_04 {
+  border-bottom: 60px solid black;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  transform: rotate(93deg);
+  width: 30px;
+  position: absolute;
+  top: -40px;
+  left: -36px;
+  z-index: 5;
+}
+
+#T{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  transform: scale(0.55);
+  top: 30px;
+  position: relative;
+  left: 0px;
+}
+
+#TTrapezoid_01{
+  width: 60px;
+  height: 80px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(0deg);
+  -o-transform: skew(0deg);
+  background: black;
+  position: absolute;
+  top: 126px;
+  left: 40px;
+}
+
+#TTrapezoid_02 {
+  border-bottom: 60px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  transform: rotate(180deg);
+  top: 48px;
+  left: 40px;
+}
+
+#TTrapezoid_03 {
+  border-bottom: 140px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 60px;
+  width: 40px;
+  position: absolute;
+  top: -152px;
+  left: 40px;
+}
+
+#TTrapezoid_04 {
+  border-bottom: 120px solid black;
+  border-left: 60px solid transparent;
+  border-right: 20px solid transparent;
+  width: 40px;
+  position: absolute;
+  top: 86px;
+  left: 130px;
+  z-index: 6;
+}
+
+#TTrapezoid_05 {
+  border-bottom: 80px solid black;
+  border-left: 40px solid transparent;
+  border-right: 20px solid transparent;
+  transform: scaleX(-1) rotate(180deg);
+  width: 40px;
+  position: absolute;
+  top: -90px;
+  left: -40px;
+  z-index: 6;
+}
+
+#TTrapezoid_06 {
+  border-bottom: 80px solid black;
+  border-left: 40px solid transparent;
+  border-right: 20px solid transparent;
+  transform: scaleX(-1) rotate(180deg);
+  width: 120px;
+  position: absolute;
+  top: -92px;
+  left: 80px;
+  z-index: 6;
+}
+
+#TTrapezoid_07 {
+  border-bottom: 60px solid black;
+  border-left: 40px solid transparent;
+  border-right: 20px solid transparent;
+  height: 60px;
+  width: 40px;
+  position: absolute;
+  top: 86px;
+  left: 120px;
+  z-index: 6;
+}
+
+#TTrapezoid_08 {
+  border-bottom: 100px solid black;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  transform: rotate(30deg);
+  height: 20px;
+  width: 40px;
+  position: absolute;
+  top: 74px;
+  left: 176px;
+}
+
+#TTrapezoid_09 {
+  border-bottom: 100px solid black;
+  border-left: 60px solid transparent;
+  border-right: 10px solid transparent;
+  transform: rotate(-98deg);
+  height: 12px;
+  width: 16px;
+  position: absolute;
+  top: 18px;
+  left: 149px;
+}
+
+#TSquare_01 {
+  width: 50px;
+  height: 80px;
+  background: black;
+  z-index: 3;
+  position: absolute;
+  top: 126px;
+  left: 80px;
+}
+
+#TSquare_02 {
+  width: 50px;
+  height: 80px;
+  background: white;
+  transform: rotate(40deg);
+  z-index: 5;
+  position: absolute;
+  top: 160px;
+  left: 120px;
+}
+
+#TTriangle_01 {
+  width: 21px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 60px solid transparent;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(270deg);
+  position: absolute;
+  top: 146px;
+  left: 109px;
+}
+
+#TTriangle_03 {
+  width: 0px;
+  height: 0;
+  border-bottom: 80px solid black;
+  border-right: 60px solid transparent;
+  transform: scaleX(-1) rotate(180deg);
+  position: absolute;
+  top: 126px;
+  left: -20px;
+}
+
+#TTriangle_04 {
+  width: 0px;
+  height: 0;
+  border-bottom: 60px solid black;
+  border-right: 40px solid transparent;
+  transform: scaleX(-1);
+  position: absolute;
+  top: 146px;
+  left: 126px;
+  z-index: 12;
+}
+
+#TSquare_03 {
+  width: 50px;
+  height: 80px;
+  background: black;
+  z-index: 5;
+  position: absolute;
+  top: 28px;
+  left: 60px;
+}
+
+#U{
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  transform: scale(0.45);
+  position: relative;
+  top: 90px;
+  left: -20px;
+}
+
+#USquare_01{
+  width: 160px;
+  height: 45px;
+  background: black;
+  position: absolute;
+  top: 35px;
+  left: 52px;
+}
+
+#USquare_02{
+  width: 160px;
+  height: 60px;
+  background: black;
+  position: absolute;
+  transform: rotate(-64deg);
+  top: -36px;
+  left: 140px;
+}
+
+#USquare_04{
+  width: 80px;
+  height: 200px;
+  background: black;
+  position: absolute;
+  transform: rotate(-10deg);
+  top: -140px;
+  left: -40px;
+  z-index: 1;
+}
+
+#USquare_05{
+  width: 76px;
+  height: 200px;
+  background: black;
+  position: absolute;
+  transform: rotate(20deg);
+  top: -330px;
+  left: -26px;
+  z-index: 1;
+}
+
+#USquare_06{
+  width: 76px;
+  height: 200px;
+  background: white;
+  position: absolute;
+  transform: rotate(-96deg);
+  top: -400px;
+  left: -26px;
+  z-index: 4;
+}
+
+#USquare_07{
+  width: 38px;
+  height: 34px;
+  background: black;
+  position: absolute;
+  transform: rotate(-100deg);
+  top: -150px;
+  left: -59px;
+  z-index: 4;
+}
+
+#USquare_08{
+  width: 80px;
+  height: 60px;
+  background: black;
+  position: absolute;
+  top: 20px;
+  left: -22px;
+  z-index: 4;
+}
+
+#USquare_09{
+  width: 90px;
+  height: 140px;
+  background: white;
+  position: absolute;
+  top: -38px;
+  left: 60px;
+  z-index: 6;
+}
+
+#USquare_10{
+  width: 380px;
+  height: 140px;
+  background: white;
+  position: absolute;
+  top: -360px;
+  left: -80px;
+  z-index: 8;
+}
+
+#USquare_11{
+  width: 380px;
+  height: 140px;
+  transform: rotate(40deg);
+  background: white;
+  position: absolute;
+  top: 120px;
+  left: -160px;
+  z-index: 15;
+}
+
+#USquare_12{
+  width: 240px;
+  height: 50px;
+  background: black;
+  position: absolute;
+  top: 60px;
+  left: 42px;
+  z-index: 15;
+}
+
+#USquare_13{
+  width: 80px;
+  height: 182px;
+  background: black;
+  position: absolute;
+  top: -72px;
+  left: 221px;
+  z-index: 15;
+}
+
+#USquare_14{
+  width: 120px;
+    height: 84px;
+    background: white;
+    position: absolute;
+    top: -72px;
+    left: 90px;
+    z-index: 20;
+}
+
+#UTriangle_01{
+  width: 0;
+  height: 140px;
+  border-left: 26px solid transparent;
+  border-right: 26px solid transparent;
+  border-bottom: 200px solid black;
+  transform: rotate(-15deg);
+  position: absolute;
+  top: -262px;
+  left: 7px;
+}
+
+#UTriangle_02{
+  width: 0;
+  height: 140px;
+  border-left: 26px solid transparent;
+  border-right: 26px solid transparent;
+  border-bottom: 200px solid black;
+  position: absolute;
+  top: -260px;
+  left: 0px;
+}
+
+#UTriangle_03{
+  width: 10px;
+  height: 82px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 180px solid black;
+  transform: rotate(57deg);
+  position: absolute;
+  top: -158px;
+  left: 160px;
+}
+
+#UTriangle_04{
+  width: 10px;
+  height: 82px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 180px solid black;
+  position: absolute;
+  transform: rotate(60deg);
+  top: -417px;
+  left: 73px;
+  z-index: 6;
+}
+
+#UTriangle_05{
+  width: 70px;
+  border-left: 28px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 70px solid black;
+  transform: rotate(20deg);
+  position: absolute;
+  top: -305px;
+  left: 117px;
+}
+
+#UTriangle_06{
+  width: 40px;
+  border-left: 68px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 100px solid black;
+  transform: rotate(150deg);
+  position: absolute;
+  top: -270px;
+  left: -20px;
+  z-index: 12;
+}
+
+#UTrapezoid_02{
+  border-bottom: 70px solid black;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  transform: rotate(82deg);
+  height: 0;
+  width: 100px;
+  position: absolute;
+  top: -154px;
+  left: 180px;
+}
+
+#UTrapezoid_03{
+  border-bottom: 180px solid black;
+  border-left: 80px solid transparent;
+  border-right: 40px solid transparent;
+  transform: rotate(90deg);
+  width: 90px;
+  position: absolute;
+  top: -80px;
+  left: -12px;
+  z-index: 8;
+}
+
+#V{
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  transform: scale(0.45);
+  position: relative;
+  top: 110px;
+  left: -60px;
+  z-index: 16;
+}
+
+#VTriangle_01{
+  border-left: 360px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 180px solid black;
+  transform: rotate(40deg) scaleX(-1);
+  position: absolute;
+  top: -230px;
+  left: -20px;
+  z-index: 12;
+}
+
+#VSquare_01{
+  width: 80px;
+  height: 80px;
+  background: black;
+  position: absolute;
+  top: -64px;
+  left: 258px;
+}
+
+#VTrapezoid_01{
+  border-bottom: 40px solid black;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  transform: rotate(90deg);
+  height: 0;
+  width: 160px;
+  position: absolute;
+  top: -112px;
+  left: 246px;
+}
+
+#VParallelogram_01{
+ width: 140px;
+  height: 100px;
+  -webkit-transform: rotate(90deg) skew(20deg) scale(1.2);
+  -moz-transform: skew(60deg);
+  -o-transform: skew(30deg);
+  background: black;
+  position: absolute;
+  top: -200px;
+  left: 280px;
+  z-index: 5;
+}
+
+#W{
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  transform: scale(0.45);
+  position: relative;
+  top: 110px;
+  left: -100px;
+  z-index: 16;
+}
+
+#WSquare_01{
+  width: 84px;
+  height: 80px;
+  transform: rotate(-36deg);
+  background: black;
+  position: absolute;
+  top: -56px;
+  left: 358px;
+}
+
+#WTrapezoid_01{
+  border-bottom: 40px solid black;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  transform: rotate(90deg);
+  height: 0;
+  width: 160px;
+  position: absolute;
+  top: -160px;
+  left: 254px;
+}
+
+#WTriangle_01{
+  border-left: 360px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 160px solid black;
+  transform: rotate(54deg) scaleX(-1) scale(0.9);
+  position: absolute;
+  top: -230px;
+  left: 10px;
+  z-index: 12;
+}
+
+#WTriangle_02{
+ width: 40px;
+    border-left: 280px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 120px solid black;
+    transform: rotate(-60deg);
+    position: absolute;
+    top: -170px;
+    left: 260px;
+    z-index: 12;
+}
+
+#WParallelogram_01{
+ width: 60px;
+  height: 80px;
+  -webkit-transform: rotate(72deg) skew(20deg) scale(1.2);
+  -moz-transform: skew(60deg);
+  -o-transform: skew(30deg);
+  background: black;
+  position: absolute;
+  top: -160px;
+  left: 300px;
+  z-index: 5;
+}
+
+#X{
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  transform: scale(0.45);
+  position: relative;
+  top: 110px;
+  left: -60px;
+  z-index: 16;
+}
+
+#XSquare_01{
+  width: 104px;
+  height: 80px;
+  transform: rotate(45deg);
+  background: black;
+  position: absolute;
+  top: -34px;
+  left: 154px;
+}
+
+#XTriangle_01{
+  border-left: 360px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 180px solid black;
+  transform: rotate(40deg) scaleX(-1);
+  position: absolute;
+  top: -230px;
+  left: -20px;
+  z-index: 12;
+}
+
+#XTriangle_02 {
+  height: 0;
+  border-bottom: 80px solid black;
+  border-right: 170px solid transparent;
+  -webkit-transform: scaleX(-1);
+  transform: rotate(270deg) scaleX(-1);
+  position: absolute;
+  top: -182px;
+  left: 212px;
+}
+
+#XParallelogram_01{
+ width: 140px;
+  height: 60px;
+  -webkit-transform: rotate(90deg) skew(20deg) scale(1.2);
+  -moz-transform: skew(60deg);
+  -o-transform: skew(30deg);
+  background: black;
+  position: absolute;
+  top: -186px;
+  left: 303px;
+  z-index: 5;
+}
+
+#XTrapezoid_01{
+  border-bottom: 80px solid black;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  height: 0;
+  width: 100px;
+  position: absolute;
+  top: 0px;
+  left: 120px;
+}
+
+#XTrapezoid_02{
+  border-bottom: 80px solid black;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  height: 0;
+  width: 100px;
+  position: absolute;
+  top: 0px;
+  left: 120px;
+}
+
+#XTrapezoid_03{
+  border-bottom: 60px solid black;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  transform: rotate(180deg);
+  height: 0;
+  width: 40px;
+  position: absolute;
+  top: 12px;
+  left: 300px;
+}
+
+#Y{
+  grid-row-start: 5;
+  grid-row-end: 6;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  transform: scale(0.55);
+  top: 40px;
+  position: relative;
+  left: 0px;
+}
+
+#YTrapezoid_01{
+  width: 60px;
+  height: 80px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(0deg);
+  -o-transform: skew(0deg);
+  background: black;
+  position: absolute;
+  top: 126px;
+  left: 40px;
+}
+
+#YTrapezoid_02 {
+  border-bottom: 60px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  transform: rotate(180deg);
+  top: 48px;
+  left: 40px;
+}
+
+#YTrapezoid_03 {
+  border-bottom: 140px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 60px;
+  width: 40px;
+  position: absolute;
+  top: -152px;
+  left: 40px;
+}
+
+#YTrapezoid_04 {
+  border-bottom: 120px solid black;
+  border-left: 60px solid transparent;
+  border-right: 20px solid transparent;
+  width: 40px;
+  position: absolute;
+  top: 86px;
+  left: 130px;
+  z-index: 6;
+}
+
+#YTrapezoid_05 {
+  border-bottom: 80px solid black;
+  border-left: 40px solid transparent;
+  border-right: 20px solid transparent;
+  transform: scaleX(-1) rotate(180deg);
+  width: 40px;
+  position: absolute;
+  top: -90px;
+  left: -40px;
+  z-index: 6;
+}
+
+#YTrapezoid_06 {
+  border-bottom: 80px solid black;
+  border-left: 40px solid transparent;
+  border-right: 20px solid transparent;
+  transform: scaleX(-1) rotate(180deg);
+  width: 120px;
+  position: absolute;
+  top: -92px;
+  left: 80px;
+  z-index: 6;
+}
+
+#YTrapezoid_07 {
+  border-bottom: 60px solid black;
+  border-left: 40px solid transparent;
+  border-right: 20px solid transparent;
+  height: 60px;
+  width: 40px;
+  position: absolute;
+  top: 86px;
+  left: 120px;
+  z-index: 6;
+}
+
+#YTrapezoid_08 {
+  border-bottom: 100px solid black;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  transform: rotate(30deg);
+  height: 20px;
+  width: 40px;
+  position: absolute;
+  top: 74px;
+  left: 176px;
+}
+
+#YTrapezoid_09 {
+  border-bottom: 100px solid black;
+  border-left: 60px solid transparent;
+  border-right: 10px solid transparent;
+  transform: rotate(-98deg);
+  height: 12px;
+  width: 16px;
+  position: absolute;
+  top: 18px;
+  left: 149px;
+}
+
+#YSquare_01 {
+  width: 50px;
+  height: 80px;
+  background: black;
+  z-index: 3;
+  position: absolute;
+  top: 126px;
+  left: 80px;
+}
+
+#YSquare_02 {
+  width: 50px;
+  height: 80px;
+  background: white;
+  transform: rotate(40deg);
+  z-index: 5;
+  position: absolute;
+  top: 160px;
+  left: 120px;
+}
+
+#YTriangle_01 {
+  width: 21px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 60px solid transparent;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(270deg);
+  position: absolute;
+  top: 146px;
+  left: 109px;
+}
+
+#YTriangle_02 {
+  width: 21px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 60px solid transparent;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(90deg);
+  position: absolute;
+  top: -66px;
+  left: -40px;
+}
+
+#YTriangle_03 {
+  width: 0px;
+  height: 0;
+  border-bottom: 80px solid black;
+  border-right: 60px solid transparent;
+  transform: scaleX(-1) rotate(180deg);
+  position: absolute;
+  top: 126px;
+  left: -20px;
+}
+
+#YTriangle_04 {
+  width: 0px;
+  height: 0;
+  border-bottom: 60px solid black;
+  border-right: 40px solid transparent;
+  transform: scaleX(-1);
+  position: absolute;
+  top: 146px;
+  left: 126px;
+  z-index: 12;
+}
+
+#YSquare_03 {
+  width: 50px;
+  height: 80px;
+  background: black;
+  z-index: 5;
+  position: absolute;
+  top: 28px;
+  left: 60px;
+}
+
+#YParallelogram_01{
+ width: 140px;
+  height: 60px;
+  -webkit-transform: rotate(120deg) skew(20deg) scale(1.2);
+  -moz-transform: skew(60deg);
+  -o-transform: skew(30deg);
+  background: black;
+  position: absolute;
+  top: -20px;
+  left: 80px;
+  z-index: 5;
+}
+
+#Z{
+  grid-row-start: 6;
+  grid-row-end: 7;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  transform: scale(0.8);
+  position: relative;
+  left: 10px;
+  top: 0px;
+}
+
+#ZSquare_01{
+  width: 220px;
+  height: 40px;
+  background: black;
+  z-index: 5;
+  position: absolute;
+  top: 0px;
+  left: -40px;
+}
+
+#ZTriangle_01{
+    width: 40px;
+    border-left: 120px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 50px solid black;
+    transform: rotate(180deg);
+    position: absolute;
+    top: 40px;
+    left:-40px;
+    z-index: 12;
+}
+
+#ZTriangle_02{
+    width: 40px;
+    border-left: 120px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 50px solid black;
+    transform: rotate(140deg);
+    position: absolute;
+    top: 100px;
+    left: -60px;
+    z-index: 12;
+}
+
+#ZTriangle_04 {
+  width: 30px;
+  height: 0;
+  border-bottom: 16px solid black;
+  border-right: 40px solid transparent;
+  position: absolute;
+  top: 189px;
+  left: -26.65px;
+}
+
+#ZTriangle_05 {
+  width: 0px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 80px solid transparent;
+  position: absolute;
+  transform: rotate(-0deg);
+  top: 165px;
+  left: 80px;
+}
+
+#ZTriangle_06 {
+  width: 16px;
+  height: 0;
+  border-bottom: 120px solid black;
+  border-right: 4px solid transparent;
+  position: absolute;
+  transform: rotate(92deg);
+  top: 137px;
+  left: 25px;
+}
+
+#ZTriangle_07 {
+  width: 0px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 80px solid transparent;
+  position: absolute;
+  transform: rotate(0deg) scaleX(-1);
+  top: 165px;
+  left: 0px;
+}
+
+#ZTriangle_08 {
+    width: 0px;
+    height: 0;
+    border-bottom: 40px solid black;
+    border-right: 80px solid transparent;
+    position: absolute;
+    transform: rotate(-0deg);
+    top: 165px;
+    left: 80px;
+}
+
+#ZTrapezoid_03 {
+  border-bottom: 40px solid black;
+    border-left: 24px solid transparent;
+    border-right: 24px solid transparent;
+    transform: scaleX(-1) rotate(98deg);
+    width: 60px;
+    position: absolute;
+    top: 130px;
+    left: 85px;
+}
+
+</style>
+
+  </head>
+  <body>
+
+<div id="myGrid">
+  <div id="A">
+      <div id="ASquare_01"></div>
+      <div id="ASquare_02"></div>
+      <div id="AParallelogram_01"></div>
+      <div id="ATriangle_01"></div>
+      <div id="ATriangle_02"></div>
+      <div id="ATriangle_03"></div>
+      <div id="ATriangle_04"></div>
+      <div id="ATriangle_05"></div>
+      <div id="ATrapezoid_01"></div>
+  </div>
+
+  <div id="B">
+      <div id="BSquare_01"></div>
+      <div id="BSquare_02"></div>
+      <div id="BParallelogram_01"></div>
+      <div id="BTriangle_01"></div>
+      <div id="BTriangle_02"></div>
+      <div id="BTriangle_03"></div>
+      <div id="BTriangle_04"></div>
+      <div id="BTriangle_05"></div>
+      <div id="BTrapezoid_01"></div>
+      <div id="BTrapezoid_02"></div>
+      <div id="BTrapezoid_03"></div>
+      <div id="BTrapezoid_04"></div>
+      <div id="BTrapezoid_05"></div>
+      <div id="BTrapezoid_06"></div>
+      <div id="BTrapezoid_07"></div>
+  </div>
+
+  <div id="C">
+  <div id="CSquare_01"></div>
+      <div id="CSquare_02"></div>
+      <div id="CSquare_03"></div>
+      <div id="CSquare_04"></div>
+      <div id="CSquare_05"></div>
+      <div id="CSquare_06"></div>
+      <div id="CSquare_07"></div>
+      <div id="CSquare_08"></div>
+      <div id="CTriangle_01"></div>
+      <div id="CTriangle_02"></div>
+      <div id="CTriangle_03"></div>
+      <div id="CTriangle_04"></div>
+      <div id="CTriangle_05"></div>
+      <div id="CTriangle_06"></div>
+      <div id="CTrapezoid_01"></div>
+      <div id="CTrapezoid_02"></div>
+      <div id="CParallelogram_01"></div>
+  </div>
+
+  <div id="D">
+  <div id="DSquare_01"></div>
+      <div id="DSquare_02"></div>
+      <div id="DParallelogram_01"></div>
+      <div id="DTriangle_01"></div>
+      <div id="DTriangle_02"></div>
+      <div id="DTriangle_03"></div>
+      <div id="DTriangle_04"></div>
+      <div id="DTriangle_05"></div>
+      <div id="DTrapezoid_01"></div>
+      <div id="DTrapezoid_02"></div>
+      <div id="DTrapezoid_03"></div>
+      <div id="DTrapezoid_04"></div>
+      <div id="DTrapezoid_05"></div>
+      <div id="DTrapezoid_06"></div>
+      <div id="DTrapezoid_07"></div>
+  </div>
+
+  <div id="E">
+    <div id="ESquare_01"></div>
+      <div id="ESquare_02"></div>
+      <div id="ESquare_03"></div>
+      <div id="ESquare_04"></div>
+      <div id="EParallelogram_01"></div>
+      <div id="EParallelogram_02"></div>
+      <div id="ETriangle_01"></div>
+      <div id="ETriangle_02"></div>
+      <div id="ETriangle_03"></div>
+      <div id="ETriangle_04"></div>
+      <div id="ETriangle_05"></div>
+      <div id="ETriangle_06"></div>
+      <div id="ETriangle_07"></div>
+      <div id="ETriangle_05"></div>
+      <div id="ETrapezoid_01"></div>
+      <div id="ETrapezoid_02"></div>
+      <div id="ETrapezoid_03"></div>
+  </div>
+
+  <div id="F">
+    <div id="FSquare_01"></div>
+      <div id="FSquare_02"></div>
+      <div id="FSquare_03"></div>
+      <div id="FSquare_04"></div>
+      <div id="FParallelogram_01"></div>
+      <div id="FParallelogram_02"></div>
+      <div id="FTriangle_01"></div>
+      <div id="FTriangle_02"></div>
+      <div id="FTriangle_03"></div>
+      <div id="FTriangle_04"></div>
+      <div id="FTrapezoid_01"></div>
+      <div id="FTrapezoid_02"></div>
+  </div>
+
+<div id="G">
+  <div id="GSquare_01"></div>
+      <div id="GSquare_02"></div>
+      <div id="GSquare_03"></div>
+      <div id="GSquare_04"></div>
+      <div id="GSquare_05"></div>
+      <div id="GSquare_06"></div>
+      <div id="GSquare_07"></div>
+      <div id="GSquare_08"></div>
+      <div id="GTriangle_01"></div>
+      <div id="GTriangle_02"></div>
+      <div id="GTriangle_03"></div>
+      <div id="GTriangle_04"></div>
+      <div id="GTriangle_05"></div>
+      <div id="GTriangle_06"></div>
+      <div id="GTriangle_07"></div>
+      <div id="GTriangle_08"></div>
+      <div id="GTrapezoid_01"></div>
+      <div id="GTrapezoid_02"></div>
+      <div id="GTrapezoid_03"></div>
+      <div id="GParallelogram_01"></div>
+  </div>
+
+  <div id="H">
+      <div id="HSquare_01"></div>
+      <div id="HSquare_02"></div>
+      <div id="HSquare_03"></div>
+      <div id="HTriangle_01"></div>
+      <div id="HTriangle_02"></div>
+      <div id="HTriangle_03"></div>
+      <div id="HTriangle_04"></div>
+      <div id="HTriangle_05"></div>
+      <div id="HTriangle_06"></div>
+      <div id="HTrapezoid_01"></div>
+      <div id="HParallelogram_01"></div>
+  </div>
+
+  <div id="I">
+  <div id="ISquare_01"></div>
+      <div id="ISquare_02"></div>
+      <div id="IParallelogram_01"></div>
+      <div id="ITriangle_01"></div>
+      <div id="ITriangle_02"></div>
+      <div id="ITriangle_03"></div>
+      <div id="ITriangle_04"></div>
+      <div id="ITriangle_05"></div>
+      <div id="ITrapezoid_01"></div>
+      <div id="ITrapezoid_02"></div>
+      <div id="ITrapezoid_03"></div>
+      <div id="ITrapezoid_04"></div>
+      <div id="ITrapezoid_05"></div>
+      <div id="ITrapezoid_06"></div>
+      <div id="ITrapezoid_07"></div>
+</div>
+
+  <div id="J">
+  <div id="JSquare_01"></div>
+      <div id="JSquare_02"></div>
+      <div id="JParallelogram_01"></div>
+      <div id="JTriangle_01"></div>
+      <div id="JTriangle_02"></div>
+      <div id="JTriangle_03"></div>
+      <div id="JTriangle_04"></div>
+      <div id="JTriangle_05"></div>
+      <div id="JTrapezoid_01"></div>
+      <div id="JTrapezoid_02"></div>
+      <div id="JTrapezoid_03"></div>
+      <div id="JTrapezoid_04"></div>
+      <div id="JTrapezoid_05"></div>
+      <div id="JTrapezoid_06"></div>
+      <div id="JTrapezoid_07"></div>
+      <div id="JTrapezoid_08"></div>
+      <div id="JTrapezoid_09"></div>
+      <div id="JTrapezoid_10"></div>
+</div>
+
+  <div id="K">
+      <div id="KSquare_01"></div>
+      <div id="KSquare_02"></div>
+      <div id="KParallelogram_01"></div>
+      <div id="KTriangle_01"></div>
+      <div id="KTriangle_02"></div>
+      <div id="KTriangle_03"></div>
+      <div id="KTriangle_04"></div>
+      <div id="KTriangle_05"></div>
+      <div id="KTrapezoid_01"></div>
+      <div id="KTrapezoid_02"></div>
+      <div id="KTrapezoid_03"></div>
+  </div>
+
+  <div id="L">
+      <div id="LSquare_01"></div>
+      <div id="LSquare_02"></div>
+      <div id="LParallelogram_01"></div>
+      <div id="LTriangle_01"></div>
+      <div id="LTriangle_02"></div>
+      <div id="LTriangle_03"></div>
+      <div id="LTriangle_04"></div>
+      <div id="LTriangle_05"></div>
+      <div id="LTriangle_06"></div>
+      <div id="LTriangle_07"></div>
+      <div id="LTrapezoid_01"></div>
+      <div id="LTrapezoid_02"></div>
+      <div id="LTrapezoid_03"></div>
+      <div id="LTrapezoid_04"></div>
+      <div id="LTrapezoid_05"></div>
+      <div id="LTrapezoid_06"></div>
+      <div id="LTrapezoid_07"></div>
+</div>
+
+  <div id="M">
+      <div id="MSquare_01"></div>
+      <div id="MSquare_02"></div>
+      <div id="MParallelogram_01"></div>
+      <div id="MTriangle_01"></div>
+      <div id="MTriangle_02"></div>
+      <div id="MTrapezoid_01"></div>
+      <div id="MTrapezoid_02"></div>
+      <div id="MPentagon_01"></div>
+      <div id="MPentagon_02"></div>
+      <div id="MParallelogram_01"></div>
+    </div>
+
+  <div id="N">
+      <div id="NSquare_01"></div>
+      <div id="NSquare_02"></div>
+      <div id="NParallelogram_01"></div>
+      <div id="NTriangle_01"></div>
+      <div id="NTriangle_02"></div>
+      <div id="NTrapezoid_01"></div>
+      <div id="NTrapezoid_02"></div>
+      <div id="NPentagon_01"></div>
+      <div id="NPentagon_02"></div>
+      <div id="NParallelogram_01"></div>
+    </div>
+
+  <div id="O">
+    <div id="OSquare_01"></div>
+      <div id="OSquare_02"></div>
+      <div id="OSquare_03"></div>
+      <div id="OSquare_04"></div>
+      <div id="OSquare_05"></div>
+      <div id="OSquare_06"></div>
+      <div id="OSquare_07"></div>
+      <div id="OSquare_08"></div>
+      <div id="OTriangle_01"></div>
+      <div id="OTriangle_02"></div>
+      <div id="OTriangle_03"></div>
+      <div id="OTriangle_04"></div>
+      <div id="OTriangle_05"></div>
+      <div id="OTriangle_06"></div>
+      <div id="OTrapezoid_01"></div>
+      <div id="OTrapezoid_02"></div>
+      <div id="OParallelogram_01"></div>
+    </div>
+
+  <div id="P">
+      <div id="PSquare_01"></div>
+      <div id="PSquare_02"></div>
+      <div id="PParallelogram_01"></div>
+      <div id="PTriangle_01"></div>
+      <div id="PTriangle_02"></div>
+      <div id="PTriangle_03"></div>
+      <div id="PTriangle_04"></div>
+      <div id="PTriangle_05"></div>
+      <div id="PTrapezoid_01"></div>
+      <div id="PTrapezoid_02"></div>
+      <div id="PTrapezoid_03"></div>
+      <div id="PTrapezoid_04"></div>
+      <div id="PTrapezoid_05"></div>
+      <div id="PTrapezoid_06"></div>
+      <div id="PTrapezoid_07"></div>
+  </div>
+
+<div id="Q">
+      <div id="QSquare_01"></div>
+      <div id="QSquare_02"></div>
+      <div id="QSquare_03"></div>
+      <div id="QSquare_04"></div>
+      <div id="QSquare_05"></div>
+      <div id="QSquare_06"></div>
+      <div id="QSquare_07"></div>
+      <div id="QSquare_08"></div>
+      <div id="QTriangle_01"></div>
+      <div id="QTriangle_02"></div>
+      <div id="QTriangle_03"></div>
+      <div id="QTriangle_04"></div>
+      <div id="QTriangle_05"></div>
+      <div id="QTriangle_06"></div>
+      <div id="QTrapezoid_01"></div>
+      <div id="QTrapezoid_02"></div>
+      <div id="QTrapezoid_03"></div>
+      <div id="QParallelogram_01"></div>
+  </div>
+
+  <div id="R">
+      <div id="RSquare_01"></div>
+      <div id="RSquare_02"></div>
+      <div id="RParallelogram_01"></div>
+      <div id="RTriangle_01"></div>
+      <div id="RTriangle_02"></div>
+      <div id="RTriangle_03"></div>
+      <div id="RTriangle_04"></div>
+      <div id="RTriangle_05"></div>
+      <div id="RTrapezoid_01"></div>
+      <div id="RTrapezoid_02"></div>
+      <div id="RTrapezoid_03"></div>
+      <div id="RTrapezoid_04"></div>
+      <div id="RTrapezoid_05"></div>
+      <div id="RTrapezoid_06"></div>
+      <div id="RTrapezoid_07"></div>
+  </div>
+
+<div id="S">
+      <div id="SSquare_01"></div>
+      <div id="SSquare_02"></div>
+      <div id="SSquare_03"></div>
+      <div id="SSquare_04"></div>
+      <div id="Square_05"></div>
+      <div id="SSquare_06"></div>
+      <div id="SSquare_07"></div>
+      <div id="SSquare_08"></div>
+      <div id="STriangle_01"></div>
+      <div id="STriangle_02"></div>
+      <div id="STriangle_03"></div>
+      <div id="STriangle_04"></div>
+      <div id="STriangle_05"></div>
+      <div id="STriangle_06"></div>
+      <div id="STrapezoid_01"></div>
+      <div id="STrapezoid_02"></div>
+      <div id="STrapezoid_03"></div>
+      <div id="STrapezoid_04"></div>
+      <div id="SParallelogram_01"></div>
+</div>
+
+  <div id="T">
+      <div id="TSquare_01"></div>
+      <div id="TSquare_02"></div>
+      <div id="TSquare_03"></div>
+      <div id="TSquare_04"></div>
+      <div id="TParallelogram_01"></div>
+      <div id="TTriangle_01"></div>
+      <div id="TTriangle_02"></div>
+      <div id="TTriangle_04"></div>
+      <div id="TTriangle_05"></div>
+      <div id="TTrapezoid_01"></div>
+      <div id="TTrapezoid_02"></div>
+      <div id="TTrapezoid_03"></div>
+      <div id="TTrapezoid_05"></div>
+      <div id="TTrapezoid_06"></div>
+</div>
+
+  <div id="U">
+    <div id="USquare_01"></div>
+    <div id="USquare_02"></div>
+    <div id="USquare_03"></div>
+    <div id="USquare_04"></div>
+    <div id="USquare_05"></div>
+    <div id="USquare_06"></div>
+    <div id="USquare_07"></div>
+    <div id="USquare_08"></div>
+    <div id="USquare_09"></div>
+    <div id="USquare_10"></div>
+    <div id="USquare_11"></div>
+    <div id="USquare_12"></div>
+    <div id="USquare_13"></div>
+    <div id="USquare_14"></div>
+    <div id="UTriangle_01"></div>
+    <div id="UTriangle_02"></div>
+    <div id="UTriangle_03"></div>
+    <div id="UTriangle_04"></div>
+    <div id="UTriangle_05"></div>
+    <div id="UTriangle_06"></div>
+    <div id="UTrapezoid_01"></div>
+    <div id="UTrapezoid_02"></div>
+    <div id="UTrapezoid_03"></div>
+    <div id="UParallelogram_01"></div>
+    <div id="UPentagon_02"></div>
+    </div>
+
+  <div id="V">
+    <div id="VSquare_01"></div>
+      <div id="VSquare_02"></div>
+      <div id="VSquare_03"></div>
+      <div id="Square_04"></div>
+      <div id="VSquare_05"></div>
+      <div id="VSquare_06"></div>
+      <div id="VSquare_07"></div>
+      <div id="VSquare_08"></div>
+      <div id="VTriangle_01"></div>
+      <div id="VTriangle_02"></div>
+      <div id="VTriangle_03"></div>
+      <div id="VTriangle_04"></div>
+      <div id="VTriangle_05"></div>
+      <div id="VTriangle_06"></div>
+      <div id="VTrapezoid_01"></div>
+      <div id="VTrapezoid_02"></div>
+      <div id="VParallelogram_01"></div>
+    </div>
+
+  <div id="W">
+      <div id="WSquare_01"></div>
+      <div id="WSquare_02"></div>
+      <div id="WTriangle_01"></div>
+      <div id="WTriangle_02"></div>
+      <div id="WTrapezoid_01"></div>
+      <div id="WParallelogram_01"></div>
+  </div>
+
+  <div id="X">
+      <div id="XSquare_01"></div>
+      <div id="XSquare_02"></div>
+      <div id="XSquare_03"></div>
+      <div id="XSquare_04"></div>
+      <div id="XSquare_05"></div>
+      <div id="XSquare_06"></div>
+      <div id="XSquare_07"></div>
+      <div id="XSquare_08"></div>
+      <div id="XTriangle_01"></div>
+      <div id="XTriangle_02"></div>
+      <div id="XTriangle_03"></div>
+      <div id="XTriangle_04"></div>
+      <div id="XTriangle_05"></div>
+      <div id="XTriangle_06"></div>
+      <div id="XTrapezoid_01"></div>
+      <div id="XTrapezoid_02"></div>
+      <div id="XTrapezoid_03"></div>
+      <div id="XParallelogram_01"></div>
+      <div id="XParallelogram_02"></div>
+  </div>
+
+  <div id="Y">
+      <div id="YSquare_01"></div>
+      <div id="YSquare_02"></div>
+      <div id="YParallelogram_01"></div>
+      <div id="YTriangle_01"></div>
+      <div id="YTriangle_02"></div>
+      <div id="YTriangle_04"></div>
+      <div id="YTriangle_05"></div>
+      <div id="YTrapezoid_01"></div>
+      <div id="YTrapezoid_02"></div>
+  </div>
+
+  <div id="Z">
+      <div id="ZSquare_01"></div>
+      <div id="ZSquare_02"></div>
+      <div id="ZParallelogram_01"></div>
+      <div id="ZTriangle_01"></div>
+      <div id="ZTriangle_02"></div>
+      <div id="ZTriangle_03"></div>
+      <div id="ZTriangle_04"></div>
+      <div id="ZTriangle_05"></div>
+      <div id="ZTriangle_04"></div>
+      <div id="ZTriangle_05"></div>
+      <div id="ZTriangle_06"></div>
+      <div id="ZTriangle_07"></div>
+      <div id="ZTriangle_08"></div>
+      <div id="ZTrapezoid_01"></div>
+      <div id="ZTrapezoid_02"></div>
+      <div id="ZTrapezoid_03"></div>
+      <div id="ZTrapezoid_04"></div>
+      <div id="ZTrapezoid_05"></div>
+      <div id="ZTrapezoid_06"></div>
+      <div id="ZTrapezoid_07"></div>
+  </div>
+
+</div>
