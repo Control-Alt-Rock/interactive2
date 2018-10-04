@@ -2,17 +2,20 @@
 <html>
   <head>
   	<title>Alphabet_01</title>
-  	<style>
-      body 
 
+
+<style>
 #myGrid {
         margin: 40px;
+
+        padding-top: 1400px;
+        padding-left: 800px;
         
         display: grid;
         color: black;
       
-        grid-template-rows: 240px 240px 240px 240px 240px 240px 240px;
-        grid-template-columns: 240px 240px 240px 240px 240px 240px 240px;
+        grid-template-rows: 240px 240px 240px 240px 240px 240px 240px 240px 240px 240px;
+        grid-template-columns: 240px 240px 240px 240px 240px 240px 240px 240px 240px 240px 240px 240px 240px;
         grid-gap: 20px;
       }
 
@@ -23,7 +26,14 @@
   grid-column-end: 2;
   transform: scale(0.8);
   position: relative;
-  left: 10px;
+  left: 200px;
+  top: -600px;
+  transition: transform 1s ease-in-out;
+}
+
+#A.slide {
+  transform: scale(0.8) translate(-200px,800px);
+  transition-delay: 1s;
 }
 
 #ASquare_01 {
@@ -144,9 +154,15 @@
   grid-column-start: 2;
   grid-column-end: 3;
   transform: scale(0.6);
-  top: 24px;
+  left: 200px;
+  top: -600px;
   position: relative;
-  left: -20px;
+  transition: transform 1s ease-in-out;
+}
+
+#B.slide {
+  transform: scale(0.6) translate(-400px,1100px);
+  transition-delay: 1s;
 }
 
 #BTrapezoid_01{
@@ -209,15 +225,15 @@
 }
 
 #BTrapezoid_06 {
-  border-bottom: 100px solid black;
-  border-left: 60px solid transparent;
-  border-right: 10px solid transparent;
-  transform: rotate(-98deg);
-  height: 12px;
-  width: 16px;
-  position: absolute;
-  top: 18px;
-  left: 149px;
+  border-bottom: 144px solid black;
+    border-left: 60px solid transparent;
+    border-right: 10px solid transparent;
+    transform: rotate(-98deg);
+    height: 12px;
+    width: 16px;
+    position: absolute;
+    top: -1px;
+    left: 126px;
 }
 
 #BSquare_01 {
@@ -272,8 +288,14 @@
   grid-column-end: 4;
   transform: scale(0.48);
   position: relative;
-  top: 108px;
-  left: 0px;
+  left: 200px;
+  top: -600px;
+  transition: transform 1s ease-in-out;
+}
+
+#C.slide {
+  transform: scale(0.48) translate(-550px,1550px);
+  transition-delay: 1s;
 }
 
 #CSquare_01{
@@ -444,9 +466,15 @@
   grid-column-start: 4;
   grid-column-end: 5;
   transform: scale(0.6);
-  top: 24px;
+  left: -600px;
+  top: -600px;
   position: relative;
-  left: -20px;
+  transition: transform 1s ease-in-out;
+}
+
+#D.slide {
+  transform: scale(0.6) translate(800px,1114px);
+  transition-delay: 1s;
 }
 
 #DTrapezoid_01{
@@ -584,7 +612,211 @@
   grid-column-end: 6;
   transform: scale(0.8);
   position: relative;
-  left: 10px;
+  left: -600px;
+  top: -600px;
+  transition: transform 1s ease-in-out;
+}
+
+#E.slide {
+  transform: scale(0.8) translate(600px,818px);
+  transition-delay: 1s;
+}
+
+#ESquare_01 {
+  width: 44px;
+  height: 200px;
+  background: black;
+  transform: rotate(16deg);
+  z-index: 3;
+}
+
+#ESquare_02 {
+  width: 4px;
+  height: 6px;
+  background: black;
+  z-index: 3;
+  position: absolute;
+  top: 199px;
+  left: 12px;
+}
+
+#ESquare_03 {
+  width: 45px;
+  height: 12px;
+  background: black;
+  z-index: 3;
+  transform: rotate(-10deg);
+  position: absolute;
+  top: 42px;
+  left: 122px;
+}
+
+#ESquare_04 {
+  width: 26px;
+  height: 47px;
+  background: black;
+  z-index: 3;
+  transform: rotate(12deg);
+  position: absolute;
+  top: 2px;
+  left: 126px;
+}
+
+#EParallelogram_01 {
+  width: 50px;
+  height: 65px;
+  -webkit-transform: skew(80deg);
+  -moz-transform: skew(60deg);
+  -o-transform: skew(30deg);
+  background: black;
+  position: relative;
+  transform: rotate(-20deg);
+  top: -186px;
+  left: 32px;
+}
+
+#EParallelogram_02 {
+  width: 40px;
+  height: 40px;
+  -webkit-transform: skew(20deg);
+     -moz-transform: skew(20deg);
+       -o-transform: skew(80deg);
+  background: black;
+  position: absolute;
+  top: 0px;
+  left: 140px;
+}
+
+#ETriangle_01 {
+  width: 8px;
+  height: 0;
+  border-bottom: 50px solid black;
+  border-right: 60px solid transparent;
+  transform: rotate(70deg);
+  position: relative;
+  top: -259px;
+  left: 68px;
+}
+
+#ETriangle_02 {
+  width: 0px;
+  height: 0;
+  border-bottom: 80px solid black;
+  border-right: 26px solid transparent;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 113px;
+  left: 88px;
+}
+
+#ETriangle_03 {
+  width: 0px;
+  height: 0;
+  border-bottom: 80px solid black;
+  border-right: 26px solid transparent;
+  transform: rotate(90deg);
+  position: absolute;
+  top: 154px;
+  left: 134px;
+}
+
+#ETriangle_03 {
+  width: 2px;
+  height: 0;
+  border-bottom: 33px solid black;
+  border-right: 26px solid transparent;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 133px;
+  left: 34px;
+}
+
+#ETriangle_04 {
+  width: 30px;
+  height: 0;
+  border-bottom: 16px solid black;
+  border-right: 40px solid transparent;
+  position: absolute;
+  top: 189px;
+  left: -26.65px;
+}
+
+#ETriangle_05 {
+  width: 0px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 80px solid transparent;
+  position: absolute;
+  transform: rotate(-0deg);
+  top: 165px;
+  left: 80px;
+}
+
+#ETriangle_06 {
+  width: 16px;
+  height: 0;
+  border-bottom: 120px solid black;
+  border-right: 4px solid transparent;
+  position: absolute;
+  transform: rotate(92deg);
+  top: 137px;
+  left: 25px;
+}
+
+#ETriangle_07 {
+  width: 0px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 80px solid transparent;
+  position: absolute;
+  transform: rotate(0deg) scaleX(-1);
+  top: 165px;
+  left: 0px;
+}
+
+#ETrapezoid_01 {
+  width: 120px;
+  height: 56px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  background: black;
+  position: relative;
+  top: -230px;
+  left: 30px;
+}
+
+#ETrapezoid_02 {
+  border-bottom: 10px solid black;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  transform: rotate(180deg);
+  width: 0px;
+  position: absolute;
+  top: 40px;
+  left: 147px;
+}
+
+#ETrapezoid_03 {
+  border-bottom: 40px solid black;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    transform: scaleX(-1) rotate(90deg);
+    width: 10px;
+    position: absolute;
+    top: 160px;
+    left: 115px;
+}
+
+#E_02{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 6;
+  grid-column-end: 7;
+  transform: scale(0.8);
+  position: relative;
+  left: 1054px;
+  top: -486px;
 }
 
 #ESquare_01 {
@@ -774,13 +1006,20 @@
 }
 
 #F{
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 1;
-  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 6;
+  grid-column-end: 7;
   transform: scale(0.8);
   position: relative;
-  left: 10px;
+  left: -600px;
+  top: -600px;
+  transition: transform 1s ease-in-out;
+}
+
+#F.slide {
+  transform: scale(0.8) translate(540px,820px);
+  transition-delay: 1s;
 }
 
 #FSquare_01 {
@@ -926,14 +1165,20 @@
 }
 
 #G{
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 7;
+  grid-column-end: 8;
   transform: scale(0.48);
   position: relative;
-  top: 108px;
-  left: -20px;
+  left: -600px;
+  top: -600px;
+  transition: transform 1s ease-in-out;
+}
+
+#G.slide {
+  transform: scale(0.48) translate(740px,1582px);
+  transition-delay: 1s;
 }
 
 #GSquare_01{
@@ -1144,16 +1389,21 @@
   z-index: 4;
 }
 
-
 #H{
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  transform: scale(0.8);
-  position: absolute;
-  top: 140px;
-  left: 240px;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 8;
+  grid-column-end: 9;
+  transform: scale(0.9);
+  position: relative;
+  left: -1000px;
+  top: -1000px;
+  transition: transform 1s ease-in-out;
+}
+
+#H.slide {
+  transform: scale(0.9) translate(400px,926px);
+  transition-delay: 1s;
 }
 
 #HSquare_01 {
@@ -1276,16 +1526,21 @@
   left: 466px;
 }
 
-
 #I{
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 4;
-  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 9;
+  grid-column-end: 10;
   transform: scale(0.55);
-  top: 30px;
   position: relative;
-  left: 0px;
+  left: -1800px;
+  top: -800px;
+  transition: transform 1s ease-in-out;
+}
+
+#I.slide {
+  transform: scale(0.6) translate(2540px,1480px);
+  transition-delay: 1s;
 }
 
 #ITrapezoid_01{
@@ -1450,14 +1705,20 @@
 }
 
 #J{
-  grid-row-start: 2;
-  grid-row-end: 3;
-  grid-column-start: 5;
-  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 10;
+  grid-column-end: 11;
   transform: scale(0.6);
-  top: 30px;
   position: relative;
-  left: 40px;
+  left: -1600px;
+  top: -600px;
+  transition: transform 1s ease-in-out;
+}
+
+#J.slide {
+  transform: scale(0.6) translate(2200px,1140px);
+  transition-delay: 1s;
 }
 
 #JTrapezoid_01{
@@ -1576,13 +1837,20 @@
 }
 
 #K{
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
   grid-column-start: 1;
   grid-column-end: 2;
   transform: scale(0.8);
   position: relative;
-  left: 10px;
+  left: 400px;
+  top: -1200px;
+  transition: transform 1s ease-in-out;
+}
+
+#K.slide {
+  transform: scale(0.8) translate(-500px,1500px);
+  transition-delay: 2s;
 }
 
 #KSquare_01 {
@@ -1605,18 +1873,6 @@
   position: absolute;
   top: 199px;
   left: 12px;
-}
-
-#KParallelogram_01 {
-  width: 50px;
-  height: 65px;
-  -webkit-transform: scaleX(-1) skew(20deg);
-  -moz-transform: skew(60deg);
-  -o-transform: skew(30deg);
-  background: black;
-  position: relative;
-  top: -190px;
-  left: 50px;
 }
 
 #KTriangle_01 {
@@ -1671,6 +1927,17 @@
   z-index: 6;
 }
 
+#KTrapezoid_03 {
+  border-bottom: 80px solid black;
+    border-left: 20px solid transparent;
+    border-right: 60px solid transparent;
+    width: 80px;
+    transform: scale(0.6);
+    position: absolute;
+    top: 156px;
+    left: -80px;
+}
+
 #KTrapezoid_02 {
   border-bottom: 60px solid black;
   border-left: 20px solid transparent;
@@ -1684,14 +1951,20 @@
 }
 
 #L{
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
   grid-column-start: 2;
   grid-column-end: 3;
   transform: scale(0.6);
-  top: 24px;
   position: relative;
-  left: -20px;
+  left: 200px;
+  top: -1600px;
+  transition: transform 1s ease-in-out;
+}
+
+#L.slide {
+  transform: scale(0.6) translate(-424px,2720px);
+  transition-delay: 2s;
 }
 
 #LTrapezoid_01{
@@ -1809,83 +2082,55 @@
 }
 
 #M{
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
   grid-column-start: 3;
   grid-column-end: 4;
   transform: scale(0.56);
-  top: 30px;
+  left: -100px;
+  top: -1600px;
   position: relative;
-  left: -52px;
+  transition: transform 2s ease-in-out;
 }
 
-#MPentagon_01 {
-    position: relative;
-    left: 45px;
-    top: -50px;
-    width: 54px;
-    border-width: 50px 18px 0;
-    transform: rotate(164deg) scale(1.4);
-    border-style: solid;
-    border-color: black transparent;
-}
-
-#MTriangle_01{
-  width: 0px;
-  height: 0;
-  border-bottom: 65px solid black;
-  border-right: 60px solid transparent;
-  position: absolute;
-  transform: rotate(-63deg) scale(1.4);
-  top: -24px;
-  left: 69px;
+#M.slide {
+  transform: scale(0.56) translate(50px,2932px);
+  transition-delay: 1s;
 }
 
 #MPentagon_02 {
     position: relative;
-    left: 260px;
-    top: -150px;
+    left: 250px;
+    top: -100px;
     width: 54px;
     border-width: 100px 18px 0px;
-    transform: rotate(164deg) scale(1.2);
+    transform: rotate(156deg) scale(1.2);
     border-style: solid;
     border-color: black transparent;
 }
 
 #MTriangle_02{
   width: 0px;
-  height: 0;
-  border-bottom: 65px solid black;
-  border-right: 60px solid transparent;
-  position: absolute;
-  transform: rotate(-63.4deg) scale(1.2);
-  left: 293px;
-  top: -25px;
+    height: 0;
+    border-bottom: 65px solid black;
+    border-right: 60px solid transparent;
+    position: absolute;
+    transform: rotate(-74deg) scale(1.2);
+    left: 290px;
+    top: -26px;
 }
 
-
 #MParallelogram_01{
- width: 180px;
+ width: 120px;
   height: 68px;
-  -webkit-transform: scaleX(-1) rotate(40deg) skew(20deg) scale(1.2);
+  -webkit-transform: scaleX(-1) rotate(20deg) skew(20deg) scale(1.2);
   -moz-transform: skew(60deg);
   -o-transform: skew(30deg);
   background: black;
   position: absolute;
-  top: -12px;
-  left: 168px;
+  top: 12px;
+  left: 216px;
   z-index: 5;
-}
-
-#MTrapezoid_01{
-  border-bottom: 120px solid black;
-  border-left: 80px solid transparent;
-  border-right: 40px solid transparent;
-  width: 60px;
-  transform: scale(0.8);
-  position: absolute;
-  top: 92px;
-  left: 0px;
 }
 
 #MTrapezoid_02{
@@ -1899,15 +2144,67 @@
   left: 230px;
 }
 
+#MPentagon_01 {
+    position: absolute;
+    left: 0px;
+    top: -100px;
+    width: 54px;
+    border-width: 100px 18px 0px;
+    transform: rotate(-156deg) scale(1.2);
+    border-style: solid;
+    border-color: black transparent;
+}
+
+#MTriangle_01{
+  width: 0px;
+  height: 0;
+  border-bottom: 65px solid black;
+  border-right: 60px solid transparent;
+  position: absolute;
+  transform: rotate(74deg) scale(1.2);
+  left: -10px;
+  top: -25px;
+}
+
+#MParallelogram_02{
+ width: 120px;
+  height: 68px;
+  -webkit-transform: rotate(20deg) skew(20deg) scale(1.2);
+  -moz-transform: skew(60deg);
+  -o-transform: skew(30deg);
+  background: black;
+  position: absolute;
+  top: 12px;
+  left: 0px;
+  z-index: 5;
+}
+
+#MTrapezoid_01{
+  border-bottom: 80px solid black;
+  border-left: 20px solid transparent;
+  border-right: 60px solid transparent;
+  width: 80px;
+  transform: scale(0.8) scaleX(-1);
+  position: absolute;
+  top: 130px;
+  left: -50px;
+}
+
 #N{
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
   grid-column-start: 4;
   grid-column-end: 5;
   transform: scale(0.56);
-  top: 30px;
+  left: -600px;
+  top: -1000px;
   position: relative;
-  left: -20px;
+  transition: transform 2s ease-in-out;
+}
+
+#N.slide {
+  transform: scale(0.56) translate(940px,1856px);
+  transition-delay: 1s;
 }
 
 #NPentagon_01 {
@@ -1967,14 +2264,20 @@
 }
 
 #O{
-  grid-row-start: 3;
-  grid-row-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
   grid-column-start: 5;
   grid-column-end: 6;
   transform: scale(0.45);
   position: relative;
-  top: 100px;
-  left: 0px;
+  top: -1000px;
+  left: -800px;
+  transition: transform 2s ease-in-out;
+}
+
+#O.slide {
+  transform: scale(0.45) translate(1640px,2480px);
+  transition-delay: 1s;
 }
 
 #OSquare_01{
@@ -2141,14 +2444,20 @@
 }
 
 #P{
-  grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column-start: 1;
-  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 6;
+  grid-column-end: 7;
   transform: scale(0.6);
-  top: 24px;
   position: relative;
-  left: -20px;
+  left: -800px;
+  top: -1600px;
+  transition: transform 2s ease-in-out;
+}
+
+#P.slide {
+  transform: scale(0.6) translate(1160px,2740px);
+  transition-delay: 1s;
 }
 
 #PTrapezoid_01{
@@ -2256,14 +2565,20 @@
 }
 
 #Q{
-  grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 7;
+  grid-column-end: 8;
   transform: scale(0.45);
   position: relative;
-  top: 100px;
-  left: -20px;
+  left: -600px;
+  top: -1200px;
+  transition: transform 1s ease-in-out;
+}
+
+#Q.slide {
+  transform: scale(0.45) translate(1000px,2940px);
+  transition-delay: 2s;
 }
 
 #QSquare_01{
@@ -2440,14 +2755,20 @@
 }
 
 #R{
-  grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column-start: 3;
-  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 8;
+  grid-column-end: 9;
   transform: scale(0.6);
-  top: 24px;
   position: relative;
-  left: -20px;
+  left: -600px;
+  top: -1200px;
+  transition: transform 2s ease-in-out;
+}
+
+#R.slide {
+  transform: scale(0.6) translate(720px,2080px);
+  transition-delay: 1s;
 }
 
 #RTrapezoid_01{
@@ -2577,14 +2898,20 @@
 }
 
 #S{
-  grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column-start: 4;
-  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 9;
+  grid-column-end: 10;
   transform: scale(0.45);
   position: relative;
-  top: 106px;
-  left: -20px;
+  left: -1200px;
+  top: -1000px;
+  transition: transform 1s ease-in-out;
+}
+
+#S.slide {
+  transform: scale(0.45) translate(2240px,2520px);
+  transition-delay: 2s;
 }
 
 #SSquare_01{
@@ -2704,40 +3031,16 @@
   width: 100px;
 }
 
-#STrapezoid_02{
-  border-bottom: 70px solid black;
-  border-left: 30px solid transparent;
-  border-right: 30px solid transparent;
-  transform: rotate(82deg);
-  height: 0;
-  width: 100px;
-  position: absolute;
-  top: -154px;
-  left: 180px;
-}
-
-#STrapezoid_03{
-border-bottom: 80px solid black;
-    border-left: 40px solid transparent;
-    border-right: 60px solid transparent;
-    transform: scaleX(-1) rotate(180deg);
-    width: 40px;
-    position: absolute;
-    top: -120px;
-    left: 156px;
-    z-index: 6;
-}
-
 #SParallelogram_01{
- width: 100px;
+ width: 140px;
   height: 68px;
   -webkit-transform: skew(20deg) scale(1.2);
   -moz-transform: skew(60deg);
   -o-transform: skew(30deg);
   background: black;
   position: absolute;
-  top: -160px;
-  left: 128px;
+  top: -140px;
+  left: 88px;
   z-index: 5;
 }
 
@@ -2754,14 +3057,20 @@ border-bottom: 80px solid black;
 }
 
 #T{
-  grid-row-start: 4;
-  grid-row-end: 5;
-  grid-column-start: 5;
-  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 10;
+  grid-column-end: 11;
   transform: scale(0.55);
-  top: 30px;
   position: relative;
-  left: 0px;
+  left: -2200px;
+  top: -800px;
+  transition: transform 2s ease-in-out;
+}
+
+#T.slide {
+  transform: scale(0.55) translate(3520px,1570px);
+  transition-delay: 1s;
 }
 
 #TTrapezoid_01{
@@ -2937,14 +3246,20 @@ border-bottom: 80px solid black;
 }
 
 #U{
-  grid-row-start: 5;
-  grid-row-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
   grid-column-start: 1;
   grid-column-end: 2;
   transform: scale(0.45);
   position: relative;
-  top: 90px;
-  left: -20px;
+  top: -1400px;
+  left: 0px;
+  transition: transform 1s ease-in-out;
+}
+
+#U.slide {
+  transform: scale(0.45) translate(-100px,3280px);
+  transition-delay: 3s;
 }
 
 #USquare_01{
@@ -3081,6 +3396,26 @@ border-bottom: 80px solid black;
     z-index: 20;
 }
 
+#USquare_14{
+  width: 120px;
+    height: 84px;
+    background: white;
+    position: absolute;
+    top: -72px;
+    left: 90px;
+    z-index: 20;
+}
+
+#USquare_15{
+  width: 60px;
+    height: 186px;
+    background: white;
+    position: absolute;
+    top: -72px;
+    left: 90px;
+    z-index: 20;
+}
+
 #UTriangle_01{
   width: 0;
   height: 140px;
@@ -3177,15 +3512,21 @@ border-bottom: 80px solid black;
 }
 
 #V{
-  grid-row-start: 5;
-  grid-row-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
   grid-column-start: 2;
   grid-column-end: 3;
   transform: scale(0.45);
   position: relative;
-  top: 110px;
+  top: -1200px;
   left: -60px;
-  z-index: 16;
+  z-index: 10;
+  transition: transform 3s ease-in-out;
+}
+
+#V.slide {
+  transform: scale(0.45) translate(-80px,2880px);
+  transition-delay: 1s;
 }
 
 #VTriangle_01{
@@ -3234,15 +3575,21 @@ border-bottom: 80px solid black;
 }
 
 #W{
-  grid-row-start: 5;
-  grid-row-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
   grid-column-start: 3;
   grid-column-end: 4;
   transform: scale(0.45);
   position: relative;
-  top: 110px;
+  top: -2200px;
   left: -100px;
   z-index: 16;
+  transition: transform 1s ease-in-out;
+}
+
+#W.slide {
+  transform: scale(0.45) translate(-100px,5100px);
+  transition-delay: 3s;
 }
 
 #WSquare_01{
@@ -3304,15 +3651,21 @@ border-bottom: 80px solid black;
 }
 
 #X{
-  grid-row-start: 5;
-  grid-row-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
   grid-column-start: 4;
   grid-column-end: 5;
   transform: scale(0.45);
   position: relative;
-  top: 110px;
-  left: -60px;
+  top: -1800px;
+  left: -460px;
   z-index: 16;
+  transition: transform 1s ease-in-out;
+}
+
+#X.slide {
+  transform: scale(0.45) translate(820px,4200px);
+  transition-delay: 3s;
 }
 
 #XSquare_01{
@@ -3390,19 +3743,25 @@ border-bottom: 80px solid black;
   height: 0;
   width: 40px;
   position: absolute;
-  top: 12px;
+  top: 16px;
   left: 300px;
 }
 
 #Y{
-  grid-row-start: 5;
-  grid-row-end: 6;
+  grid-row-start: 3;
+  grid-row-end: 4;
   grid-column-start: 5;
   grid-column-end: 6;
   transform: scale(0.55);
-  top: 40px;
+  top: -2000px;
   position: relative;
-  left: 0px;
+  left: -400px;
+  transition: transform 3s ease-in-out;
+}
+
+#Y.slide {
+  transform: scale(0.6) translate(560px,3374px);
+  transition-delay: 1s;
 }
 
 #YTrapezoid_01{
@@ -3603,90 +3962,53 @@ border-bottom: 80px solid black;
 }
 
 #Z{
-  grid-row-start: 6;
-  grid-row-end: 7;
-  grid-column-start: 1;
-  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  grid-column-start: 6;
+  grid-column-end: 7;
   transform: scale(0.8);
   position: relative;
-  left: 10px;
-  top: 0px;
+  left: 40px;
+  top: -2000px;
+  transition: transform 1s ease-in-out;
 }
 
-#ZSquare_01{
-  width: 220px;
-  height: 40px;
-  background: black;
-  z-index: 5;
-  position: absolute;
-  top: 0px;
-  left: -40px;
+#Z.slide {
+  transform: scale(0.8) translate(-160px,2504px);
+  transition-delay: 3s;
 }
 
 #ZTriangle_01{
     width: 40px;
     border-left: 120px solid transparent;
     border-right: 40px solid transparent;
-    border-bottom: 20px solid black;
+    border-bottom: 60px solid black;
     transform: rotate(180deg);
     position: absolute;
-    top: 40px;
-    left:-40px;
+    top: 30px;
+    left: -10px;
     z-index: 12;
 }
 
 #ZTriangle_02{
     width: 40px;
-    border-left: 120px solid transparent;
+    border-left: 80px solid transparent;
     border-right: 60px solid transparent;
     border-bottom: 50px solid black;
-    transform: rotate(140deg);
+    transform: rotate(-214deg);
     position: absolute;
-    top: 100px;
-    left: -60px;
+    top: 130px;
+    left: 0px;
     z-index: 12;
 }
 
-#ZTriangle_04 {
-  width: 30px;
-  height: 0;
-  border-bottom: 16px solid black;
-  border-right: 40px solid transparent;
+#ZSquare_01 {
+  width: 80px;
+  height: 40px;
+  background: black;
+  z-index: 5;
   position: absolute;
-  top: 189px;
-  left: -26.65px;
-}
-
-#ZTriangle_05 {
-  width: 0px;
-  height: 0;
-  border-bottom: 40px solid black;
-  border-right: 80px solid transparent;
-  position: absolute;
-  transform: rotate(-0deg);
-  top: 165px;
-  left: 80px;
-}
-
-#ZTriangle_06 {
-  width: 16px;
-  height: 0;
-  border-bottom: 120px solid black;
-  border-right: 4px solid transparent;
-  position: absolute;
-  transform: rotate(92deg);
-  top: 137px;
-  left: 25px;
-}
-
-#ZTriangle_07 {
-  width: 0px;
-  height: 0;
-  border-bottom: 40px solid black;
-  border-right: 80px solid transparent;
-  position: absolute;
-  transform: rotate(0deg) scaleX(-1);
-  top: 165px;
+  top: 168px;
   left: 0px;
 }
 
@@ -3697,7 +4019,7 @@ border-bottom: 80px solid black;
     border-right: 80px solid transparent;
     position: absolute;
     transform: rotate(-0deg);
-    top: 165px;
+    top: 168px;
     left: 80px;
 }
 
@@ -3706,10 +4028,2369 @@ border-bottom: 80px solid black;
     border-left: 24px solid transparent;
     border-right: 24px solid transparent;
     transform: scaleX(-1) rotate(98deg);
+    width: 28px;
+    position: absolute;
+    top: 148px;
+    left: 105px;
+}
+
+#Zero{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 10;
+  grid-column-end: 11;
+  transform: scale(0.45);
+  position: relative;
+  top: -2000px;
+  left: -2000px;
+  transition: transform 1s ease-in-out;
+}
+
+#Zero.slide {
+  transform: scale(0.45) translate(-810px,4600px);
+  transition-delay: 4s;
+}
+
+#ZeroSquare_01{
+  width: 160px;
+  height: 45px;
+  background: black;
+  position: absolute;
+  top: 35px;
+  left: 52px;
+}
+
+#ZeroSquare_02{
+  width: 160px;
+  height: 60px;
+  background: black;
+  position: absolute;
+  transform: rotate(-64deg);
+  top: -36px;
+  left: 140px;
+}
+
+#ZeroSquare_03{
+  width: 260px;
+  height: 60px;
+  background: white;
+  position: absolute;
+  top: 60px;
+  left: -24px;
+  z-index: 4;
+}
+
+#ZeroSquare_04{
+  width: 80px;
+  height: 200px;
+  background: black;
+  position: absolute;
+  transform: rotate(-10deg);
+  top: -140px;
+  left: -40px;
+  z-index: 1;
+}
+
+#ZeroSquare_05{
+  width: 76px;
+  height: 200px;
+  background: black;
+  position: absolute;
+  transform: rotate(20deg);
+  top: -330px;
+  left: -26px;
+  z-index: 1;
+}
+
+#ZeroSquare_06{
+  width: 76px;
+  height: 200px;
+  background: white;
+  position: absolute;
+  transform: rotate(-96deg);
+  top: -400px;
+  left: -26px;
+  z-index: 4;
+}
+
+#ZeroSquare_07{
+  width: 38px;
+  height: 34px;
+  background: black;
+  position: absolute;
+  transform: rotate(-100deg);
+  top: -150px;
+  left: -59px;
+  z-index: 4;
+}
+
+#ZeroSquare_08{
+  width: 64px;
+  height: 320px;
+  background: black;
+  position: absolute;
+  transform: rotate(38deg);
+  top: -286px;
+  left: 114px;
+  z-index: 4;
+}
+
+#ZeroTrapezoid_01 {
+  border-bottom: 30px solid black;
+    border-left: 34px solid transparent;
+    border-right: 21px solid transparent;
+    transform: scale(1.9)scaleX(-1) rotate(98deg);
+    width: 40px;
+    position: absolute;
+    top: -162px;
+    left: 200px;
+}
+
+#ZeroTriangle_01{
+  width: 0;
+  height: 140px;
+  border-left: 26px solid transparent;
+  border-right: 26px solid transparent;
+  border-bottom: 200px solid black;
+  transform: rotate(-15deg);
+  position: absolute;
+  top: -262px;
+  left: 7px;
+}
+
+#ZeroTriangle_02{
+  width: 0;
+  height: 140px;
+  border-left: 26px solid transparent;
+  border-right: 26px solid transparent;
+  border-bottom: 200px solid black;
+  position: absolute;
+  top: -260px;
+  left: 0px;
+}
+
+#ZeroTriangle_03{
+  width: 10px;
+  height: 102px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 180px solid black;
+  transform: rotate(57deg);
+  position: absolute;
+  top: -158px;
+  left: 160px;
+}
+
+#ZeroTriangle_04{
+  width: 10px;
+  height: 82px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 180px solid black;
+  position: absolute;
+  transform: rotate(60deg);
+  top: -417px;
+  left: 73px;
+  z-index: 6;
+}
+
+#ZeroTriangle_05{
+  width: 70px;
+  border-left: 28px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 70px solid black;
+  transform: rotate(20deg);
+  position: absolute;
+  top: -305px;
+  left: 117px;
+}
+
+#One{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  transform: scale(0.55);
+  top: -1600px;
+  left: 260px;
+  position: relative;
+  transition: transform 1s ease-in-out;
+}
+
+#One.slide {
+  transform: scale(0.55) translate(-40px,2906px);
+  transition-delay: 4s;
+}
+
+#OneTrapezoid_01{
+  width: 60px;
+  height: 80px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(0deg);
+  -o-transform: skew(0deg);
+  background: black;
+  position: absolute;
+  top: 126px;
+  left: 40px;
+}
+
+#OneTrapezoid_02 {
+  border-bottom: 60px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  transform: rotate(180deg);
+  top: 46px;
+  left: 40px;
+}
+
+#OneTrapezoid_03 {
+  border-bottom: 140px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 60px;
+  width: 40px;
+  position: absolute;
+  top: -152px;
+  left: 40px;
+}
+
+#OneTrapezoid_04 {
+  border-bottom: 120px solid black;
+  border-left: 60px solid transparent;
+  border-right: 20px solid transparent;
+  width: 40px;
+  position: absolute;
+  top: 86px;
+  left: 130px;
+  z-index: 6;
+}
+
+#OneTrapezoid_05 {
+  border-bottom: 80px solid black;
+  border-left: 40px solid transparent;
+  border-right: 20px solid transparent;
+  transform: scaleX(-1) rotate(240deg);
+  width: 40px;
+  position: absolute;
+  top: -60px;
+  left: -30px;
+  z-index: 6;
+}
+
+#OneTrapezoid_06 {
+  border-bottom: 60px solid black;
+  border-left: 40px solid transparent;
+  border-right: 20px solid transparent;
+  transform: scaleX(-1) rotate(180deg);
+  width: 60px;
+  position: absolute;
+  top: -92px;
+  left: 80px;
+  z-index: 6;
+}
+
+#OneTrapezoid_07 {
+  border-bottom: 60px solid black;
+  border-left: 40px solid transparent;
+  border-right: 20px solid transparent;
+  height: 60px;
+  width: 40px;
+  position: absolute;
+  top: 86px;
+  left: 120px;
+  z-index: 6;
+}
+
+#OneTrapezoid_08 {
+  border-bottom: 100px solid black;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  transform: rotate(30deg);
+  height: 20px;
+  width: 40px;
+  position: absolute;
+  top: 74px;
+  left: 176px;
+}
+
+#OneTrapezoid_09 {
+  border-bottom: 100px solid black;
+  border-left: 60px solid transparent;
+  border-right: 10px solid transparent;
+  transform: rotate(-98deg);
+  height: 12px;
+  width: 16px;
+  position: absolute;
+  top: 18px;
+  left: 149px;
+}
+
+#OneSquare_01 {
+  width: 50px;
+  height: 80px;
+  background: black;
+  z-index: 3;
+  position: absolute;
+  top: 126px;
+  left: 80px;
+}
+
+#OneSquare_02 {
+  width: 50px;
+  height: 80px;
+  background: white;
+  transform: rotate(40deg);
+  z-index: 5;
+  position: absolute;
+  top: 160px;
+  left: 120px;
+}
+
+#OneTriangle_01 {
+  width: 21px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 60px solid transparent;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(270deg);
+  position: absolute;
+  top: 146px;
+  left: 109px;
+}
+
+#OneTriangle_04 {
+  width: 0px;
+  height: 0;
+  border-bottom: 60px solid black;
+  border-right: 40px solid transparent;
+  transform: scaleX(-1);
+  position: absolute;
+  top: 146px;
+  left: 126px;
+  z-index: 12;
+}
+
+#Two{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  transform: scale(0.45) scaleX(-1);
+  position: relative;
+  top: -1400px;
+  left: -200px;
+  transition: transform 1s ease-in-out;
+}
+
+#Two.slide {
+  transform: scale(0.45) scaleX(-1) translate(-880px,3284px);
+  transition-delay: 4s;
+}
+
+#TwoTriangle_06{
+  width: 70px;
+  border-left: 28px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 70px solid black;
+  transform: rotate(-120deg);
+  position: absolute;
+  top: -242px;
+  left: -60px;
+}
+
+#TwoTrapezoid_01{
+  border-bottom: 60px solid black;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0;
+  width: 220px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#TwoTrapezoid_02{
+  border-bottom: 48px solid black;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  transform: rotate(-112deg);
+  height: 0;
+  width: 100px;
+  position: absolute;
+  top: -220px;
+  left: -80px;
+}
+
+#TwoParallelogram_01{
+  width: 148px;
+  height: 68px;
+  -webkit-transform: skew(20deg) scale(1.2);
+  -moz-transform: skew(60deg);
+  -o-transform: skew(30deg);
+  background: black;
+  position: absolute;
+  top: -140px;
+  left: 104px;
+  z-index: 5;
+}
+
+#TwoTrapezoid_05 {
+  border-bottom: 80px solid black;
+  border-left: 46px solid transparent;
+  border-right: 28px solid transparent;
+  transform: rotate(180deg);
+  width: 60px;
+  position: absolute;
+  top: -313px;
+  left: 152px;
+  z-index: 5;
+}
+
+#TwoTriangle_01{
+  width: 60px;
+    height: 180px;
+    border-left: 26px solid transparent;
+    border-right: 26px solid transparent;
+    border-bottom: 100px solid black;
+    position: absolute;
+    top: -220px;
+    left: 214px;
+}
+
+#TwoTriangle_04{
+  width: 10px;
+  height: 82px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 140px solid black;
+  position: absolute;
+  transform: rotate(68deg);
+  top: -408px;
+  left: 83px;
+  z-index: 6;
+}
+
+#TwoTriangle_06{
+  width: 40px;
+  border-left: 68px solid transparent;
+  border-right: 60px solid transparent;
+  border-bottom: 100px solid black;
+  transform: rotate(150deg);
+  position: absolute;
+  top: -270px;
+  left: -20px;
+  z-index: 12;
+}
+
+#Three{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  transform: scale(0.4) scaleX(-1);
+  position: relative;
+  top: -1400px;
+  left: -480px;
+  transition: transform 1s ease-in-out;
+}
+
+#Three.slide {
+  transform: scale(0.4) scaleX(-1) translate(-1560px,3660px);
+  transition-delay: 1s;
+}
+
+#ThreeTriangle_06{
+  width: 70px;
+  border-left: 28px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 70px solid black;
+  transform: rotate(-120deg);
+  position: absolute;
+  top: -242px;
+  left: -60px;
+}
+
+#ThreeTrapezoid_01{
+  border-bottom: 60px solid black;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  transform: scaleX(-1);
+  height: 0;
+  width: 220px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#ThreeTrapezoid_02{
+  border-bottom: 100px solid black;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    transform: rotate(-112deg);
+    height: 0;
+    width: 100px;
+    position: absolute;
+    top: -238px;
+    left: -100px;
+}
+
+#ThreeTrapezoid_03{
+  width: 80px;
+  height: 120px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(0deg);
+  -o-transform: skew(0deg);
+  background: black;
+  position: absolute;
+  top: -30px;
+  left: -40px;
+}
+
+#ThreeParallelogram_01{
+ width: 148px;
+    height: 100px;
+    -webkit-transform: skew(20deg) scale(1.2);
+    -moz-transform: skew(60deg);
+    -o-transform: skew(30deg);
+    background: black;
+    position: absolute;
+    top: -140px;
+    left: 0px;
+    z-index: 5;
+  }
+
+#ThreeTrapezoid_05 {
+  border-bottom: 80px solid black;
+  border-left: 46px solid transparent;
+  border-right: 28px solid transparent;
+  transform: rotate(180deg);
+  width: 60px;
+  position: absolute;
+  top: -315px;
+  left: 152px;
+  z-index: 5;
+}
+
+#ThreeTriangle_01{
+  width: 60px;
+    height: 180px;
+    border-left: 26px solid transparent;
+    border-right: 26px solid transparent;
+    border-bottom: 100px solid black;
+    position: absolute;
+    top: -189px;
+    left: 140px;
+}
+
+#ThreeTriangle_06{
+  width: 10px;
+  height: 82px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 140px solid black;
+  position: absolute;
+  transform: rotate(105deg);
+  top: -35px;
+  left: 94px;
+  z-index: 6;
+}
+
+#ThreeTriangle_03{
+  width: 10px;
+  height: 82px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 140px solid black;
+  position: absolute;
+  transform: rotate(68deg);
+  top: -410px;
+  left: 83px;
+  z-index: 6;
+}
+
+#Four{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  transform: scale(0.52);
+  top: -1900px;
+  position: relative;
+  left: -280px;
+  transition: transform 1s ease-in-out;
+}
+
+#Four.slide {
+  transform: scale(0.52) translate(640px,3664px);
+  transition-delay: 4s;
+}
+
+#FourTrapezoid_01{
+ border-bottom: 140px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 60px;
+  width: 40px;
+  position: absolute;
+  top: -182px;
+  left: 60px;
+}
+
+#FourTrapezoid_02 {
+  border-bottom: 60px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  transform: rotate(180deg);
+  top: 16px;
+  left: 58px;
+}
+
+#FourTriangle_02 {
+  width: 280px;
+  height: 0;
+  border-bottom: 90px solid black;
+  border-right: 40px solid transparent;
+   transform: rotate(270deg);
+  position: absolute;
+  top: 0px;
+  left: 134px;
+}
+
+#FourSquare_01 {
+  width: 40px;
+  height: 100px;
+  background: white;
+  transform: rotate(40deg);
+  z-index: 5;
+  position: absolute;
+  top: 160px;
+  left: 180px;
+}
+
+#FourParallelogram_01{
+ width: 80px;
+  height: 68px;
+  -webkit-transform: scaleX(-1) rotate(180deg) skew(20deg) scale(1.2);
+  -moz-transform: skew(60deg);
+  -o-transform: skew(30deg);
+  background: black;
+  position: absolute;
+  top: 26px;
+  left: 200px;
+  z-index: 5;
+}
+
+#Five{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 5;
+  grid-column-end: 6;
+  transform: scale(0.5);
+  position: relative;
+  top: -1300px;
+  left: -800px;
+  transition: transform 4s ease-in-out;
+}
+
+#Five.slide {
+  transform: scale(0.5) translate(1680px,2780px);
+  transition-delay: 1s;
+}
+
+#FiveSquare_01{
+  width: 20px;
+  height: 20px;
+  background: black;
+  position: absolute;
+  top: 16px;
+  left: 158px;
+  z-index: 14;
+}
+
+#FiveSquare_02{
+  width: 160px;
+  height: 60px;
+  background: black;
+  position: absolute;
+  transform: rotate(-64deg);
+  top: -36px;
+  left: 140px;
+}
+
+#FiveSquare_03{
+  width: 260px;
+  height: 60px;
+  background: white;
+  position: absolute;
+  top: 60px;
+  left: -24px;
+  z-index: 4;
+}
+
+#FiveSquare_04{
+  width: 10px;
+  height: 10px;
+  background: black;
+  position: absolute;
+  top: -284px;
+  left: 12px;
+  z-index: 14;
+}
+
+#FiveTriangle_01{
+  width: 10px;
+  height: 82px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 160px solid black;
+  transform: rotate(176deg);
+  position: absolute;
+  top: -276px;
+  left: 24px;
+}
+
+#FiveTriangle_03{
+  width: 10px;
+  height: 82px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 180px solid black;
+  transform: rotate(57deg);
+  position: absolute;
+  top: -158px;
+  left: 160px;
+}
+
+#FiveTrapezoid_01{
+  border-bottom: 100px solid black;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0;
+  width: 100px;
+}
+
+#FiveParallelogram_01{
+ width: 142px;
+  height: 68px;
+  -webkit-transform: skew(20deg) scale(1.2);
+  -moz-transform: skew(60deg);
+  -o-transform: skew(30deg);
+  background: black;
+  position: absolute;
+  top: -140px;
+  left: 84px;
+  z-index: 5;
+}
+
+#FiveTrapezoid_04 {
+  border-bottom: 60px solid black;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  transform: rotate(93deg);
+  width: 30px;
+  position: absolute;
+  top: -40px;
+  left: -56px;
+  z-index: 5;
+}
+
+#FiveTrapezoid_06 {
+  border-bottom: 64px solid black;
+    border-left: 40px solid transparent;
+    border-right: 20px solid transparent;
+    transform: scaleX(-1) rotate(180deg);
+    width: 160px;
+    position: absolute;
+    top: -284px;
+    left: 16px;
+    z-index: 6;
+}
+
+#Six{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 6;
+  grid-column-end: 7;
+  transform: scale(0.5);
+  position: relative;
+  top: -1600px;
+  left: -1000px;
+  transition: transform 4s ease-in-out;
+}
+
+#Six.slide {
+  transform: scale(0.5) translate(1940px,3392px);
+  transition-delay: 1s;
+}
+
+#SixSquare_01{
+  width: 20px;
+  height: 20px;
+  background: black;
+  position: absolute;
+  top: 16px;
+  left: 158px;
+  z-index: 14;
+}
+
+#SixSquare_02{
+  width: 160px;
+  height: 60px;
+  background: black;
+  position: absolute;
+  transform: rotate(-64deg);
+  top: -36px;
+  left: 140px;
+}
+
+#SixSquare_03{
+  width: 260px;
+  height: 60px;
+  background: white;
+  position: absolute;
+  top: 60px;
+  left: -24px;
+  z-index: 4;
+}
+
+#SixTriangle_03{
+  width: 10px;
+  height: 82px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 180px solid black;
+  transform: rotate(57deg);
+  position: absolute;
+  top: -158px;
+  left: 160px;
+}
+
+#SixTrapezoid_01{
+  border-bottom: 100px solid black;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0;
+  width: 100px;
+}
+
+#SixParallelogram_01{
+ width: 162px;
+    height: 68px;
+    -webkit-transform: skew(20deg) scale(1.2);
+    -moz-transform: skew(60deg);
+    -o-transform: skew(30deg);
+    background: black;
+    position: absolute;
+    top: -149px;
+    left: 61px;
+    z-index: 5;
+}
+
+#SixTrapezoid_04 {
+  border-bottom: 60px solid black;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  transform: rotate(93deg);
+  width: 140px;
+  position: absolute;
+  top: -76px;
+  left: -58px;
+  z-index: 5;
+}
+
+#SixTrapezoid_06 {
+  border-bottom: 64px solid black;
+    border-left: 40px solid transparent;
+    border-right: 20px solid transparent;
+    transform: scaleX(-1) rotate(180deg);
+    width: 160px;
+    position: absolute;
+    top: -284px;
+    left: 16px;
+    z-index: 6;
+}
+
+#Seven{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 7;
+  grid-column-end: 8;
+  transform: scale(0.76);
+  position: relative;
+  left: -860px;
+  top: -2040px;
+  transition: transform 4s ease-in-out;
+}
+
+#Seven.slide {
+  transform: scale(0.76) translate(1100px,2702px);
+  transition-delay: 1s;
+}
+
+#SevenSquare_01 {
+  width: 44px;
+  height: 200px;
+  background: black;
+  transform: rotate(16deg);
+  z-index: 3;
+  position: absolute;
+}
+
+#SevenSquare_01 {
+  width: 44px;
+  height: 200px;
+  background: black;
+  transform: rotate(16deg);
+  z-index: 3;
+  position: absolute;
+  top: 180px;
+  left: 20px;
+}
+
+#SevenParallelogram_01 {
+  width: 40px;
+  height: 160px;
+  -webkit-transform: skew(80deg);
+  -moz-transform: skew(60deg);
+  -o-transform: skew(30deg);
+  background: black;
+  position: absolute;
+  transform: rotate(18deg);
+  top: 32px;
+  left: 44px;
+}
+
+#SevenTriangle_01 {
+  width: 8px;
+  height: 0;
+  border-bottom: 50px solid black;
+  border-right: 60px solid transparent;
+  transform: rotate(77deg);
+  position: absolute;
+  top: 30px;
+  left: 68px;
+}
+
+#SevenTriangle_04 {
+  width: 60px;
+  height: 0;
+  border-bottom: 46px solid black;
+  border-right: 24px solid transparent;
+  transform: scaleX(-1);
+  position: absolute;
+  top: 149px;
+  left: -26.65px;
+}
+
+#SevenTrapezoid_01 {
+  border-bottom: 64px solid black;
+    border-left: 40px solid transparent;
+    border-right: 20px solid transparent;
+    transform: scaleX(-1) rotate(180deg);
+    width: 180px;
+    position: absolute;
+    top: -36px;
+    left: -80px;
+    z-index: 6;
+}
+
+#SevenTriangle_05 {
+  width: 0px;
+    border-bottom: 40px solid black;
+    border-right: 32px solid transparent;
+    position: absolute;
+    top: 156px;
+    left: 88px;
+}
+
+#Eight{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 8;
+  grid-column-end: 9;
+  transform: scale(0.4) scaleX(-1);
+  position: relative;
+  top: -1600px;
+  left: -1400px;
+  transition: transform 4s ease-in-out;
+}
+
+#Eight.slide {
+  transform: scale(0.4) translate(3168px,4210px);
+  transition-delay: 1s;
+}
+
+#EightSquare_01 {
+  width: 80px;
+  height: 220px;
+  background: black;
+  transform: rotate(22deg);
+  z-index: 3;
+  position: absolute;
+  top: -260px;
+  left: 126px;
+}
+
+#EightSquare_02 {
+  width: 76px;
+  height: 100px;
+  background: black;
+  transform: rotate(-34deg);
+  z-index: 3;
+  position: absolute;
+  top: -70px;
+  left: 132px;
+}
+
+#EightTriangle_06{
+  width: 70px;
+  border-left: 28px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 70px solid black;
+  transform: rotate(-120deg);
+  position: absolute;
+  top: -242px;
+  left: -60px;
+}
+
+#EightTrapezoid_01{
+  border-bottom: 60px solid black;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  transform: scaleX(-1);
+  height: 0;
+  width: 220px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+#EightTrapezoid_02{
+  border-bottom: 100px solid black;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    transform: rotate(-112deg);
+    height: 0;
+    width: 100px;
+    position: absolute;
+    top: -238px;
+    left: -100px;
+}
+
+#EightTrapezoid_03{
+  width: 80px;
+  height: 120px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(0deg);
+  -o-transform: skew(0deg);
+  background: black;
+  position: absolute;
+  top: -30px;
+  left: -40px;
+}
+
+#EightParallelogram_01{
+ width: 148px;
+    height: 100px;
+    -webkit-transform: skew(20deg) scale(1.2);
+    -moz-transform: skew(60deg);
+    -o-transform: skew(30deg);
+    background: black;
+    position: absolute;
+    top: -140px;
+    left: 0px;
+    z-index: 5;
+  }
+
+#EightTrapezoid_05 {
+  border-bottom: 80px solid black;
+  border-left: 46px solid transparent;
+  border-right: 28px solid transparent;
+  transform: rotate(180deg);
+  width: 60px;
+  position: absolute;
+  top: -315px;
+  left: 152px;
+  z-index: 5;
+}
+
+#EightTriangle_01{
+  width: 60px;
+    height: 180px;
+    border-left: 26px solid transparent;
+    border-right: 26px solid transparent;
+    border-bottom: 100px solid black;
+    position: absolute;
+    top: -189px;
+    left: 140px;
+}
+
+#EightTriangle_06{
+  width: 10px;
+  height: 82px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 140px solid black;
+  position: absolute;
+  transform: rotate(105deg);
+  top: -35px;
+  left: 94px;
+  z-index: 6;
+}
+
+#EightTriangle_03{
+  width: 10px;
+  height: 82px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 140px solid black;
+  position: absolute;
+  transform: rotate(68deg);
+  top: -410px;
+  left: 83px;
+  z-index: 6;
+}
+
+#Nine{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 9;
+  grid-column-end: 10;
+  transform: scale(0.5) rotate(180deg);
+  position: relative;
+  top: -1602px;
+  left: -1080px;
+  transition: transform 1s ease-in-out;
+}
+
+#Nine.slide {
+  transform: scale(0.5) rotate(180deg) translate(-1700px,-2948px);
+  transition-delay: 4s;
+}
+
+#NineSquare_01{
+  width: 20px;
+  height: 20px;
+  background: black;
+  position: absolute;
+  top: 16px;
+  left: 158px;
+  z-index: 14;
+}
+
+#NineSquare_02{
+  width: 160px;
+  height: 60px;
+  background: black;
+  position: absolute;
+  transform: rotate(-64deg);
+  top: -36px;
+  left: 140px;
+}
+
+#NineSquare_03{
+  width: 260px;
+  height: 60px;
+  background: white;
+  position: absolute;
+  top: 60px;
+  left: -24px;
+  z-index: 4;
+}
+
+#NineTriangle_03{
+  width: 10px;
+  height: 82px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 180px solid black;
+  transform: rotate(57deg);
+  position: absolute;
+  top: -158px;
+  left: 160px;
+}
+
+#NineTrapezoid_01{
+  border-bottom: 100px solid black;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0;
+  width: 100px;
+}
+
+#NineParallelogram_01{
+ width: 162px;
+    height: 68px;
+    -webkit-transform: skew(20deg) scale(1.2);
+    -moz-transform: skew(60deg);
+    -o-transform: skew(30deg);
+    background: black;
+    position: absolute;
+    top: -149px;
+    left: 61px;
+    z-index: 5;
+}
+
+#NineTrapezoid_04 {
+  border-bottom: 60px solid black;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  transform: rotate(93deg);
+  width: 140px;
+  position: absolute;
+  top: -76px;
+  left: -58px;
+  z-index: 5;
+}
+
+#NineTrapezoid_06 {
+  border-bottom: 64px solid black;
+    border-left: 40px solid transparent;
+    border-right: 20px solid transparent;
+    transform: scaleX(-1) rotate(180deg);
+    width: 160px;
+    position: absolute;
+    top: -284px;
+    left: 16px;
+    z-index: 6;
+}
+
+#Question{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  transform: scale(0.5) rotate(180deg);
+  position: relative;
+  top: 140px;
+  left: -20px;
+  transition: transform 1s ease-in-out;
+}
+
+#Question.slide {
+  transform: scale(0.8) translate(-200px,800px);
+  transition-delay: 6s;
+}
+
+#QuestionSquare_01{
+  width: 20px;
+  height: 20px;
+  background: black;
+  position: absolute;
+  top: 16px;
+  left: 158px;
+  z-index: 14;
+}
+
+#QuestionSquare_02{
+  width: 160px;
+  height: 60px;
+  background: black;
+  position: absolute;
+  transform: rotate(-64deg);
+  top: -36px;
+  left: 140px;
+}
+
+#QuestionSquare_03{
+  width: 260px;
+  height: 60px;
+  background: white;
+  position: absolute;
+  top: 60px;
+  left: -24px;
+  z-index: 4;
+}
+
+#QuestionSquare_04{
+width: 80px;
+  height: 60px;
+  background: black;
+  transform: rotate(90deg);
+  position: absolute;
+    top: -180px;
+    left: 40px;
+    z-index: 6;
+}
+
+#QuestionTriangle_03{
+  width: 10px;
+  height: 82px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 180px solid black;
+  transform: rotate(57deg);
+  position: absolute;
+  top: -158px;
+  left: 160px;
+}
+
+#QuestionTrapezoid_01{
+  border-bottom: 100px solid black;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0;
+  width: 100px;
+}
+
+#QuestionParallelogram_01{
+ width: 142px;
+  height: 68px;
+  -webkit-transform: skew(20deg) scale(1.2);
+  -moz-transform: skew(60deg);
+  -o-transform: skew(30deg);
+  background: black;
+  position: absolute;
+  top: -168px;
+  left: 84px;
+  z-index: 5;
+}
+
+#QuestionTrapezoid_02{
+  width: 60px;
+  height: 80px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(0deg);
+  -o-transform: skew(0deg);
+  background: black;
+  position: absolute;
+  top: -294px;
+  left: 0px;
+}
+
+#QuestionTrapezoid_03{
+border-bottom: 80px solid black;
+    border-left: 46px solid transparent;
+    border-right: 0px solid transparent;
+    transform: rotate(90deg);
     width: 60px;
     position: absolute;
-    top: 130px;
-    left: 85px;
+    top: -34px;
+    left: -42px;
+    z-index: 5;
+}
+
+#QuestionTriangle_01{
+  width: 21px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 60px solid transparent;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(270deg);
+  position: absolute;
+  top: -274px;
+  left: 69px;
+}
+
+#QuestionSquare_01{
+  width: 50px;
+  height: 80px;
+  background: black;
+  z-index: 3;
+  position: absolute;
+  top: -294px;
+  left: 40px;
+}
+
+#Period{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  transform: scale(0.5) rotate(180deg);
+  position: relative;
+  top: 140px;
+  left: -20px;
+  transition: transform 1s ease-in-out;
+}
+
+#Period.slide {
+  transform: scale(0.8) translate(-200px,800px);
+  transition-delay: 6s;
+}
+
+#PeriodTrapezoid_01{
+border-bottom: 80px solid black;
+    border-left: 46px solid transparent;
+    border-right: 0px solid transparent;
+    transform: rotate(0deg);
+    width: 60px;
+    position: absolute;
+    top: -294px;
+    left: -20px;
+    z-index: 5;
+}
+
+#PeriodTriangle_01{
+  width: 21px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 60px solid transparent;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(270deg);
+  position: absolute;
+  top: -274px;
+  left: 69px;
+}
+
+#PeriodSquare_01{
+  width: 50px;
+  height: 80px;
+  background: black;
+  z-index: 3;
+  position: absolute;
+  top: -294px;
+  left: 40px;
+}
+
+#Comma{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  transform: scale(0.5) rotate(180deg);
+  position: relative;
+  top: 140px;
+  left: -20px;
+  transition: transform 1s ease-in-out;
+}
+
+#Comma.slide {
+  transform: scale(0.8) translate(-200px,800px);
+  transition-delay: 6s;
+}
+
+#CommaTrapezoid_01{
+border-bottom: 120px solid black;
+    border-left: 80px solid transparent;
+    border-right: 40px solid transparent;
+    width: 60px;
+    position: absolute;
+    transform: rotate(180deg);
+    top: -300px;
+    left: -40px;
+}
+
+#Exclamation{
+  grid-row-start: 4;
+  grid-row-end: 5;
+  grid-column-start: 4;
+  grid-column-end: 5;
+  transform: scale(0.5) rotate(180deg);
+  position: relative;
+  top: 140px;
+  left: -20px;
+  transition: transform 1s ease-in-out;
+}
+
+#Exclamation.slide {
+  transform: scale(0.8) translate(-200px,800px);
+  transition-delay: 6s;
+}
+
+#ExclamationTriangle_01{
+width: 220px;
+    height: 0;
+    border-bottom: 90px solid black;
+    border-right: 40px solid transparent;
+    transform: rotate(270deg);
+    position: absolute;
+    top: -46px;
+    left: -60px;
+  }
+
+#ExclamationTrapezoid_01{
+border-bottom: 80px solid black;
+    border-left: 46px solid transparent;
+    border-right: 0px solid transparent;
+    transform: rotate(0deg);
+    width: 60px;
+    position: absolute;
+    top: -294px;
+    left: -20px;
+    z-index: 5;
+}
+
+#ExclamationTriangle_02{
+  width: 21px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 60px solid transparent;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(270deg);
+  position: absolute;
+  top: -274px;
+  left: 69px;
+}
+
+#ExclamationSquare_01{
+  width: 50px;
+  height: 80px;
+  background: black;
+  z-index: 3;
+  position: absolute;
+  top: -294px;
+  left: 40px;
+}
+
+#G_02{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 7;
+  grid-column-end: 8;
+  transform: scale(0.48);
+  position: relative;
+  left: 0px;
+  top: -400px;
+  transition: transform 1s ease-in-out;
+}
+
+#G.slide {
+  transform: scale(0.48) translate(740px,1582px);
+  transition-delay: 1s;
+}
+
+#GSquare_01{
+  width: 160px;
+  height: 45px;
+  background: black;
+  position: absolute;
+  top: 35px;
+  left: 52px;
+}
+
+#GSquare_02{
+  width: 160px;
+  height: 60px;
+  background: black;
+  position: absolute;
+  transform: rotate(-64deg);
+  top: -36px;
+  left: 140px;
+}
+
+#GSquare_03{
+  width: 260px;
+  height: 60px;
+  background: white;
+  position: absolute;
+  top: 60px;
+  left: -24px;
+  z-index: 4;
+}
+
+#GSquare_04{
+  width: 80px;
+  height: 200px;
+  background: black;
+  position: absolute;
+  transform: rotate(-10deg);
+  top: -140px;
+  left: -40px;
+  z-index: 1;
+}
+
+#GSquare_05{
+  width: 76px;
+  height: 200px;
+  background: black;
+  position: absolute;
+  transform: rotate(20deg);
+  top: -330px;
+  left: -26px;
+  z-index: 1;
+}
+
+#GSquare_06{
+  width: 76px;
+  height: 200px;
+  background: white;
+  position: absolute;
+  transform: rotate(-96deg);
+  top: -400px;
+  left: -26px;
+  z-index: 4;
+}
+
+#GSquare_07{
+  width: 38px;
+  height: 34px;
+  background: black;
+  position: absolute;
+  transform: rotate(-100deg);
+  top: -150px;
+  left: -59px;
+  z-index: 4;
+}
+
+#GSquare_08{
+  width: 200px;
+  height: 180px;
+  background: white;
+  position: absolute;
+  top: -230px;
+  left: 140px;
+  z-index: 4;
+}
+
+#GTriangle_01{
+  width: 0;
+  height: 140px;
+  border-left: 26px solid transparent;
+  border-right: 26px solid transparent;
+  border-bottom: 200px solid black;
+  transform: rotate(-15deg);
+  position: absolute;
+  top: -262px;
+  left: 7px;
+}
+
+#GTriangle_02{
+  width: 0;
+  height: 140px;
+  border-left: 26px solid transparent;
+  border-right: 26px solid transparent;
+  border-bottom: 200px solid black;
+  position: absolute;
+  top: -260px;
+  left: 0px;
+}
+
+#GTriangle_03{
+  width: 10px;
+  height: 82px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 180px solid black;
+  transform: rotate(57deg);
+  position: absolute;
+  top: -158px;
+  left: 160px;
+}
+
+#GTriangle_04{
+  width: 10px;
+  height: 82px;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-bottom: 180px solid black;
+  position: absolute;
+  transform: rotate(60deg);
+  top: -417px;
+  left: 73px;
+  z-index: 6;
+}
+
+#GTriangle_05{
+  width: 70px;
+  border-left: 28px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 70px solid black;
+  transform: rotate(20deg);
+  position: absolute;
+  top: -305px;
+  left: 117px;
+}
+
+#GTrapezoid_01{
+  border-bottom: 100px solid black;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0;
+  width: 100px;
+}
+
+#GTrapezoid_02{
+  border-bottom: 70px solid black;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  transform: rotate(82deg);
+  height: 0;
+  width: 100px;
+  position: absolute;
+  top: -154px;
+  left: 180px;
+}
+
+#GTriangle_06 {
+  height: 0px;
+    border-bottom: 59px solid black;
+    border-right: 40px solid transparent;
+    position: absolute;
+    transform: scaleX(-1) rotate(90deg);
+    top: -80px;
+    left: 71px;
+    z-index: 4;
+}
+
+#GTriangle_07 {
+  height: 44px;
+  border-bottom: 40px solid black;
+  border-right: 120px solid transparent;
+  transform: rotate(180deg) scaleX(-1);
+  position: absolute;
+  top: -70px;
+  left: 120px;
+  z-index: 4;
+}
+
+#GTriangle_08 {
+  width: 60px;
+  height: 99px;
+  border-bottom: -200px solid white;
+  border-right: 80px solid transparent;
+  position: absolute;
+  top: 400px;
+  left: 500px;
+  z-index: 5
+}
+
+#GTrapezoid_03 {
+  width: 180px;
+  height: 100px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+  background: black;
+  position: absolute;
+  top: -170px;
+  left: 80px;
+  z-index: 4;
+}
+
+#I_02{
+  grid-row-start: 1;
+  grid-row-end: 2;
+  grid-column-start: 7;
+  grid-column-end: 8;
+  transform: scale(0.55);
+  position: relative;
+  left: 180px;
+  top: -470px;
+  transition: transform 1s ease-in-out;
+}
+
+#I.slide {
+  transform: scale(0.6) translate(2540px,1480px);
+  transition-delay: 1s;
+}
+
+#ITrapezoid_01{
+  width: 60px;
+  height: 80px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(0deg);
+  -o-transform: skew(0deg);
+  background: black;
+  position: absolute;
+  top: 126px;
+  left: 40px;
+}
+
+#ITrapezoid_02 {
+  border-bottom: 60px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  transform: rotate(180deg);
+  top: 48px;
+  left: 40px;
+}
+
+#ITrapezoid_03 {
+  border-bottom: 140px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 60px;
+  width: 40px;
+  position: absolute;
+  top: -152px;
+  left: 40px;
+}
+
+#ITrapezoid_04 {
+  border-bottom: 120px solid black;
+  border-left: 60px solid transparent;
+  border-right: 20px solid transparent;
+  width: 40px;
+  position: absolute;
+  top: 86px;
+  left: 130px;
+  z-index: 6;
+}
+
+#ITrapezoid_05 {
+  border-bottom: 80px solid black;
+  border-left: 40px solid transparent;
+  border-right: 20px solid transparent;
+  transform: scaleX(-1) rotate(180deg);
+  width: 40px;
+  position: absolute;
+  top: -90px;
+  left: -40px;
+  z-index: 6;
+}
+
+#ITrapezoid_06 {
+  border-bottom: 80px solid black;
+  border-left: 40px solid transparent;
+  border-right: 20px solid transparent;
+  transform: scaleX(-1) rotate(180deg);
+  width: 40px;
+  position: absolute;
+  top: -90px;
+  left: 160px;
+  z-index: 6;
+}
+
+#ITrapezoid_07 {
+  border-bottom: 60px solid black;
+  border-left: 40px solid transparent;
+  border-right: 20px solid transparent;
+  height: 60px;
+  width: 40px;
+  position: absolute;
+  top: 86px;
+  left: 120px;
+  z-index: 6;
+}
+
+#ITrapezoid_08 {
+  border-bottom: 100px solid black;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  transform: rotate(30deg);
+  height: 20px;
+  width: 40px;
+  position: absolute;
+  top: 74px;
+  left: 176px;
+}
+
+#ITrapezoid_09 {
+  border-bottom: 100px solid black;
+  border-left: 60px solid transparent;
+  border-right: 10px solid transparent;
+  transform: rotate(-98deg);
+  height: 12px;
+  width: 16px;
+  position: absolute;
+  top: 18px;
+  left: 149px;
+}
+
+#ISquare_01 {
+  width: 50px;
+  height: 80px;
+  background: black;
+  z-index: 3;
+  position: absolute;
+  top: 126px;
+  left: 80px;
+}
+
+#ISquare_02 {
+  width: 50px;
+  height: 80px;
+  background: white;
+  transform: rotate(40deg);
+  z-index: 5;
+  position: absolute;
+  top: 160px;
+  left: 120px;
+}
+
+#ITriangle_01 {
+  width: 21px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 60px solid transparent;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(270deg);
+  position: absolute;
+  top: 146px;
+  left: 109px;
+}
+
+#ITriangle_02 {
+  width: 20px;
+  height: 0;
+  border-bottom: 80px solid black;
+  border-right: 60px solid transparent;
+  transform: rotate(180deg);
+  position: absolute;
+  top: -90px;
+  left: 120px;
+}
+
+#ITriangle_03 {
+  width: 0px;
+  height: 0;
+  border-bottom: 80px solid black;
+  border-right: 60px solid transparent;
+  transform: scaleX(-1) rotate(180deg);
+  position: absolute;
+  top: 126px;
+  left: -20px;
+}
+
+#R_02{
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 7;
+  grid-column-end: 8;
+  transform: scale(0.6);
+  position: relative;
+  left: 360px;
+  top: -735px;
+  transition: transform 1s ease-in-out;
+}
+
+#R.slide {
+  transform: scale(0.6) translate(720px,2080px);
+  transition-delay: 1s;
+}
+
+#RTrapezoid_01{
+  width: 60px;
+  height: 80px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(0deg);
+  -o-transform: skew(0deg);
+  background: black;
+  position: absolute;
+  top: 126px;
+  left: 0px;
+}
+
+#RTrapezoid_02 {
+  border-bottom: 60px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  transform: rotate(180deg);
+  top: 48px;
+  left: 0px;
+}
+
+#RTrapezoid_03 {
+  border-bottom: 140px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 60px;
+  width: 40px;
+  position: absolute;
+  top: -152px;
+  left: 0px;
+}
+
+#RSquare_01 {
+  width: 50px;
+  height: 80px;
+  background: black;
+  z-index: 3;
+  position: absolute;
+  top: 126px;
+  left: 40px;
+}
+
+#RSquare_02 {
+  width: 50px;
+  height: 80px;
+  background: white;
+  transform: rotate(40deg);
+  z-index: 5;
+  position: absolute;
+  top: 160px;
+  left: 80px;
+}
+
+#RTriangle_01 {
+  width: 21px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 60px solid transparent;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(270deg);
+  position: absolute;
+  top: 146px;
+  left: 69px;
+}
+
+#RTriangle_02 {
+  width: 60px;
+  height: 0;
+  border-bottom: 80px solid black;
+  border-right: 60px solid transparent;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(310deg);
+  position: absolute;
+  top: -82px;
+  left: 100px;
+}
+
+#RTriangle_03 {
+  width: 100px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 80px solid transparent;
+  position: absolute;
+  top: 84px;
+  left: 120px;
+}
+
+#RTrapezoid_04{
+  border-bottom: 100px solid black;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0;
+  width: 100px;
+  transform: scale(0.7);
+  position: absolute;
+  top: 23px;
+  left: 60px;
+}
+
+#RTrapezoid_05{
+  border-bottom: 70px solid black;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  transform: rotate(82deg) scale(0.7);
+  height: 0;
+  width: 100px;
+  position: absolute;
+  top: -20px;
+  left: 130px;
+}
+
+#RTrapezoid_06 {
+  border-bottom: 80px solid black;
+  border-left: 40px solid transparent;
+  border-right: 60px solid transparent;
+  transform: scaleX(-1) rotate(180deg);
+  width: 40px;
+  position: absolute;
+  top: 124px;
+  left: 156px;
+  z-index: 6;
+}
+
+#D_02{
+grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    transform: scale(0.6);
+    left: 1340px;
+    top: -470px;
+    position: relative;
+}
+
+#DTrapezoid_01{
+  width: 60px;
+  height: 80px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(0deg);
+  -o-transform: skew(0deg);
+  background: black;
+  position: absolute;
+  top: 126px;
+  left: 0px;
+}
+
+#DTrapezoid_02 {
+  border-bottom: 60px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  transform: rotate(180deg);
+  top: 48px;
+  left: 0px;
+}
+
+#DTrapezoid_03 {
+  border-bottom: 140px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 60px;
+  width: 40px;
+  position: absolute;
+  top: -152px;
+  left: 0px;
+}
+
+#DTrapezoid_04 {
+  border-bottom: 60px solid black;
+  border-left: 40px solid transparent;
+  border-right: 20px solid transparent;
+  height: 60px;
+  width: 40px;
+  position: absolute;
+  top: 86px;
+  left: 120px;
+  z-index: 6;
+}
+
+#DTrapezoid_05 {
+  border-bottom: 100px solid black;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  transform: rotate(30deg);
+  height: 20px;
+  width: 40px;
+  position: absolute;
+  top: 74px;
+  left: 176px;
+}
+
+#DTrapezoid_06 {
+  border-bottom: 100px solid black;
+  border-left: 60px solid transparent;
+  border-right: 10px solid transparent;
+  transform: rotate(98deg);
+  height: 12px;
+  width: 16px;
+  position: absolute;
+  top: -100px;
+  left: 149px;
+}
+
+#DTrapezoid_07 {
+  border-bottom: 40px solid black;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  transform: rotate(-96deg);
+  height: 20px;
+  width: 64px;
+  position: absolute;
+  top: -70px;
+  left: 66px;
+}
+
+#DSquare_01 {
+  width: 50px;
+  height: 80px;
+  background: black;
+  z-index: 3;
+  position: absolute;
+  top: 126px;
+  left: 40px;
+}
+
+#DSquare_02 {
+  width: 50px;
+  height: 80px;
+  background: white;
+  transform: rotate(40deg);
+  z-index: 5;
+  position: absolute;
+  top: 160px;
+  left: 80px;
+}
+
+#DTriangle_01 {
+  width: 21px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 60px solid transparent;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(270deg);
+  position: absolute;
+  top: 146px;
+  left: 69px;
+}
+
+#DTriangle_02 {
+  width: 60px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 60px solid transparent;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(-260deg);
+  position: absolute;
+  top: 20px;
+  left: 160px;
+}
+
+#R_03{
+  grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 8;
+    grid-column-end: 9;
+    transform: scale(0.6);
+    position: relative;
+    left: 698px;
+    top: -728px;
+    transition: transform 1s ease-in-out;
+}
+
+#R.slide {
+  transform: scale(0.6) translate(720px,2080px);
+  transition-delay: 1s;
+}
+
+#RTrapezoid_01{
+  width: 60px;
+  height: 80px;
+  -webkit-transform: skew(-20deg);
+  -moz-transform: skew(0deg);
+  -o-transform: skew(0deg);
+  background: black;
+  position: absolute;
+  top: 126px;
+  left: 0px;
+}
+
+#RTrapezoid_02 {
+  border-bottom: 60px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  transform: rotate(180deg);
+  top: 48px;
+  left: 0px;
+}
+
+#RTrapezoid_03 {
+  border-bottom: 140px solid black;
+  border-left: 30px solid transparent;
+  border-right: 60px solid transparent;
+  height: 60px;
+  width: 40px;
+  position: absolute;
+  top: -152px;
+  left: 0px;
+}
+
+#RSquare_01 {
+  width: 50px;
+  height: 80px;
+  background: black;
+  z-index: 3;
+  position: absolute;
+  top: 126px;
+  left: 40px;
+}
+
+#RSquare_02 {
+  width: 50px;
+  height: 80px;
+  background: white;
+  transform: rotate(40deg);
+  z-index: 5;
+  position: absolute;
+  top: 160px;
+  left: 80px;
+}
+
+#RTriangle_01 {
+  width: 21px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 60px solid transparent;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(270deg);
+  position: absolute;
+  top: 146px;
+  left: 69px;
+}
+
+#RTriangle_02 {
+  width: 60px;
+  height: 0;
+  border-bottom: 80px solid black;
+  border-right: 60px solid transparent;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1) rotate(310deg);
+  position: absolute;
+  top: -82px;
+  left: 100px;
+}
+
+#RTriangle_03 {
+  width: 100px;
+  height: 0;
+  border-bottom: 40px solid black;
+  border-right: 80px solid transparent;
+  position: absolute;
+  top: 84px;
+  left: 120px;
+}
+
+#RTrapezoid_04{
+  border-bottom: 100px solid black;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  height: 0;
+  width: 100px;
+  transform: scale(0.7);
+  position: absolute;
+  top: 23px;
+  left: 60px;
+}
+
+#RTrapezoid_05{
+  border-bottom: 70px solid black;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  transform: rotate(82deg) scale(0.7);
+  height: 0;
+  width: 100px;
+  position: absolute;
+  top: -20px;
+  left: 130px;
+}
+
+#RTrapezoid_06 {
+  border-bottom: 80px solid black;
+  border-left: 40px solid transparent;
+  border-right: 60px solid transparent;
+  transform: scaleX(-1) rotate(180deg);
+  width: 40px;
+  position: absolute;
+  top: 124px;
+  left: 156px;
+  z-index: 6;
+}
+
+
+.image_02{
+  top: 0px;
+  left: 800px;
+  width: 16000px;
+  height: 11000px;
+  z-index: 1;
+  position: absolute;
+  top:-3000px;
+  top:-3000px;
+  z-index:-1;
+}
+
+.image{
+  grid-row-start: 1;
+  grid-row-end: 6;
+  grid-column-start: 1;
+  grid-column-end: 8;
+  position: absolute;
+  top: 0px;
+  left: 800px;
+  width: 1600px;
+  height: 1100px;
+  z-index: 20;
 }
 
 </style>
@@ -3718,7 +6399,10 @@ border-bottom: 80px solid black;
   <body>
 
 <div id="myGrid">
-  <div id="A">
+
+<img class=image src="Web_Pic.jpg" />
+
+  <div id="A" class="thisA">
       <div id="ASquare_01"></div>
       <div id="ASquare_02"></div>
       <div id="AParallelogram_01"></div>
@@ -3730,7 +6414,7 @@ border-bottom: 80px solid black;
       <div id="ATrapezoid_01"></div>
   </div>
 
-  <div id="B">
+  <div id="B" class="thisB">
       <div id="BSquare_01"></div>
       <div id="BSquare_02"></div>
       <div id="BParallelogram_01"></div>
@@ -3748,7 +6432,7 @@ border-bottom: 80px solid black;
       <div id="BTrapezoid_07"></div>
   </div>
 
-  <div id="C">
+  <div id="C" class="thisC">
   <div id="CSquare_01"></div>
       <div id="CSquare_02"></div>
       <div id="CSquare_03"></div>
@@ -3768,7 +6452,7 @@ border-bottom: 80px solid black;
       <div id="CParallelogram_01"></div>
   </div>
 
-  <div id="D">
+  <div id="D" class="thisD">
   <div id="DSquare_01"></div>
       <div id="DSquare_02"></div>
       <div id="DParallelogram_01"></div>
@@ -3786,7 +6470,25 @@ border-bottom: 80px solid black;
       <div id="DTrapezoid_07"></div>
   </div>
 
-  <div id="E">
+  <div id="D_02">
+  <div id="DSquare_01"></div>
+      <div id="DSquare_02"></div>
+      <div id="DParallelogram_01"></div>
+      <div id="DTriangle_01"></div>
+      <div id="DTriangle_02"></div>
+      <div id="DTriangle_03"></div>
+      <div id="DTriangle_04"></div>
+      <div id="DTriangle_05"></div>
+      <div id="DTrapezoid_01"></div>
+      <div id="DTrapezoid_02"></div>
+      <div id="DTrapezoid_03"></div>
+      <div id="DTrapezoid_04"></div>
+      <div id="DTrapezoid_05"></div>
+      <div id="DTrapezoid_06"></div>
+      <div id="DTrapezoid_07"></div>
+  </div>
+
+  <div id="E" class="thisE">
     <div id="ESquare_01"></div>
       <div id="ESquare_02"></div>
       <div id="ESquare_03"></div>
@@ -3806,7 +6508,27 @@ border-bottom: 80px solid black;
       <div id="ETrapezoid_03"></div>
   </div>
 
-  <div id="F">
+  <div id="E_02">
+    <div id="ESquare_01"></div>
+      <div id="ESquare_02"></div>
+      <div id="ESquare_03"></div>
+      <div id="ESquare_04"></div>
+      <div id="EParallelogram_01"></div>
+      <div id="EParallelogram_02"></div>
+      <div id="ETriangle_01"></div>
+      <div id="ETriangle_02"></div>
+      <div id="ETriangle_03"></div>
+      <div id="ETriangle_04"></div>
+      <div id="ETriangle_05"></div>
+      <div id="ETriangle_06"></div>
+      <div id="ETriangle_07"></div>
+      <div id="ETriangle_05"></div>
+      <div id="ETrapezoid_01"></div>
+      <div id="ETrapezoid_02"></div>
+      <div id="ETrapezoid_03"></div>
+  </div>
+
+  <div id="F" class="thisF">
     <div id="FSquare_01"></div>
       <div id="FSquare_02"></div>
       <div id="FSquare_03"></div>
@@ -3821,7 +6543,7 @@ border-bottom: 80px solid black;
       <div id="FTrapezoid_02"></div>
   </div>
 
-<div id="G">
+<div id="G" class="thisG">
   <div id="GSquare_01"></div>
       <div id="GSquare_02"></div>
       <div id="GSquare_03"></div>
@@ -3844,7 +6566,30 @@ border-bottom: 80px solid black;
       <div id="GParallelogram_01"></div>
   </div>
 
-  <div id="H">
+  <div id="G_02">
+  <div id="GSquare_01"></div>
+      <div id="GSquare_02"></div>
+      <div id="GSquare_03"></div>
+      <div id="GSquare_04"></div>
+      <div id="GSquare_05"></div>
+      <div id="GSquare_06"></div>
+      <div id="GSquare_07"></div>
+      <div id="GSquare_08"></div>
+      <div id="GTriangle_01"></div>
+      <div id="GTriangle_02"></div>
+      <div id="GTriangle_03"></div>
+      <div id="GTriangle_04"></div>
+      <div id="GTriangle_05"></div>
+      <div id="GTriangle_06"></div>
+      <div id="GTriangle_07"></div>
+      <div id="GTriangle_08"></div>
+      <div id="GTrapezoid_01"></div>
+      <div id="GTrapezoid_02"></div>
+      <div id="GTrapezoid_03"></div>
+      <div id="GParallelogram_01"></div>
+  </div>
+
+  <div id="H" class="thisH">
       <div id="HSquare_01"></div>
       <div id="HSquare_02"></div>
       <div id="HSquare_03"></div>
@@ -3858,7 +6603,7 @@ border-bottom: 80px solid black;
       <div id="HParallelogram_01"></div>
   </div>
 
-  <div id="I">
+  <div id="I" class="thisI">
   <div id="ISquare_01"></div>
       <div id="ISquare_02"></div>
       <div id="IParallelogram_01"></div>
@@ -3876,8 +6621,26 @@ border-bottom: 80px solid black;
       <div id="ITrapezoid_07"></div>
 </div>
 
-  <div id="J">
-  <div id="JSquare_01"></div>
+<div id="I_02">
+  <div id="ISquare_01"></div>
+      <div id="ISquare_02"></div>
+      <div id="IParallelogram_01"></div>
+      <div id="ITriangle_01"></div>
+      <div id="ITriangle_02"></div>
+      <div id="ITriangle_03"></div>
+      <div id="ITriangle_04"></div>
+      <div id="ITriangle_05"></div>
+      <div id="ITrapezoid_01"></div>
+      <div id="ITrapezoid_02"></div>
+      <div id="ITrapezoid_03"></div>
+      <div id="ITrapezoid_04"></div>
+      <div id="ITrapezoid_05"></div>
+      <div id="ITrapezoid_06"></div>
+      <div id="ITrapezoid_07"></div>
+</div>
+
+  <div id="J" class="thisJ">
+      <div id="JSquare_01"></div>
       <div id="JSquare_02"></div>
       <div id="JParallelogram_01"></div>
       <div id="JTriangle_01"></div>
@@ -3897,7 +6660,7 @@ border-bottom: 80px solid black;
       <div id="JTrapezoid_10"></div>
 </div>
 
-  <div id="K">
+  <div id="K" class="thisK">
       <div id="KSquare_01"></div>
       <div id="KSquare_02"></div>
       <div id="KParallelogram_01"></div>
@@ -3911,7 +6674,7 @@ border-bottom: 80px solid black;
       <div id="KTrapezoid_03"></div>
   </div>
 
-  <div id="L">
+  <div id="L" class="thisL">
       <div id="LSquare_01"></div>
       <div id="LSquare_02"></div>
       <div id="LParallelogram_01"></div>
@@ -3931,10 +6694,11 @@ border-bottom: 80px solid black;
       <div id="LTrapezoid_07"></div>
 </div>
 
-  <div id="M">
+  <div id="M" class="thisM">
       <div id="MSquare_01"></div>
       <div id="MSquare_02"></div>
       <div id="MParallelogram_01"></div>
+      <div id="MParallelogram_02"></div>
       <div id="MTriangle_01"></div>
       <div id="MTriangle_02"></div>
       <div id="MTrapezoid_01"></div>
@@ -3944,7 +6708,7 @@ border-bottom: 80px solid black;
       <div id="MParallelogram_01"></div>
     </div>
 
-  <div id="N">
+  <div id="N" class="thisN">
       <div id="NSquare_01"></div>
       <div id="NSquare_02"></div>
       <div id="NParallelogram_01"></div>
@@ -3957,7 +6721,7 @@ border-bottom: 80px solid black;
       <div id="NParallelogram_01"></div>
     </div>
 
-  <div id="O">
+  <div id="O" class="thisO">
     <div id="OSquare_01"></div>
       <div id="OSquare_02"></div>
       <div id="OSquare_03"></div>
@@ -3977,7 +6741,7 @@ border-bottom: 80px solid black;
       <div id="OParallelogram_01"></div>
     </div>
 
-  <div id="P">
+  <div id="P" class="thisP">
       <div id="PSquare_01"></div>
       <div id="PSquare_02"></div>
       <div id="PParallelogram_01"></div>
@@ -3995,7 +6759,7 @@ border-bottom: 80px solid black;
       <div id="PTrapezoid_07"></div>
   </div>
 
-<div id="Q">
+<div id="Q" class="thisQ">
       <div id="QSquare_01"></div>
       <div id="QSquare_02"></div>
       <div id="QSquare_03"></div>
@@ -4016,7 +6780,7 @@ border-bottom: 80px solid black;
       <div id="QParallelogram_01"></div>
   </div>
 
-  <div id="R">
+  <div id="R" class="thisR">
       <div id="RSquare_01"></div>
       <div id="RSquare_02"></div>
       <div id="RParallelogram_01"></div>
@@ -4034,7 +6798,43 @@ border-bottom: 80px solid black;
       <div id="RTrapezoid_07"></div>
   </div>
 
-<div id="S">
+  <div id="R_02">
+      <div id="RSquare_01"></div>
+      <div id="RSquare_02"></div>
+      <div id="RParallelogram_01"></div>
+      <div id="RTriangle_01"></div>
+      <div id="RTriangle_02"></div>
+      <div id="RTriangle_03"></div>
+      <div id="RTriangle_04"></div>
+      <div id="RTriangle_05"></div>
+      <div id="RTrapezoid_01"></div>
+      <div id="RTrapezoid_02"></div>
+      <div id="RTrapezoid_03"></div>
+      <div id="RTrapezoid_04"></div>
+      <div id="RTrapezoid_05"></div>
+      <div id="RTrapezoid_06"></div>
+      <div id="RTrapezoid_07"></div>
+  </div>
+
+<div id="R_03">
+      <div id="RSquare_01"></div>
+      <div id="RSquare_02"></div>
+      <div id="RParallelogram_01"></div>
+      <div id="RTriangle_01"></div>
+      <div id="RTriangle_02"></div>
+      <div id="RTriangle_03"></div>
+      <div id="RTriangle_04"></div>
+      <div id="RTriangle_05"></div>
+      <div id="RTrapezoid_01"></div>
+      <div id="RTrapezoid_02"></div>
+      <div id="RTrapezoid_03"></div>
+      <div id="RTrapezoid_04"></div>
+      <div id="RTrapezoid_05"></div>
+      <div id="RTrapezoid_06"></div>
+      <div id="RTrapezoid_07"></div>
+  </div>
+
+<div id="S" class="thisS">
       <div id="SSquare_01"></div>
       <div id="SSquare_02"></div>
       <div id="SSquare_03"></div>
@@ -4056,7 +6856,7 @@ border-bottom: 80px solid black;
       <div id="SParallelogram_01"></div>
 </div>
 
-  <div id="T">
+  <div id="T" class="thisT">
       <div id="TSquare_01"></div>
       <div id="TSquare_02"></div>
       <div id="TSquare_03"></div>
@@ -4073,7 +6873,7 @@ border-bottom: 80px solid black;
       <div id="TTrapezoid_06"></div>
 </div>
 
-  <div id="U">
+  <div id="U" class="thisU">
     <div id="USquare_01"></div>
     <div id="USquare_02"></div>
     <div id="USquare_03"></div>
@@ -4088,6 +6888,7 @@ border-bottom: 80px solid black;
     <div id="USquare_12"></div>
     <div id="USquare_13"></div>
     <div id="USquare_14"></div>
+    <div id="USquare_15"></div>
     <div id="UTriangle_01"></div>
     <div id="UTriangle_02"></div>
     <div id="UTriangle_03"></div>
@@ -4099,9 +6900,9 @@ border-bottom: 80px solid black;
     <div id="UTrapezoid_03"></div>
     <div id="UParallelogram_01"></div>
     <div id="UPentagon_02"></div>
-    </div>
+  </div>
 
-  <div id="V">
+  <div id="V" class="thisV">
     <div id="VSquare_01"></div>
       <div id="VSquare_02"></div>
       <div id="VSquare_03"></div>
@@ -4121,7 +6922,7 @@ border-bottom: 80px solid black;
       <div id="VParallelogram_01"></div>
     </div>
 
-  <div id="W">
+  <div id="W" class="thisW">
       <div id="WSquare_01"></div>
       <div id="WSquare_02"></div>
       <div id="WTriangle_01"></div>
@@ -4130,7 +6931,7 @@ border-bottom: 80px solid black;
       <div id="WParallelogram_01"></div>
   </div>
 
-  <div id="X">
+  <div id="X" class="thisX">
       <div id="XSquare_01"></div>
       <div id="XSquare_02"></div>
       <div id="XSquare_03"></div>
@@ -4152,7 +6953,7 @@ border-bottom: 80px solid black;
       <div id="XParallelogram_02"></div>
   </div>
 
-  <div id="Y">
+  <div id="Y" class="thisY">
       <div id="YSquare_01"></div>
       <div id="YSquare_02"></div>
       <div id="YParallelogram_01"></div>
@@ -4164,7 +6965,7 @@ border-bottom: 80px solid black;
       <div id="YTrapezoid_02"></div>
   </div>
 
-  <div id="Z">
+  <div id="Z" class="thisZ">
       <div id="ZSquare_01"></div>
       <div id="ZSquare_02"></div>
       <div id="ZParallelogram_01"></div>
@@ -4187,4 +6988,555 @@ border-bottom: 80px solid black;
       <div id="ZTrapezoid_07"></div>
   </div>
 
+<div id="Zero" class="thisZero">
+      <div id="ZeroSquare_01"></div>
+      <div id="ZeroSquare_02"></div>
+      <div id="ZeroSquare_03"></div>
+      <div id="ZeroSquare_04"></div>
+      <div id="ZeroSquare_05"></div>
+      <div id="ZeroSquare_06"></div>
+      <div id="ZeroSquare_07"></div>
+      <div id="ZeroSquare_08"></div>
+      <div id="ZeroTriangle_01"></div>
+      <div id="ZeroTriangle_02"></div>
+      <div id="ZeroTriangle_03"></div>
+      <div id="ZeroTriangle_04"></div>
+      <div id="ZeroTriangle_05"></div>
+      <div id="ZeroTriangle_06"></div>
+      <div id="ZeroTrapezoid_01"></div>
+      <div id="ZeroTrapezoid_02"></div>
+      <div id="ZeroParallelogram_01"></div>
 </div>
+
+<div id="One" class="thisOne">
+      <div id="OneSquare_01"></div>
+      <div id="OneSquare_02"></div>
+      <div id="OneSquare_03"></div>
+      <div id="OneSquare_04"></div>
+      <div id="OneSquare_05"></div>
+      <div id="OneSquare_06"></div>
+      <div id="OneParallelogram_01"></div>
+      <div id="OneTriangle_01"></div>
+      <div id="OneTriangle_02"></div>
+      <div id="OneTriangle_04"></div>
+      <div id="OneTrapezoid_01"></div>
+      <div id="OneTrapezoid_02"></div>
+      <div id="OneTrapezoid_03"></div>
+      <div id="OneTrapezoid_05"></div>
+      <div id="OneTrapezoid_06"></div>
+</div>
+
+<div id="Two" class="thisTwo">
+      <div id="TwoParallelogram_01"></div>
+      <div id="TwoTriangle_01"></div>
+      <div id="TwoTriangle_02"></div>
+      <div id="TwoTriangle_04"></div>
+      <div id="TwoTriangle_05"></div>
+      <div id="TwoTrapezoid_01"></div>
+      <div id="TwoTrapezoid_02"></div>
+      <div id="TwoTrapezoid_03"></div>
+      <div id="TwoTrapezoid_04"></div>
+      <div id="TwoTrapezoid_05"></div>
+      <div id="TwoTrapezoid_06"></div>
+      <div id="TwoTrapezoid_07"></div>
+      <div id="TwoTrapezoid_08"></div>
+</div>
+
+<div id="Three" class="thisThree">
+      <div id="ThreeParallelogram_01"></div>
+      <div id="ThreeTriangle_04"></div>
+      <div id="ThreeTrapezoid_02"></div>
+      <div id="ThreeTrapezoid_05"></div>
+      <div id="ThreeTriangle_01"></div>
+      <div id="ThreeTriangle_02"></div>
+      <div id="ThreeTriangle_03"></div>
+      <div id="ThreeTriangle_06"></div>
+      <div id="ThreeTrapezoid_04"></div>
+      <div id="ThreeTrapezoid_03"></div>
+</div>
+
+
+<div id="Four" class="thisFour">
+      <div id="FourSquare_01"></div>
+      <div id="FourSquare_02"></div>
+      <div id="FourParallelogram_01"></div>
+      <div id="FourTriangle_01"></div>
+      <div id="FourTriangle_02"></div>
+      <div id="FourTrapezoid_01"></div>
+      <div id="FourTrapezoid_02"></div>
+      <div id="FourPentagon_01"></div>
+      <div id="FourPentagon_02"></div>
+      <div id="FourParallelogram_01"></div>
+</div>
+
+<div id="Five" class="thisFive">
+  <div id="FiveSquare_01"></div>
+      <div id="FiveSquare_02"></div>
+      <div id="FiveSquare_03"></div>
+      <div id="FiveSquare_04"></div>
+      <div id="FiveSquare_05"></div>
+      <div id="FiveSquare_06"></div>
+      <div id="FiveSquare_07"></div>
+      <div id="FiveSquare_08"></div>
+      <div id="FiveTriangle_01"></div>
+      <div id="FiveTriangle_02"></div>
+      <div id="FiveTriangle_03"></div>
+      <div id="FiveTriangle_04"></div>
+      <div id="FiveTriangle_05"></div>
+      <div id="FiveTriangle_06"></div>
+      <div id="FiveTrapezoid_01"></div>
+      <div id="FiveTrapezoid_02"></div>
+      <div id="FiveTrapezoid_03"></div>
+      <div id="FiveTrapezoid_04"></div>
+      <div id="FiveTrapezoid_05"></div>
+      <div id="FiveTrapezoid_06"></div>
+      <div id="FiveParallelogram_01"></div>
+</div>
+
+<div id="Six" class="thisSix">
+      <div id="SixSquare_01"></div>
+      <div id="SixSquare_02"></div>
+      <div id="SixSquare_03"></div>
+      <div id="SixSquare_04"></div>
+      <div id="SixSquare_05"></div>
+      <div id="SixSquare_06"></div>
+      <div id="SixSquare_07"></div>
+      <div id="SixSquare_08"></div>
+      <div id="SixTriangle_01"></div>
+      <div id="SixTriangle_02"></div>
+      <div id="SixTriangle_03"></div>
+      <div id="SixTriangle_04"></div>
+      <div id="SixTriangle_05"></div>
+      <div id="SixTriangle_06"></div>
+      <div id="SixTrapezoid_01"></div>
+      <div id="SixTrapezoid_02"></div>
+      <div id="SixTrapezoid_03"></div>
+      <div id="SixTrapezoid_04"></div>
+      <div id="SixTrapezoid_05"></div>
+      <div id="SixTrapezoid_06"></div>
+      <div id="SixParallelogram_01"></div>
+</div>
+
+<div id="Seven" class="thisSeven">
+      <div id="SevenSquare_02"></div>
+      <div id="SevenSquare_03"></div>
+      <div id="SevenSquare_04"></div>
+      <div id="SevenParallelogram_01"></div>
+      <div id="SevenParallelogram_02"></div>
+      <div id="SevenTriangle_01"></div>
+      <div id="SevenTriangle_02"></div>
+      <div id="SevenTriangle_03"></div>
+      <div id="SevenTriangle_04"></div>
+      <div id="SevenTriangle_05"></div>
+      <div id="SevenTrapezoid_01"></div>
+      <div id="SevenTrapezoid_02"></div>
+  </div>
+
+<div id="Eight" class="thisEight">
+      <div id="EightSquare_01"></div>
+      <div id="EightSquare_02"></div>
+      <div id="EightParallelogram_01"></div>
+      <div id="EightTriangle_04"></div>
+      <div id="EightTrapezoid_02"></div>
+      <div id="EightTrapezoid_05"></div>
+      <div id="EightTriangle_01"></div>
+      <div id="EightTriangle_02"></div>
+      <div id="EightTriangle_03"></div>
+      <div id="EightTriangle_06"></div>
+      <div id="EightTrapezoid_04"></div>
+      <div id="EightTrapezoid_03"></div>
+</div>
+
+<div id="Nine" class="thisNine">
+      <div id="NineSquare_01"></div>
+      <div id="NineSquare_02"></div>
+      <div id="NineSquare_03"></div>
+      <div id="NineSquare_04"></div>
+      <div id="NineSquare_05"></div>
+      <div id="NineSquare_06"></div>
+      <div id="NineSquare_07"></div>
+      <div id="NineSquare_08"></div>
+      <div id="NineTriangle_01"></div>
+      <div id="NineTriangle_02"></div>
+      <div id="NineTriangle_03"></div>
+      <div id="NineTriangle_04"></div>
+      <div id="NineTriangle_05"></div>
+      <div id="NineTriangle_06"></div>
+      <div id="NineTrapezoid_01"></div>
+      <div id="NineTrapezoid_02"></div>
+      <div id="NineTrapezoid_03"></div>
+      <div id="NineTrapezoid_04"></div>
+      <div id="NineTrapezoid_05"></div>
+      <div id="NineTrapezoid_06"></div>
+      <div id="NineParallelogram_01"></div>
+</div>
+
+<div id="Question" class="thisQuestion">
+  <div id="QuestionSquare_01"></div>
+      <div id="QuestionSquare_02"></div>
+      <div id="QuestionSquare_03"></div>
+      <div id="QuestionSquare_04"></div>
+      <div id="QuestionSquare_05"></div>
+      <div id="QuestionSquare_06"></div>
+      <div id="QuestionSquare_07"></div>
+      <div id="QuestionSquare_08"></div>
+      <div id="QuestionTriangle_01"></div>
+      <div id="QuestionTriangle_02"></div>
+      <div id="QuestionTriangle_03"></div>
+      <div id="QuestionTriangle_04"></div>
+      <div id="QuestionTriangle_05"></div>
+      <div id="QuestionTriangle_06"></div>
+      <div id="QuestionTrapezoid_01"></div>
+      <div id="QuestionTrapezoid_02"></div>
+      <div id="QuestionTrapezoid_03"></div>
+      <div id="QuestionTrapezoid_04"></div>
+      <div id="QuestionTrapezoid_05"></div>
+      <div id="QuestionTrapezoid_06"></div>
+      <div id="QuestionParallelogram_01"></div>
+</div>
+
+<div id="Period" class="thisPeriod">
+  <div id="PeriodTrapezoid_01"></div>
+  <div id="PeriodTriangle_01"></div>
+  <div id="PeriodSquare_01"></div>
+</div>
+
+<div id="Comma" class="thisComma">
+  <div id="CommaTrapezoid_01"></div>
+  <div id="CommaTriangle_01"></div>
+  <div id="CommaSquare_01"></div>
+</div>
+
+<div id="Exclamation" class="thisExclamation">
+  <div id="ExclamationTrapezoid_01"></div>
+  <div id="ExclamationTriangle_01"></div>
+  <div id="ExclamationTriangle_02"></div>
+  <div id="ExclamationSquare_01"></div>
+</div>
+
+<div id="Word_01">
+  <div id="M_02"></div>
+  <div id="O_02"></div>
+  <div id="B_02"></div>
+  <div id="I_02"></div>
+  <div id="L_02"></div>
+  <div id="E_02"></div>
+</div>
+
+<div id="Word_02">
+  <div id="S_02"></div>
+  <div id="U_02"></div>
+  <div id="I_03"></div>
+  <div id="T_02"></div>
+</div>
+
+<div id="Word_03">
+  <div id="G_02"></div>
+  <div id="U_03"></div>
+  <div id="N_02"></div>
+  <div id="D_02"></div>
+  <div id="A_02"></div>
+  <div id="M_03"></div>
+
+</div>
+
+
+<script>
+// function myMove() {
+//   var elem = document.getElementById("A");   
+//   var pos = 10;
+//   var id = setInterval(frame, 5);
+//   function frame() {
+//     if (pos == 800) {
+//       clearInterval(id);
+//     } else {
+//       pos++; 
+//       elem.style.top = pos + 'px'; 
+//       elem.style.left = pos + 'px'; 
+//       }
+//       }
+//       }
+
+
+let aEl = document.querySelector('#A.thisA')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    aEl.classList.toggle('slide')    
+  },100)
+  
+// }
+
+ let bEl = document.querySelector('#B.thisB')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    bEl.classList.toggle('slide')    
+  },100)
+
+  let cEl = document.querySelector('#C.thisC')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    cEl.classList.toggle('slide')    
+  },100)
+
+  let dEl = document.querySelector('#D.thisD')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    dEl.classList.toggle('slide')    
+  },100)
+
+  let eEl = document.querySelector('#E.thisE')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    eEl.classList.toggle('slide')    
+  },100)
+
+let fEl = document.querySelector('#F.thisF')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    fEl.classList.toggle('slide')    
+  },100)
+
+  let gEl = document.querySelector('#G.thisG')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    gEl.classList.toggle('slide')    
+  },100)
+
+let hEl = document.querySelector('#H.thisH')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    hEl.classList.toggle('slide')    
+  },100)
+
+let iEl = document.querySelector('#I.thisI')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    iEl.classList.toggle('slide')    
+  },100)
+
+  let jEl = document.querySelector('#J.thisJ')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    jEl.classList.toggle('slide')    
+  },100)
+
+  let kEl = document.querySelector('#K.thisK')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    kEl.classList.toggle('slide')    
+  },100)
+
+  let lEl = document.querySelector('#L.thisL')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    lEl.classList.toggle('slide')    
+  },100)
+
+  let mEl = document.querySelector('#M.thisM')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    mEl.classList.toggle('slide')    
+  },100)
+
+  let nEl = document.querySelector('#N.thisN')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    nEl.classList.toggle('slide')    
+  },100)
+
+  let oEl = document.querySelector('#O.thisO')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    oEl.classList.toggle('slide')    
+  },100)
+
+  let pEl = document.querySelector('#P.thisP')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    pEl.classList.toggle('slide')    
+  },100)
+
+  let qEl = document.querySelector('#Q.thisQ')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    qEl.classList.toggle('slide')    
+  },100)
+
+  let rEl = document.querySelector('#R.thisR')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    rEl.classList.toggle('slide')    
+  },100)
+
+  let sEl = document.querySelector('#S.thisS')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    sEl.classList.toggle('slide')    
+  },100)
+
+  let tEl = document.querySelector('#T.thisT')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    tEl.classList.toggle('slide')    
+  },100)
+
+  let uEl = document.querySelector('#U.thisU')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    uEl.classList.toggle('slide')    
+  },100)
+
+  let vEl = document.querySelector('#V.thisV')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    vEl.classList.toggle('slide')    
+  },100)
+
+  let wEl = document.querySelector('#W.thisW')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    wEl.classList.toggle('slide')    
+  },100)
+
+  let xEl = document.querySelector('#X.thisX')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    xEl.classList.toggle('slide')    
+  },100)
+
+  let yEl = document.querySelector('#Y.thisY')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    yEl.classList.toggle('slide')    
+  },100)
+
+  let zEl = document.querySelector('#Z.thisZ')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    zEl.classList.toggle('slide')    
+  },100)
+
+   let oneEl = document.querySelector('#One.thisOne')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    oneEl.classList.toggle('slide')    
+  },100)
+
+   let twoEl = document.querySelector('#Two.thisTwo')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    twoEl.classList.toggle('slide')    
+  },100)
+
+   let threeEl = document.querySelector('#Three.thisThree')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    threeEl.classList.toggle('slide')    
+  },100)
+
+   let fourEl = document.querySelector('#Four.thisFour')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    fourEl.classList.toggle('slide')    
+  },100)
+
+   let fiveEl = document.querySelector('#Five.thisFive')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    fiveEl.classList.toggle('slide')    
+  },100)
+
+   let sixEl = document.querySelector('#Six.thisSix')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    sixEl.classList.toggle('slide')    
+  },100)
+
+   let sevenEl = document.querySelector('#Seven.thisSeven')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    sevenEl.classList.toggle('slide')    
+  },100)
+
+  let eightEl = document.querySelector('#Eight.thisEight')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    eightEl.classList.toggle('slide')    
+  },100)
+
+  let nineEl = document.querySelector('#Nine.thisNine')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    nineEl.classList.toggle('slide')    
+  },100)
+
+  let zeroEl = document.querySelector('#Zero.thisZero')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    zeroEl.classList.toggle('slide')    
+  },100)
+
+  let questionEl = document.querySelector('#Question.thisQuestion')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    questionEl.classList.toggle('slide')    
+  },100)
+
+  let periodEl = document.querySelector('#Period.thisPeriod')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    periodEl.classList.toggle('slide')    
+  },100)
+
+  let commaEl = document.querySelector('#Comma.thisComma')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    commaEl.classList.toggle('slide')    
+  },100)
+
+  let exclamationEl = document.querySelector('#Exclamation.thisExclamation')
+
+// aEl.onpointerdown = function(){
+  setTimeout(function(){
+    exclamationEl.classList.toggle('slide')    
+  },100)
+  </script>
