@@ -201,11 +201,11 @@ body {
   }
 
   80% {
-    opacity: 0.7;
+    opacity: 0.1;
   }
 
   90% {
-    opacity: 0.4;
+    opacity: 0;
   }
 
   to {
@@ -245,6 +245,10 @@ body {
   box-shadow: -40px 8px 70px 0.2px inset;
 }
 
+.n0 .ball:before{
+  display: block;
+} 
+
 .n500 .ball:before{
   box-shadow: -39.9999px 0px 70px 0.2px inset;
   transition: box-shadow 0.5s ease-in;
@@ -268,6 +272,11 @@ body {
 .n1400 .ball:before{
   box-shadow: -20px 0px 70px 0.2px inset;
   transition: box-shadow 0.3s ease-in;
+  opacity: 0.9;
+} 
+
+.n18000 .ball:before{
+  opacity: 0.4;
 } 
 
 body {
@@ -372,7 +381,13 @@ function draw(){
 if(scrollPosition > 0){
       stage.classList.add('n0')
    } else {
-      stage.classList.remove('n18000') 
+      stage.classList.remove('n1') 
+   }
+
+   if(scrollPosition > 1){
+      stage.classList.add('n1')
+   } else {
+      stage.classList.remove('n1') 
    }
 
 if(scrollPosition > 500){
