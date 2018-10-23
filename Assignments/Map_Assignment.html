@@ -1,0 +1,469 @@
+<html lang="en">
+  <head>
+    <title>Kyan</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+    <div id="stage">
+      <h1></h1>  
+      <div id="spinner">
+        <figure class="ball" style. transform=scale(0.6)><span class="shadow"></span></figure>  
+      </div>
+  <div id="Cloud">
+      <img id="image" src="INT2_P2-01.svg"/>
+  </div>
+  <div id="White">
+      <img id="cup" style. transform=scale(20) src="Clouds.jpg"/>
+  </div>
+      <!--       <img src="https://cdn.glitch.com/9e769eb8-3c8f-47cc-9565-a804494feb79%2FIMG_8782-2.jpg?1539736318242"> -->
+    </div> 
+  </body>
+</html>
+
+<style>
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 0 !important;
+  height:25000px;
+}
+
+#stage {
+  height:100vh !important; 
+  width:100vw !important; 
+  position:fixed;
+  margin: auto;
+  background: black;
+}
+
+#stage.n0 {
+ background: black;
+}
+
+.n17000 #stage{
+  display: none;
+}
+
+.n20000 #stage{
+  display: none;
+}
+
+#spinner{
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  animation: flux 1s linear; 
+  display:block;
+  position: absolute;
+  top:calc(50vh - 25px);
+  left:calc(50vw - 25px);
+
+  /*margin: 0 auto;
+  align-content: center;*/
+}
+
+.n16200 #spinner{
+  display: none;
+}
+
+.n20000 #spinner{
+  display: none;
+}
+
+@keyframes flux {
+  from {
+    transform:scale(0);
+  }
+  
+  50% {
+    transform: scale(20);
+  }
+
+  to {
+    transform: scale(40);
+  }
+}
+
+
+
+
+#image{
+  display: block;
+  position: fixed;
+  animation: fluxll 1s linear; 
+}
+
+@keyframes fluxll {
+  from {
+    transform:scale(1.8);
+  }
+
+  75% {
+    transform: scale(3.2);
+  }
+
+  to {
+    transform: scale(20);
+  }
+}
+
+.n0 #Cloud{
+  display: none;
+}
+
+.n18999 #Cloud{
+  display: none;
+}
+
+.n19000 #Cloud{
+  display: block;
+  position: fixed;
+  width: 864px;
+  height: 462px;
+}
+
+.n30000 #Cloud{
+  display: none;
+}
+
+
+
+
+.n0 #White{
+  display: none;
+}
+
+.n16199 #White{
+  display: none;
+}
+
+.n16200 #White{
+  display: block;
+  position: fixed;
+}
+
+.n20000 #White{
+  display: none;
+}
+
+.n30000 #White{
+  display: none;
+}
+
+#cup{
+  width: 864px;
+  height: 462px;
+  max-width: 1440px;
+  max-height: 770px;
+  display: block;
+  position: fixed;
+  left: 280px;
+  top: 100px;
+  animation: fluxer 1s linear; 
+}
+
+@keyframes fluxer {
+  from {
+    transform:scale(1.2);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.1;
+  }
+
+  40% {
+    opacity: 0.7;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  80% {
+    opacity: 0.7;
+  }
+
+  90% {
+    opacity: 0.4;
+  }
+
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+
+
+
+.ball {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 50%;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+  background: url('Planet.jpg') repeat-x;
+  background-size: auto 100%;
+  -webkit-animation: move-map 40s infinite linear;
+  -moz-animation: move-map 40s infinite linear;
+  -o-animation: move-map 40s infinite linear;
+  -ms-animation: move-map 40s infinite linear;
+  animation: move-map 40s infinite linear;
+}
+
+.ball:before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  box-shadow: -40px 8px 70px 0.2px inset;
+}
+
+.n500 .ball:before{
+  box-shadow: -39.9999px 0px 70px 0.2px inset;
+  transition: box-shadow 0.5s ease-in;
+} 
+
+.n750 .ball:before{
+  box-shadow: -39.6px 0px 70px 0.2px inset;
+  transition: box-shadow 0.3s ease-in;
+} 
+
+.n1000 .ball:before{
+  box-shadow: -37.8px 0px 70px 0.2px inset;
+  transition: box-shadow 0.3s ease-in;
+} 
+
+.n1200 .ball:before{
+  box-shadow: -24px 0px 70px 0.2px inset;
+  transition: box-shadow 0.3s ease-in;
+} 
+
+.n1400 .ball:before{
+  box-shadow: -20px 0px 70px 0.2px inset;
+  transition: box-shadow 0.3s ease-in;
+} 
+
+body {
+  width: 300px;
+  margin: 20px auto;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(100, 100, 100, 0.2)), color-stop(40%, rgba(255, 255, 255, 0.5)), color-stop(100%, #ffffff));
+  background: -webkit-linear-gradient(top, rgba(100, 100, 100, 0.2) 0%, rgba(255, 255, 255, 0.5) 40%, #ffffff 100%);
+  background: -moz-linear-gradient(top, rgba(100, 100, 100, 0.2) 0%, rgba(255, 255, 255, 0.5) 40%, #ffffff 100%);
+  background: -o-linear-gradient(top, rgba(100, 100, 100, 0.2) 0%, rgba(255, 255, 255, 0.5) 40%, #ffffff 100%);
+  background: linear-gradient(top, rgba(100, 100, 100, 0.2) 0%, rgba(255, 255, 255, 0.5) 40%, #ffffff 100%);
+  background-repeat: no-repeat;
+}
+
+.stage {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+  -webkit-perspective: 400px;
+  -moz-perspective: 400px;
+  -ms-perspective: 400px;
+  -o-perspective: 400px;
+  perspective: 400px;
+  -webkit-perspective-origin: 60% 60%;
+  -moz-perspective-origin: 60% 60%;
+  -ms-perspective-origin: 60% 60%;
+  -o-perspective-origin: 60% 60%;
+  perspective-origin: 60% 60%;
+}
+
+@-moz-keyframes move-map {
+  0% {
+    background-position: -40px 0; }
+
+  100% {
+    background-position: 0 0; } }
+
+@-webkit-keyframes move-map {
+  0% {
+    background-position: 0 0; }
+  100% {
+    background-position: -40px 0; }
+}
+
+
+@-o-keyframes move-map {
+  0% {
+    background-position: -849px 0; }
+
+  100% {
+    background-position: 0 0; } }
+
+@-ms-keyframes move-map {
+  0% {
+    background-position: -849px 0; }
+
+  100% {
+    background-position: 0 0; } }
+
+@keyframes move-map {
+  0% {
+    background-position: -849px 0; }
+
+  100% {
+    background-position: 0 0; } }
+</style>
+
+
+
+
+<script>
+let scrollPosition = 0
+
+let stage = document.querySelector('#stage')
+let stageHeader = document.querySelector('#stage h1')
+
+window.addEventListener('scroll',function(){
+  scrollPosition = window.scrollY
+})
+
+let spinner = document.querySelector('#spinner')
+spinner.style.animationPlayState = "paused";
+
+let image = document.querySelector('#image')
+image.style.animationPlayState = "paused";
+
+let cup = document.querySelector('#Cup')
+cup.style.animationPlayState = "paused";
+
+draw()
+function draw(){  
+  let headerScale = 1 - scrollPosition / 25000
+  stageHeader.style.transform = "scale(" + headerScale + "," + headerScale + ")"
+  
+  let scrollPercentage = scrollPosition / 25000
+  
+  spinner.style.animationDelay = (-scrollPercentage) + 's'
+  
+  image.style.animationDelay = (-scrollPercentage) + 's'
+
+  cup.style.animationDelay = (-scrollPercentage) + 's'
+
+if(scrollPosition > 0){
+      stage.classList.add('n0')
+   } else {
+      stage.classList.remove('n18000') 
+   }
+
+if(scrollPosition > 500){
+      stage.classList.add('n500')
+   } else {
+      stage.classList.remove('n500') 
+   }
+
+if(scrollPosition > 750){
+      stage.classList.add('n750')
+   } else {
+      stage.classList.remove('n750') 
+   }
+
+  if(scrollPosition > 1000){
+      stage.classList.add('n1000')
+
+   } else {
+      stage.classList.remove('n1000') 
+   }
+
+   if(scrollPosition > 1200){
+      stage.classList.add('n1200')
+
+   } else {
+      stage.classList.remove('n1200') 
+   }
+
+   if(scrollPosition > 1400){
+      stage.classList.add('n1400')
+
+   } else {
+      stage.classList.remove('n1400') 
+   }
+
+   if(scrollPosition > 8000){
+      stage.classList.add('n16000')
+
+   } else {
+      stage.classList.remove('n20000') 
+   }
+
+ if(scrollPosition > 16199){
+      stage.classList.add('n16199')
+
+   } else {
+      stage.classList.remove('n16200') 
+   }
+
+if(scrollPosition > 16200){
+      stage.classList.add('n16200')
+
+   } else {
+      stage.classList.remove('n20000') 
+   }
+
+if(scrollPosition > 18999){
+      stage.classList.add('n18999')
+
+   } else {
+      stage.classList.remove('n19000') 
+   }
+
+   if(scrollPosition > 19000){
+      stage.classList.add('n19000')
+
+   } else {
+      stage.classList.remove('n25000') 
+   }
+
+    if(scrollPosition > 30000){
+      stage.classList.add('n25000')
+
+   } else {
+      stage.classList.remove('n25000') 
+   }
+
+  
+   
+
+   // if(scrollPosition <1000){
+   //    ball:before.add('ball:before.o1000')
+   // } else {
+   //    ball:before.remove('o1000') 
+   // }
+   // if(scrollPosition <18000){
+   //    ball:before.add('ball:before.o18000')
+   // } else {
+   //    ball:before.remove('o18000') 
+   // }
+  window.requestAnimationFrame(draw)
+}
+
+</script>
