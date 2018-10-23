@@ -107,7 +107,11 @@ body {
 
 @keyframes fluxll {
   from {
-    transform:scale(1.8);
+  display: none;  
+  }
+
+  1% {
+  transform:scale(1.8);
   }
 
   75% {
@@ -272,11 +276,11 @@ body {
 .n1400 .ball:before{
   box-shadow: -20px 0px 70px 0.2px inset;
   transition: box-shadow 0.3s ease-in;
-  opacity: 0.9;
+  opacity: 0.9 0.1s ease-in;
 } 
 
 .n18000 .ball:before{
-  opacity: 0.4;
+  opacity: 0.4 0.1s ease-in;
 } 
 
 body {
