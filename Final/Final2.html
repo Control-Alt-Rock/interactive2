@@ -15,13 +15,14 @@
   <body>
 
 <div id="First">
-      <img id="Untitled" src="https://static.independent.co.uk/s3fs-public/styles/article_small/public/thumbnails/image/2018/08/18/15/screaming-homer-simpson.v1.jpg"/><style>{image-resolution:72dpi;}</style>
-      <div class="Header">1940</p></div>
-      <div class="Subheader">Untitled</p></div>
+      <img id="Untitled" src="Resources/Colorfield.jpg"/>
+      <img id="NearlyHit" src="Resources/NearlyHit-01.png"/>
+      <div class="Header"><p><strong>1940</strong></p></div>
+      <div class="Subheader"><p><strong>UNTITLED</strong></p></div>
       <div class="Des1">Born 1879 to a family of musicians in Switzerland, Klee soon picked up painting and joined the Kandinsky’s expressionist group, Blaue Reiter (Blue Rider), applying cubist and fauvist principles.</p></div>
       <div class="Des2">In his early years, Klee found influence in the works of Braque and Picasso. His paintings adopted these trendy styles through formal expressions of buildings and landscapes.</p></div>
 
-    <div class="dashSet" style="right:360px;top:180px;position:absolute;z-index:6;transform:rotate(-58deg) scale(1.5);;">
+    <div class="dashSet" style="right:360px;top:180px;position:absolute;z-index:15;transform:rotate(-58deg) scale(1.5);;">
       <div class="dash" style="position:absolute;top:70px;left:64px;z-index:6;transform:rotate(40deg)">
       </div>
      <div class="dash" style="position:absolute;top:145px;left:-50px;z-index:6;transform:rotate(-20deg)">
@@ -89,36 +90,84 @@
 #Untitled {
   display: block;
   position: fixed;
-   right: 0.5px;
+  right: 0.5px;
   bottom: 0.5px;
   width: 100vw;
   height: 100vh;
   z-index: 3;
 }
-.Header
+#NearlyHit{
+  display: none;
+  transform: scale(1.3);
+  display: block;
+  position: fixed;
+  right: 380px;
+  bottom: 140px;
+  width: 900px;
+  height: 600px;
+  z-index: 4;
+}
+#NearlyHit.show{
+  display: block;
+}
+.Header{
+  display: none;
+  position: absolute;
+  left: 738px;
+  top: 100px;
+  font-family: Charter;
+  letter-spacing: 0.1em;
+  width: 340px;
+  font-size: 120pt;
+  color: black;
+  z-index: 10;
+}
+.Header.show{
+  display: block;
+}
+.Subheader{
+  display: none;
+  position: absolute;
+  left: 208px;
+  top: 180px;
+  font-family: Charter;
+  width: 340px;
+  font-size: 45pt;
+  color: black;
+  z-index: 10;
+}
+.Subheader.show{
+  display: block;
+}
+.Des2{
+    display: none;
+    position: absolute;
+    left: 760px;
+    top: 440px;
+    font-family: Mrs Eaves OT;
+    letter-spacing: 0.1em;
+    width: 300px;
+    font-size: 14pt;
+    color: black;
+    z-index: 15;
+}
+.Des2.show{
+  display: block;
+}
 .Des1{
   display: none;
   position: absolute;
-  top: 354px;
-  left: 900px;
+  left: 210px;
+  top: 120px;
   font-family: Mrs Eaves OT;
   letter-spacing: 0.1em;
   width: 340px;
   font-size: 14pt;
   color: black;
+  z-index: 14;
 }
 .Des1.show{
   display: block;
-}
-.Des2{
-  position: absolute;
-  left: 210px;
-  font-family: Mrs Eaves OT;
-  letter-spacing: 0.1em;
-  width: 230px;
-  font-size: 14pt;
-  color: black;
-  z-index: 5;
 }
 .outline{
   display: block;
@@ -185,7 +234,11 @@ for(let i = 0; i < dashSets.length; i++){
           hasBeenDone = true
         let un = document.querySelector('#Untitled')
         let Des1 = document.querySelector('.Des1')
+        let Des2 = document.querySelector('.Des2')
         let none = document.querySelector('.dashSet.complete')
+        let Sub = document.querySelector('.Header.show')
+        let Head = document.querySelector('.Subheader.show')
+        let Face = document.querySelector('#NearlyHit')
       }
     })
 
@@ -199,23 +252,47 @@ for(let i = 0; i < dashSets.length; i++){
   duration: 1800,
   iterations: 1,
   fill:'forwards'
-  document.getElement('none').animate([
-    { display: 'block'}
-    { color: 'red'}
-    ],
-  }
+
 })
 
   setTimeout(function(){
     window.location.href = "www.google.com"
     console.log("Hello");
     },
-    20000);
+    26000);
 
    setTimeout(function(){
     let Des1 = document.querySelector('.Des1')
-    Des1.classList.add('.show')
-    console.log("Hello");
+    Des1.classList.add('show')
+    console.log("Goodbye");
+    },
+    1800);
+
+   setTimeout(function(){
+    let Des2 = document.querySelector('.Des2')
+    Des2.classList.add('show')
+    console.log("OhnoOhno");
+    },
+    1800);
+
+   setTimeout(function(){
+    let Head = document.querySelector('.Subheader')
+    Head.classList.add('show')
+    console.log("Yousay");
+    },
+    1800);
+
+    setTimeout(function(){
+    let Sub = document.querySelector('.Header')
+    Sub.classList.add('show')
+    console.log("Isay");
+    },
+    1800);
+
+    setTimeout(function(){
+    let Face = document.querySelector('#NearlyHit')
+    Face.add('show')
+    console.log("Sayhah");
     },
     1800);
 }
