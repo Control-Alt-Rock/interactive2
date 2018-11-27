@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>artistic ability</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+
+<div id="Third">
+      <img id="BlteninderNachtBlossomsintheNight" src="Resources/3Blossomsinthenight.jpg"/></div>
+
+    <div class="dashSet" style="right:204px;top:240px;position:absolute;z-index:6;transform:rotate(-34deg) scale(1.5);;">
+      <div class="dash" style="position:absolute;top:70px;left:64px;z-index:6;transform:rotate(0deg)">
+      </div>
+     <div class="dash" style="position:absolute;top:85px;left:36px;z-index:6;transform:rotate(0deg)">
+      </div>
+      <div class="dash" style="position:absolute;top:100px;left:40px;z-index:6;transform:rotate(0deg)">
+      </div>
+      <div class="dash" style="position:absolute;top:115px;left:44px;z-index:6;transform:rotate(0deg)">
+      </div>
+      <div class="dash" style="position:absolute;top:130px;left:48px;z-index:6;transform:rotate(0deg)">
+      </div>
+      <div class="dash" style="position:absolute;top:145px;left:52px;z-index:6;transform:rotate(0deg)">
+      </div>
+      <div class="dash" style="position:absolute;top:160px;left:56px;z-index:6;transform:rotate(0deg)">
+      </div>
+      <div class="dash" style="position:absolute;top:175px;left:60px;z-index:6;transform:rotate(0deg)">
+      </div>
+</div>
+
+<style>
+
+#BlteninderNachtBlossomsintheNight {
+  display: block;
+  position: fixed;
+  left: 1px;
+  bottom: 2px;
+  width: 120vw;
+  height: 120vh;
+  z-index: 1;
+}
+.Des1{
+  display: none;
+  position: absolute;
+  top: 354px;
+  left: 900px;
+  font-family: Mrs Eaves OT;
+  width: 130px;
+  font-size: 8pt;
+  color: black;
+  z-index: 5;
+}
+
+.Des1 .show{
+  display: block;
+  position: absolute;
+  top: 354px;
+  left: 900px;
+  font-family: Mrs Eaves OT;
+  width: 130px;
+  font-size: 8pt;
+  color: black;
+  z-index: 5;
+}
+.Des2{
+  position: absolute;
+  font-family: Mrs Eaves OT;
+  width: 130px;
+  font-size: 14pt;
+  color: black;
+  z-index: 5;
+}
+.dashSet {
+  position:absolute; 
+  width:200px;
+  height:200px;
+}
+.dashSet.complete {
+  background:orange; 
+}
+.dash {
+  position:absolute;
+  transform-origin:50% 50%;
+  width:2.5px;
+  height:10px;
+  background:red;
+}
+.dash.complete {
+  background:tan; 
+}
+body {
+  cursor: url('Resources/Cursor.png') -2 8, auto;
+}
+</style>
+    
+
+
+
+<script>
+  let dashSets = document.querySelectorAll('.dashSet')
+  console.log(dashSets);
+for(let i = 0; i < dashSets.length; i++){
+  let theseDashes = dashSets[i].querySelectorAll('.dash')
+  
+  let dashesComplete = 0
+  let hasBeenDone = false
+  
+  for(let d = 0; d< theseDashes.length; d++){
+    theseDashes[d].addEventListener('pointerenter',function(){
+      
+      
+      // if this dash isn't complete, we're just
+      // checking it off, so we should add to our dash count
+   if(!theseDashes[d].classList.contains('complete')){
+        dashesComplete ++
+        console.log(dashesComplete);
+      }
+      
+      // a dash done
+   theseDashes[d].classList.add('complete')
+      
+   if(dashesComplete == theseDashes.length){
+   // all dashes in this set done
+   // dashSets[i].classList.add('complete')
+        if(!hasBeenDone) dothiswhendone()
+          hasBeenDone = true
+        let un = document.querySelector('#BlteninderNachtBlossomsintheNight')
+        let Des1 = document.querySelector('#Des1')
+      }
+    })
+
+  function dothiswhendone(){
+  document.getElementById("BlteninderNachtBlossomsintheNight").animate([
+  // keyframes
+  { transform: 'scale(1) translateY(0px) translateX(0px)' }, 
+  { transform: 'scale(4) translateY(-200px) translateX(-120px)'}
+], { 
+  // timing options
+  duration: 1800,
+  iterations: 1,
+  fill:'forwards'
+})
+  document.querySelector(".Des1").classList.add('.show')
+}
+    
+}
+}
+</script>
+</body>
+</html>

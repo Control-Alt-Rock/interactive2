@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+</head>
+
+<body>
+
+<div id="First">
+      <img id="Untitled" src="Resources/Colorfield.jpg"/>
+      <p class="Des1">Born 1879 to a family of musicians in Switzerland, Klee soon picked up painting and joined the Kandinsky’s expressionist group, Blaue Reiter (Blue Rider), applying cubist and fauvist principles.</p>
+      <p class="Des2">In his early years, Klee found influence in the works of Braque and Picasso. His paintings adopted these trendy styles through formal expressions of buildings and landscapes.</p>
+</div>
+<div class="outline" src="Hashmark.png"></div>
+<div id="Second">
+      <img id="FastgetroffenNearlyHit" src="Resources/NearlyHit.png"/>
+      <p class="Des3">Ater his trip to Tunisia, Klee departed from traditional forms, instead gesturing towards color as a representative composition. His expressive titles pushed towards poetic, announcing a prevelant message to audiences, whether comedic or lonesome.</p>
+</div>
+<div id="Third">
+      <img id="BlteninderNachtBlossomsintheNight" src="Resources/BlossomsintheNight.png"/>
+
+<style>
+
+#Untitled {
+  display: block;
+  position: absolute;
+  top: -10px;
+  right: 4px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+}
+
+.Des1{
+  position: absolute;
+  top: 354px;
+  left: 900px;
+  font-family: Mrs Eaves OT;
+  width: 130px;
+  font-size: 8pt;
+  color: black;
+  z-index: 5;
+}
+
+.Des2{
+  position: absolute;
+  font-family: Mrs Eaves OT;
+  width: 130px;
+  font-size: 14pt;
+  color: black;
+  z-index: 5;
+}
+
+#FastgetroffenNearlyHit{
+  display: block;
+  position: absolute;
+  right: 4px;
+  top: -10px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2;
+}
+
+#BlteninderNachtBlossomsintheNight {
+  display: block;
+  position: relative;
+  right: 4px;
+  top: -10px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+  
+.outline{
+  display: block;
+  position: absolute;
+  left: 200px;
+  top: 200px;
+  z-index: 5;
+}
+
+.head {
+  cursor: img src=('Cursor.png'), auto;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+  position: absolute;
+  z-index: 4;
+}
+
+</style>
+
+<script src="sketch.js">
+</script>
+<script .style="position: absolute;
+top: -400px;
+z-index: 3;
+background: yellow;
+color: yellow;
+">
+
+var value = 0;
+function draw() {
+fill(value);
+rect(25, 10, 15, 5);
+}
+
+function mouseDragged() {
+  value = value + 5;
+  if (value > 255) {
+    value = 0;
+  }
+}
+</script>
+
+</body>
+</html>
