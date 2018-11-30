@@ -9,65 +9,10 @@
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css">
     
+    <!-- <link rel="stylesheet" media="screen and (max-width: 754px)" href="desktop_small.css" /> -->
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
-  </head>  
-  <body>
 
-<div id="First">
-      <img id="Untitled" src="Resources/Colorfield.jpg"/>
-      <img id="NearlyHit" src="Resources/NearlyHit-01.png"/>
-      <div class="Header"><p><strong>1940</strong></p></div>
-      <div class="Subheader"><p><strong>UNTITLED</strong></p></div>
-      <div class="Des1">Born 1879 to a family of musicians in Switzerland, Klee soon picked up painting and joined the Kandinsky’s expressionist group, Blaue Reiter (Blue Rider), applying cubist and fauvist principles.</p></div>
-      <div class="Des2">In his early years, Klee found influence in the works of Braque and Picasso. His paintings adopted these trendy styles through formal expressions of buildings and landscapes.</p></div>
-      <div class="Dash" src="https://png2.kisspng.com/20180310/uge/kisspng-woolen-string-theory-yarn-brown-beautiful-ball-of-yarn-5aa439166c2145.7255813515207119584429.png"/>
-     <a class="button_01", href=" https://control-alt-rock.github.io/Bowie-in-Space/Final/Ads/Ad_01.html"></a>
-
-    <div class="dashSet" style="right:380px;top:174px;position:absolute;z-index:15;transform:rotate(-58deg) scale(1.5);;">
-       <div class="dash" style="position:absolute;top:145px;left:-62px;z-index:6;transform:rotate(0deg)">
-      </div>
-      <div class="dash" style="position:absolute;top:185px;left:-66px;z-index:6;transform:rotate(4deg)">
-      </div>
-      <div class="dash" style="position:absolute;top:215px;left:-72px;z-index:6;transform:rotate(4deg)">
-      </div>
-      <div class="dash" style="position:absolute;top:238px;left:-88px;z-index:6;transform:rotate(68deg)">
-      </div>
-      <div class="dash" style="position:absolute;top:225px;left:-110px;z-index:6;transform:rotate(158deg)">
-      </div>
-      <div class="dash" style="position:absolute;top:194px;left:-122px;z-index:6;transform:rotate(152deg)">
-      </div>
-      <div class="dash" style="position:absolute;top:160px;left:-146px;z-index:6;transform:rotate(152deg)">
-      </div>
-      <div class="dash" style="position:absolute;top:120px;left:-162px;z-index:6;transform:rotate(152deg)">
-      </div>
-      <div class="dash" style="position:absolute;top:100px;left:-176px;z-index:6;transform:rotate(152deg)">
-      </div>
-      <div class="dash" style="position:absolute;top:80px;left:-192px;z-index:6;transform:rotate(152deg)">
-      </div>
-      <div class="dash" style="position:absolute;top:60px;left:-200px;z-index:6;transform:rotate(152deg)">
-      </div>
-      <div class="dash" style="position:absolute;top:40px;left:-200px;z-index:6;transform:rotate(68deg)">
-      </div>
-      <div class="dash" style="position:absolute;top:31px;left:-180px;z-index:6;transform:rotate(68deg)">
-      </div>
-      <div class="dash" style="position:absolute;top:24px;left:-160px;z-index:6;transform:rotate(68deg)">
-      </div>
-      <div class="dash" style="position:absolute;top:17px;left:-140px;z-index:6;transform:rotate(68deg)">
-      </div>
-      <div class="dash" style="position:absolute;top:30px;left:-110px;z-index:6;transform:rotate(150deg)">
-      </div>
-      <div class="dash" style="position:absolute;top:48px;left:-100px;z-index:6;transform:rotate(150deg)">
-      </div>
-      <div class="dash" style="position:absolute;top:60px;left:-90px;z-index:6;transform:rotate(150deg)">
-      </div>
-      <div class="dash" style="position:absolute;top:80px;left:-80px;z-index:6;transform:rotate(150deg)">
-      </div>
-      <div class="dash" style="position:absolute;top:100px;left:-70px;z-index:6;transform:rotate(150deg)">
-      </div>
-      <div class="dash" style="position:absolute;top:120px;left:-60px;z-index:6;transform:rotate(150deg)">
-      </div>
-</div>
 
 <style>
 
@@ -86,15 +31,16 @@
   top:278px;
   left: 514px;
   overflow: hidden;
-  width: 14px;
-  height: 14px;
-  background: white;
+  width: 70px;
+  height: 70px;
+  opacity: 0;
   border: 1px;
   border-radius: 100px;
   z-index: 18;
 }
 .button_01.show{
   display: block;
+  opacity: 0;
 }
 #NearlyHit{
   display: none;
@@ -107,11 +53,55 @@
   height: 600px;
   z-index: 4;
   opacity: 0;
-  transition: opacity 100ms;
 }
 #NearlyHit.show{
   /*display: block;*/
   opacity: 1;
+  animation: sprout .5s linear
+}
+@keyframes sprout {
+  from {
+    transform:scale(0.25);;
+  }
+  10% {
+position: absolute;
+right: 300px;
+top: 100px;
+transform:scale(1.25);
+  }
+
+  40% {
+position: absolute;
+right: 400px;
+top: 180px;
+transform:scale(0.5);
+  }
+
+  50% {
+position: absolute;
+right: 300px;
+top: 100px;
+transform:scale(1.125)
+  }
+
+  60% {
+position: absolute;
+right: 400px;
+top: 180px;
+transform:scale(0.75)
+  }
+
+  80% {
+position: absolute;
+right: 380px;
+top: 140px;
+transform:scale(1)
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 .Header{
   display: none;
@@ -208,8 +198,90 @@
 body {
   cursor: url('Resources/Cursor_02.png') -2.3 8, auto;
 }
+
+#onlySmol {
+  color: red;
+  z-index: 18;
+  display:none;
+}
+
+@media only screen and (max-width: 400px) {
+  #onlySmol {
+    display: block;
+
+  }
+}
+
 </style>
     
+
+
+
+  </head>  
+  <body>
+
+<div id="onlySmol">
+
+
+
+</div>
+
+<div id="First">
+      <img id="Untitled" src="Resources/Colorfield.jpg"/>
+      <img id="NearlyHit" src="Resources/NearlyHit-01.png"/>
+      <div class="Header"><p><strong>1940</strong></p></div>
+      <div class="Subheader"><p><strong>UNTITLED</strong></p></div>
+      <div class="Des1">Born 1879 to a family of musicians in Switzerland, Klee soon picked up painting and joined the Kandinsky’s expressionist group, Blaue Reiter (Blue Rider), applying cubist and fauvist principles.</p></div>
+      <div class="Des2">In his early years, Klee found influence in the works of Braque and Picasso. His paintings adopted these trendy styles through formal expressions of buildings and landscapes.</p></div>
+      <div class="Dash" src="https://png2.kisspng.com/20180310/uge/kisspng-woolen-string-theory-yarn-brown-beautiful-ball-of-yarn-5aa439166c2145.7255813515207119584429.png"/>
+     <a class="button_01", href=" https://control-alt-rock.github.io/Bowie-in-Space/Final/Ads/Ad_01.html"></a>
+
+    <div class="dashSet" style="right:380px;top:174px;position:absolute;z-index:15;transform:rotate(-58deg) scale(1.5);;">
+       <div class="dash" style="position:absolute;top:145px;left:-62px;z-index:6;transform:rotate(0deg)">
+      </div>
+      <div class="dash" style="position:absolute;top:185px;left:-66px;z-index:6;transform:rotate(4deg)">
+      </div>
+      <div class="dash" style="position:absolute;top:215px;left:-72px;z-index:6;transform:rotate(4deg)">
+      </div>
+      <div class="dash" style="position:absolute;top:238px;left:-88px;z-index:6;transform:rotate(68deg)">
+      </div>
+      <div class="dash" style="position:absolute;top:225px;left:-110px;z-index:6;transform:rotate(158deg)">
+      </div>
+      <div class="dash" style="position:absolute;top:194px;left:-122px;z-index:6;transform:rotate(152deg)">
+      </div>
+      <div class="dash" style="position:absolute;top:160px;left:-146px;z-index:6;transform:rotate(152deg)">
+      </div>
+      <div class="dash" style="position:absolute;top:120px;left:-162px;z-index:6;transform:rotate(152deg)">
+      </div>
+      <div class="dash" style="position:absolute;top:100px;left:-176px;z-index:6;transform:rotate(152deg)">
+      </div>
+      <div class="dash" style="position:absolute;top:80px;left:-192px;z-index:6;transform:rotate(152deg)">
+      </div>
+      <div class="dash" style="position:absolute;top:60px;left:-200px;z-index:6;transform:rotate(152deg)">
+      </div>
+      <div class="dash" style="position:absolute;top:40px;left:-200px;z-index:6;transform:rotate(68deg)">
+      </div>
+      <div class="dash" style="position:absolute;top:31px;left:-180px;z-index:6;transform:rotate(68deg)">
+      </div>
+      <div class="dash" style="position:absolute;top:24px;left:-160px;z-index:6;transform:rotate(68deg)">
+      </div>
+      <div class="dash" style="position:absolute;top:17px;left:-140px;z-index:6;transform:rotate(68deg)">
+      </div>
+      <div class="dash" style="position:absolute;top:30px;left:-110px;z-index:6;transform:rotate(150deg)">
+      </div>
+      <div class="dash" style="position:absolute;top:48px;left:-100px;z-index:6;transform:rotate(150deg)">
+      </div>
+      <div class="dash" style="position:absolute;top:60px;left:-90px;z-index:6;transform:rotate(150deg)">
+      </div>
+      <div class="dash" style="position:absolute;top:80px;left:-80px;z-index:6;transform:rotate(150deg)">
+      </div>
+      <div class="dash" style="position:absolute;top:100px;left:-70px;z-index:6;transform:rotate(150deg)">
+      </div>
+      <div class="dash" style="position:absolute;top:120px;left:-60px;z-index:6;transform:rotate(150deg)">
+      </div>
+</div>
+
+
 
 
 
@@ -303,14 +375,14 @@ for(let i = 0; i < dashSets.length; i++){
     Face.classList.add('show')
     console.log("Sayhah");
     },
-    1800);
+    2800);
 
     setTimeout(function(){
     let b1 = document.querySelector('.button_01')
     b1.classList.add('show')
     console.log("Idon'tknow");
     },
-    4800);
+    2800);
 }
 }
 }

@@ -21,7 +21,7 @@
       <div class="Subheader"><p><strong>FAST <br />GETROFFEN</strong></p></div>
       <div class="Subheader_02"><p><strong>(NEARLY HIT)</strong></p></div>
       <p class="Des1">Ater his trip to Tunisia, Klee departed from traditional forms, instead gesturing towards color as a representative composition. His expressive titles pushed towards poetic, announcing a prevelant message to audiences, whether comedic or lonesome.</p>
-      <p class="Des2">Ater his trip to Tunisia, Klee departed from traditional forms, instead gesturing towards color as a representative composition. His expressive titles pushed towards poetic, announcing a prevelant message to audiences, whether comedic or lonesome.</p>
+      <p class="Des2">Klee specified in small scale water color paintings and drawings. Works encapsulated tryptich melodies, childlike perspectives and an scorchingly sly whit.</p>
       <a class="button_01", href=" https://control-alt-rock.github.io/Bowie-in-Space/Final/Ads/Ad_01.html"></a>
 
 </div>
@@ -71,15 +71,59 @@
   display: none;
     width: 800px;
     position: absolute;
-    right: -60px;
+    right: -50px;
     top: -40px;
     bottom: 0.5px;
     z-index: 4;
-    transform: rotate(75deg);
 }
+
+
 #BlteninderNachtBlossomsintheNight.show{
   display: block;
+  animation: sprout 3s linear
 }
+
+@keyframes sprout {
+  from {
+    transform:scale(0.01);;
+  }
+
+  10% {
+position: absolute;
+right: 20px;
+top: -70px;
+  }
+
+  40% {
+position: absolute;
+right: 0px;
+top: -65px;
+  }
+
+  50% {
+position: absolute;
+right: -10px;
+top: -60px;
+  }
+
+  60% {
+position: absolute;
+right: -30px;
+top: -55px;
+  }
+
+  80% {
+position: absolute;
+right: -50px;
+top: -50px;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 .Header{
   display: none;
   position: absolute;
@@ -93,16 +137,14 @@
 }
 .button_01{
   display: none;
-  position: absolute;
-  top:278px;
-  left: 1200px;
+  width: 440px;
+    position: absolute;
+    right: 60px;
+    top: 0px;
   overflow: hidden;
-  width: 14px;
-  height: 14px;
-  background: white;
-  opacity: 0.45;
+  height: 300px;
+  opacity: 0;
   border: 1px;
-  border-radius: 100px;
   z-index: 18;
 }
 .button_01.show{
