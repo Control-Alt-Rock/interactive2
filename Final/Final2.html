@@ -34,14 +34,55 @@
   width: 70px;
   height: 70px;
   opacity: 0;
+  color: green;
   border: 1px;
   border-radius: 100px;
   z-index: 18;
 }
 .button_01.show{
   display: block;
-  opacity: 0;
+  animation: glow 4s linear;
 }
+
+@keyframes glow {
+  from {
+  opacity: 1;
+  color: white;
+  transform:scale(0.75);
+  }
+
+  20% {
+position: absolute;
+opacity: .6;
+color: white;
+transform:scale(1)
+  }
+
+  40% {
+opacity: 0;
+transform:scale(0.75)
+  }
+
+  60% {
+position: absolute;
+opacity: .6;
+color: white;
+transform:scale(1)
+  }
+
+  80% {
+opacity: 0;
+transform:scale(0.75)
+  }
+
+  to {
+position: absolute;
+opacity: .6;
+color: white;
+transform:scale(1)
+  }
+}
+
 #NearlyHit{
   display: none;
   transform: scale(1.3);
@@ -93,14 +134,23 @@ transform:scale(0.75)
 
   80% {
 position: absolute;
-right: 380px;
-top: 140px;
-transform:scale(1)
+right: 300px;
+top: 100px;
+transform:scale(1.0065)
+  }
+
+   90% {
+position: absolute;
+right: 360px;
+top: 120px;
+transform:scale(0.9) ease-out
   }
 
   to {
     transform: scale(1);
     opacity: 1;
+    right: 380px;
+    bottom: 140px;
   }
 }
 .Header{
@@ -111,7 +161,7 @@ transform:scale(1)
   font-family: Charter;
   width: 340px;
   font-size: 120pt;
-  color: black;
+  color: rgb( 24, 36, 54);
   z-index: 10;
 }
 .Header.show{
@@ -125,7 +175,7 @@ transform:scale(1)
   font-family: Charter;
   width: 340px;
   font-size: 45pt;
-  color: black;
+  color: rgb( 24, 36, 54);
   z-index: 10;
 }
 .Subheader.show{
@@ -139,7 +189,7 @@ transform:scale(1)
     font-family: Mrs Eaves OT;
     width: 300px;
     font-size: 14pt;
-    color: black;
+    color: rgb( 24, 36, 54);
     z-index: 15;
 }
 .Des2.show{
@@ -153,7 +203,7 @@ transform:scale(1)
   font-family: Mrs Eaves OT;
   width: 340px;
   font-size: 14pt;
-  color: black;
+  color: rgb( 24, 36, 54);
   z-index: 14;
 }
 .Des1.show{
@@ -210,6 +260,9 @@ body {
     display: block;
 
   }
+  #big {
+    display: none;
+  }
 }
 
 </style>
@@ -217,15 +270,61 @@ body {
 
 
 
-  </head>  
-  <body>
+</head>  
+<body>
 
-<div id="onlySmol">
+  <div id="onlySmol">
+<img id="Un" src="Resources/Colorfield.jpg"/>
+<div class="Header3"><p><strong>1940</strong></p></div>
+<div class="Subheader4"><p><strong>UNTITLED</strong></p></div>
+<div class="Des3">Born 1879 to a family of musicians in Switzerland, Klee soon picked up painting and joined the Kandinsky’s expressionist group, Blaue Reiter (Blue Rider), applying cubist and fauvist principles.</p></div>
+<p class="Des4">Ater his trip to Tunisia, Klee departed from traditional forms, instead gesturing towards color as a representative composition. His expressive titles pushed towards poetic, announcing a prevelant message to audiences, whether comedic or lonesome.</p>
 
+<style>
 
+#Un{
+  width: 80px;
+  height: 60px;
+  z-index: 20px;
+}
+
+</style>
+
+<img id="Near" src="Resources/ReallyNear.png"/>
+<div class="Header3"><p><strong>1928</strong></p></div>
+<div class="Subheader4"><p><strong>FAST <br />GETROFFEN</strong></p></div>
+<div class="Subheader_03"><p><strong>(NEARLY HIT)</strong></p></div>
+<p class="Des3">Ater his trip to Tunisia, Klee departed from traditional forms, instead gesturing towards color as a representative composition. His expressive titles pushed towards poetic, announcing a prevelant message to audiences, whether comedic or lonesome.</p>
+<p class="Des4">Klee specified in small scale drawings and water color paintings. Works encapsulated tryptich melodies, childlike perspectives and an scorchingly sly whit.</p>
+
+<style>
+
+#Near{
+  width: 80px;
+  height: 60px;
+  z-index: 20px;
+
+</style>
+
+<img id="Blossom" src="Resources/Blossom.png"/></div>
+<p class="Des3">Klee produced a prolific 10,000 works while teaching at the Bauhaus in both Weimar and Dessau. The artist strayed from drawing off  model, instead assimilating pieces from a series of geometric components. Virtuously, to this day, he is considered a crucial innovator of abstraction in the early 20th century.</p>
+<div class="Header3"><p><strong>1930</strong></p></div>
+<div class="Subheader4"><p><strong>Blten in dër Nacht</strong></p></div>
+<div class="Subheader_03"><p><strong>Blossoms in the Night</strong></p></div>
+
+<style>
+
+#Blosson{
+  width: 80px;
+  height: 60px;
+  z-index: 20px;
+}
+</style>
 
 </div>
+  </div>
 
+<div id='big'>
 <div id="First">
       <img id="Untitled" src="Resources/Colorfield.jpg"/>
       <img id="NearlyHit" src="Resources/NearlyHit-01.png"/>
@@ -281,7 +380,7 @@ body {
       </div>
 </div>
 
-
+</div>
 
 
 

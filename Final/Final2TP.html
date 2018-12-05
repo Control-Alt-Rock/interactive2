@@ -15,17 +15,20 @@
   <body>
 
 <div id="Third">
-  <p class="Des1">Klee produced a prolific 10,000 works while teaching at the Bauhaus of both Weimar and Dessau. Klee strayed from using a model and stands as a crucial pioneer of abstraction in the early 20th century.</p>
+  <p class="Des1">Klee produced a prolific 10,000 works while teaching at the Bauhaus in both Weimar and Dessau. The artist strayed from drawing off  model, instead assimilating pieces from a series of geometric components. Virtuously, to this day, he is considered a crucial innovator of abstraction in the early 20th century.</p>
+   <div class="Header"><p><strong>1930</strong></p></div>
+   <div class="Subheader"><p><strong>Blten in dër Nacht</strong></p></div>
+   <div class="Subheader_02"><p><strong>(Blossoms in the Night)</strong></p></div>
       <img id="BlteninderNachtBlossomsintheNight" src="Resources/Blossom.png"/></div>
 
-    <div class="dashSet" style="right:204px;top:240px;position:absolute;z-index:6;transform:rotate(-34deg) scale(1.5);;">
-      <div class="dash" style="position:absolute;top:70px;left:64px;z-index:6;transform:rotate(0deg)">
+    <div class="dashSet" style="left: 140px; top: 180px;position:absolute;z-index:6;transform:rotate(-34deg) scale(1.5);;">
+      <div class="dash" style="position:absolute;top:70px;left:54px;z-index:6;transform:rotate(-4deg)">
       </div>
-      <div class="dash" style="position:absolute;top:85px;left:36px;z-index:6;transform:rotate(0deg)">
+      <div class="dash" style="position:absolute;top:110px;left:56px;z-index:6;transform:rotate(-24deg)">
       </div>
-      <div class="dash" style="position:absolute;top:100px;left:40px;z-index:6;transform:rotate(0deg)">
+      <div class="dash" style="position:absolute;top:160px;left:80px;z-index:6;transform:rotate(-30deg)">
       </div>
-      <div class="dash" style="position:absolute;top:115px;left:44px;z-index:6;transform:rotate(0deg)">
+      <div class="dash" style="position:absolute;top:206px;left:150px;z-index:6;transform:rotate(-54deg)">
       </div>
       <div class="dash" style="position:absolute;top:130px;left:48px;z-index:6;transform:rotate(0deg)">
       </div>
@@ -67,12 +70,12 @@
 .Header{
   display: none;
   position: absolute;
-  left: 738px;
-  top: 100px;
+  left: 860px;
+  top: 340px;
   font-family: Charter;
   width: 340px;
   font-size: 120pt;
-  color: black;
+  color: white;
   z-index: 10;
 }
 .Header.show{
@@ -81,15 +84,29 @@
 .Subheader{
   display: none;
   position: absolute;
-  left: 208px;
+  left: 140px;
   top: 180px;
   font-family: Charter;
   width: 340px;
   font-size: 45pt;
-  color: black;
+  color: white;
   z-index: 10;
 }
 .Subheader.show{
+  display: block;
+}
+.Subheader_02{
+  display: none;
+  position: absolute;
+  left: 140px;
+  top: 336px;
+  font-family: Charter;
+  width: 800px;
+  font-size: 30pt;
+  color: white;
+  z-index: 10;
+}
+.Subheader_02.show{
   display: block;
 }
 .Des2{
@@ -100,7 +117,7 @@
     font-family: Mrs Eaves OT;
     width: 300px;
     font-size: 14pt;
-    color: black;
+    color: white;
     z-index: 15;
 }
 .Des2.show{
@@ -109,12 +126,12 @@
 .Des1{
   display: none;
   position: absolute;
-  left: 210px;
-  top: 128px;
+  left: 140px;
+  top: 460px;
   font-family: Mrs Eaves OT;
   width: 340px;
   font-size: 14pt;
-  color: black;
+  color: white;
   z-index: 14;
 }
 .Des1.show{
@@ -197,6 +214,7 @@ for(let i = 0; i < dashSets.length; i++){
         let none = document.querySelector('.dashSet.complete')
         let Sub = document.querySelector('.Header.show')
         let Head = document.querySelector('.Subheader.show')
+        let Head2 = document.querySelector('.Subheader_02.show')
         let Face = document.querySelector('#NearlyHit')
         let b1 = document.querySelector('.button_01')
 
@@ -213,7 +231,7 @@ for(let i = 0; i < dashSets.length; i++){
   document.getElementById('BlteninderNachtBlossomsintheNight').animate([
   // keyframes
   { transform: 'scale(1) translateY(0px) translateX(0px)' }, 
-  { transform: 'scale(4) translateY(-200px) translateX(-120px)'}
+  { transform: 'scale(3) translateY(100px) translateX(348px)'}
 ], { 
   // timing options
   duration: 1800,
@@ -240,6 +258,13 @@ for(let i = 0; i < dashSets.length; i++){
     let Head = document.querySelector('.Subheader')
     Head.classList.add('show')
     console.log("Yousay");
+    },
+    1800);
+
+   setTimeout(function(){
+    let Head2 = document.querySelector('.Subheader_02')
+    Head2.classList.add('show')
+    console.log("Why");
     },
     1800);
 
