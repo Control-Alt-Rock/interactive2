@@ -13,7 +13,7 @@
     <script src="/script.js" defer></script>
   </head>  
   <body>
-
+<div id='big'>
 <div id="Second">
       <img id="FastgetroffenNearlyHit" src="Resources/ReallyNear.png"/>
       <img id="BlteninderNachtBlossomsintheNight" src="Resources/Flowers-01.png"/>
@@ -23,7 +23,7 @@
       <p class="Des1">Ater his trip to Tunisia, Klee departed from traditional forms, instead gesturing towards color as a representative composition. His expressive titles pushed towards poetic, announcing a prevelant message to audiences, whether comedic or lonesome.</p>
       <p class="Des2">Klee specified in small scale drawings and water color paintings. Works encapsulated tryptich melodies, childlike perspectives and an scorchingly sly whit.</p>
       <a class="button_01", href=" https://control-alt-rock.github.io/Bowie-in-Space/Final/Ads/Ad_01.html"></a>
-
+</div>
 </div>
 
     <div class="dashSet" style="right:330px;top:104px;position:absolute;z-index:6;transform:rotate(98deg) scale(1.5);;">
@@ -58,6 +58,11 @@
 
 
 <style>
+
+body{
+  overflow: hidden;
+}
+
 #FastgetroffenNearlyHit{
   display: block;
   position: fixed;
@@ -67,6 +72,7 @@
   height: 100vh;
   z-index: 3;
 }
+
 #BlteninderNachtBlossomsintheNight{
   display: none;
     width: 800px;
@@ -77,10 +83,112 @@
     z-index: 4;
 }
 
+#dot1{
+opacity: 0;
+position: absolute;
+right: 320px;
+top: 20px;
+width: 4px;
+height: 10px;
+background: red;
+z-index: 24;
+animation: blick 10s linear;
+transform: rotate(-30deg);
+}
+
+@keyframes blick{
+  from {
+    background: red;
+    display: block;
+    opacity: 1;
+  }
+
+  50% {
+    background: blue;
+  }
+
+  90% {
+    background: red;
+    opacity: 1;
+  }
+
+to {
+    opacity: 0;
+  }
+}
+
+#dot2{
+opacity: 0;
+position: absolute;
+right: 330px;
+top: 0px;
+width: 4px;
+height: 10px;
+background: red;
+z-index: 24;
+animation: blicko 9s linear;
+transform: rotate(-30deg);
+}
+
+@keyframes blicko{
+  from {
+    background: red;
+    opacity: 1;
+  }
+
+  45% {
+    background: blue;
+  }
+
+  85% {
+    background: red;
+    opacity: 1;
+  }
+
+to {
+    background: blue;
+    opacity: 0;
+  }
+}
+
+#dot3{
+opacity: 0;
+position: absolute;
+right: 340px;
+top: -20px;
+width: 4px;
+height: 10px;
+background: red;
+z-index: 24;
+animation: blicky 8s linear;
+transform: rotate(-30deg);
+}
+
+@keyframes blicky{
+  from {
+    opacity: 1;
+    background: red;
+  }
+
+  40% {
+    background: blue;
+  }
+
+  80% {
+    background: red;
+    opacity: 1;
+  }
+
+to {
+    background: blue;
+    opacity: 0;
+  }
+}
+
 
 #BlteninderNachtBlossomsintheNight.show{
   display: block;
-  animation: sprout 3s linear
+  animation: sprout 1.6s ease-in-out;
 }
 
 @keyframes sprout {
@@ -186,7 +294,7 @@ top: -50px;
 .Des1{
   display: none;
   position: absolute;
-  left: 40px;
+  left: 80px;
   top: 364px;
   font-family: Mrs Eaves OT;
   width: 328px;
@@ -242,10 +350,62 @@ top: -50px;
 body {
   cursor: url('Resources/Cursor_02.png') -2.3 8, auto;
 }
+#onlySmol {
+  color: red;
+  z-index: 18;
+  display:none;
+}
+
+@media only screen and (max-width: 400px) {
+  #onlySmol {
+    display: block;
+
+  }
+  #big {
+    display: none;
+  }
+}
 </style>
     
+</head>  
+</div>
+<body>
+<div id="onlySmol">
 
+<img id="Near" src="Resources/ReallyNear.png"/>
+<div class="Header3"><p><strong>1928</strong></p></div>
+<div class="Subheader4"><p><strong>FAST <br />GETROFFEN</strong></p></div>
+<div class="Subheader_03"><p><strong>(NEARLY HIT)</strong></p></div>
+<p class="Des3">Ater his trip to Tunisia, Klee departed from traditional forms, instead gesturing towards color as a representative composition. His expressive titles pushed towards poetic, announcing a prevelant message to audiences, whether comedic or lonesome.</p>
+<p class="Des4">Klee specified in small scale drawings and water color paintings. Works encapsulated tryptich melodies, childlike perspectives and an scorchingly sly whit.</p>
 
+<style>
+
+#Near{
+  width: 80px;
+  height: 60px;
+  z-index: 20px;
+}
+.Header3{
+  width: 80px;
+  height: 60px;
+  z-index: 20px;
+}
+.Subheader4{
+
+}
+.Subheader3{
+  
+}
+.Des3{
+
+}
+.Des4{
+
+}
+
+</style>
+</div>
 
 <script>
   let dashSets = document.querySelectorAll('.dashSet')
