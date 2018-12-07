@@ -24,6 +24,16 @@
       <p class="Ex12"><strong>MARCH 13,</strong><br />2000</style></p>
       <p class="Ex2"><strong>Paul Klee Signs of Life</strong><br /><style> {font-size: 8pt} </style>SF MOMA 151 3rd St, San Francisco, CA 94103<br />(415) 357-4000<style> {font-size: 8pt;} </style></p>
       <img id="BlteninderNachtBlossomsintheNight" src="Resources/Blossom.png"/></div>
+      <div id="dots">
+      <div id="dot1"></div>
+      <div id="dot2"></div>
+      <div id="dot3"></div>
+</div>
+    <div class="Snippers">
+      <p class="Snip1">SNIP</p>
+      <p class="Snip2">SNIP</p>
+      <p class="Snip3">SNIP</p>
+</div>
      
 
     <div class="dashSet" style="left: 140px; top: 180px;position:absolute;z-index:6;transform:rotate(-34deg) scale(1.5);;">
@@ -131,6 +141,282 @@ body{
     color: rgb(255, 230, 178);
     z-index: 15;
 }
+
+.Snippers{
+font-size: 12pt;
+color: yellow;
+opacity: 1;
+position: absolute;
+left: -106px;
+top: -40px;
+transform: rotate(55deg);
+}
+
+.Snip1{
+animation: SO 1s linear;
+position: absolute;
+left: 0px;
+opacity: 0;
+transform: rotate(12deg);
+}
+
+@keyframes SO{
+ from {
+    opacity: 1;
+  }
+
+90% {
+  opacity: 1;
+}
+
+to {
+    opacity: 0;
+  }
+}
+.Snip2{
+animation: SP 1.5s linear;
+opacity: 0;
+position: absolute;
+left: 40px;
+top: -2px;
+transform: rotate(-16deg);
+}
+
+@keyframes SP{
+ from {
+    opacity: 1;
+  }
+
+90% {
+  opacity: 1;
+}
+
+to {
+    opacity: 0;
+  }
+}
+
+.Snip3{
+animation: ST 2s linear;
+opacity: 0;
+position: absolute;
+left: 86px;
+top: 2px;
+transform: rotate(4deg);
+}
+
+@keyframes ST{
+ from {
+    opacity: 1;
+  }
+
+90% {
+  opacity: 1;
+}
+
+to {
+    opacity: 0;
+  }
+}
+
+#dots{
+position: absolute;
+right: 320px;
+top: 24px;
+}
+
+#dot1{
+opacity: 0;
+position: absolute;
+right: 320px;
+top: 24px;
+width: 4px;
+height: 4px;
+background: red;
+z-index: 24;
+animation: blick 10s linear;
+transform: rotate(-30deg);
+}
+
+@keyframes blick{
+  from {
+    background: red;
+    display: block;
+    opacity: 1;
+  }
+
+ from {
+    opacity: 1;
+    background: red;
+  }
+
+ 10% {
+    background: yellow;
+  }
+
+20% {
+    background: red;
+  }
+
+30% {
+    background: yellow;
+  }
+
+40% {
+    background: red;
+  }
+
+  50% {
+    background: yellow;
+  }
+
+60% {
+    background: red;
+  }
+
+  70% {
+    background: yellow;
+  }
+
+80% {
+    background: red;
+  }
+
+  90% {
+    background: red;
+    opacity: 1;
+  }
+
+to {
+    background: yellow;
+    opacity: 0;
+  }
+}
+
+#dot2{
+opacity: 0;
+position: absolute;
+right: 330px;
+top: 8px;
+width: 4px;
+height: 4px;
+background: red;
+z-index: 24;
+animation: blicko 9s linear;
+transform: rotate(-30deg);
+}
+
+@keyframes blicko{
+ from {
+    opacity: 1;
+    background: red;
+  }
+
+ 10% {
+    background: yellow;
+  }
+
+20% {
+    background: red;
+  }
+
+30% {
+    background: yellow;
+  }
+
+40% {
+    background: red;
+  }
+
+  50% {
+    background: yellow;
+  }
+
+60% {
+    background: red;
+  }
+
+  70% {
+    background: yellow;
+  }
+
+80% {
+    background: red;
+  }
+
+  90% {
+    background: red;
+    opacity: 1;
+  }
+
+to {
+    background: yellow;
+    opacity: 0;
+  }
+}
+
+#dot3{
+opacity: 0;
+    position: absolute;
+    right: 338px;
+    top: -4px;
+    width: 4px;
+    height: 4px;
+    background: red;
+    z-index: 24;
+    animation: blicky 8s linear;
+    transform: rotate(-30deg);
+}
+
+@keyframes blicky{
+  from {
+    opacity: 1;
+    background: red;
+  }
+
+ 10% {
+    background: yellow;
+  }
+
+20% {
+    background: red;
+  }
+
+30% {
+    background: yellow;
+  }
+
+40% {
+    background: red;
+  }
+
+  50% {
+    background: yellow;
+  }
+
+60% {
+    background: red;
+  }
+
+  70% {
+    background: yellow;
+  }
+
+80% {
+    background: red;
+  }
+
+  90% {
+    background: red;
+    opacity: 1;
+  }
+
+to {
+    background: yellow;
+    opacity: 0;
+  }
+}
+
 .Des2.show{
   display: block;
 }
