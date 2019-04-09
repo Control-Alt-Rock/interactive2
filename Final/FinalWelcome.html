@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Start</title>
+    <meta charset="utf-8">
+    
+    <div id="myGrid">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+
+<h1>A DRAWING IS SIMPLY <br />A LINE GOING FOR A WALK</h1>
+
+<p>
+
+    As all artists share beginnings not so different from our own, a prominantly revered Paul Klee ventured on a journey of discovery. A German painter born December of 1879, Klee recipricated in a fruitful relationship with art. Practicing as a boy, while attending school, he established an independent practice painting outside of formal education. Inclined in both music, written critical analysis and painting, Klee sought work in all fields, yet decided on a college education in Munich Switzerland.<br /><br />
+
+    In relatively isolated early experiments, Klee inscribed satiricle line etchings. Works such as Aged Phoenix from 1905 displayed a stalky, misconstrued body topped with a craning head of...well a Phoenix. Feathers dispersed sparsely, skin sagged and eyes swelled into bloated craters, contrary to the beautiful rebirth we associate with the mythical creature. This piece makes a mockery an openly rebels against formal conceptions of beauty, a theme attributed alongside the remained of his work spanning throught his career.
+
+    After exposure to Picasso and Braque's Cubism
+
+
+</p>
+
+</head>
+<body>
+
+<style>
+
+#myGrid {
+        margin:100px;
+        
+        display: grid;
+        grid-template-columns: repeat(3, 3fr);
+        grid-template-rows: 40px 60px 800px;
+        grid-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+h1{
+  grid-column-start: 1;
+  grid-column-end: 3;
+  position: relative;
+  top: 130px;
+  line-height: 0.98em;
+  font-family: Charter;
+  font-size: 64px;
+  color: rgb( 24, 36, 54);
+  z-index: 10;
+}
+
+p{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  position: relative;
+  top: 364px;
+  font-family: Mrs Eaves OT;
+  width: 600px;
+  height: 200px;
+  font-size: 26px;
+  line-height: 1.3em;
+  color: rgb( 24, 36, 54);
+  z-index: 12;
+}
+
+</style>
+
+<script>
+var p = $( "p:first" );
+$( "p:last" ).text("As all artists share beginnings not so different from our own, a prominantly revered Paul Klee ventured on a journey of discovery. A German painter born December of 1879, Klee recipricated in a fruitful relationship with art. Practicing as a boy, while attending school, he established an independent practice painting outside of formal education. Inclined in both music, written critical analysis and painting, Klee sought work in all fields, yet decided on a college education in Munich Switzerland.<br /><br />In relatively isolated early experiments, Klee inscribed satiricle line etchings. Works such as Aged Phoenix from 1905 displayed a stalky, misconstrued body topped with a craning head of...well a Phoenix. Feathers dispersed sparsely, skin sagged and eyes swelled into bloated craters, contrary to the beautiful rebirth we associate with the mythical creature. This piece makes a mockery an openly rebels against formal conceptions of beauty, a theme attributed alongside the remained of his work spanning throught his career.After exposure to Picasso and Braque's Cubism:" + p.scrollLeft() );
+</script>
