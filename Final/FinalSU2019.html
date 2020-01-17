@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Children</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <p class="Caption_Header"><strong>SIGNS OF LIFE</strong></p>
+    <img id="Caption_Subheader" src="Resources/Info.png"/>
+    <img id="dot1" src="Resources/InteractiveSymbol_P1.png"/>
+
+<div class="ColorBlock"></div>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- <link rel="stylesheet" media="screen and (max-width: 754px)" href="desktop_small.css" /> -->
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+
+
+<style>
+
+body{
+  overflow: hidden;
+}
+
+#Untitled {
+  display: block;
+  position: fixed;
+  right: 0.5px;
+  bottom: .75in;
+  width: 100vw;
+  height: 100vh;
+
+  z-index: 3;
+}
+.button_01{
+  display: none;
+  position: absolute;
+  top:120px;
+  left: 420px;
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+  opacity: 0;
+  color: green;
+  border: 1px;
+  border-radius: 100px;
+  z-index: 18;
+}
+.button_01.show{
+  display: block;
+  animation: glow 4s linear;
+}
+
+.Caption_Header{
+  font-family: Charter;
+  font-size: 26pt;
+  color: black;
+  position: absolute;
+  bottom: 54px;
+  right: 240px;
+  z-index: 5000;
+}
+
+#Caption_Subheader{
+  position: absolute;
+  bottom: 34px;
+  right: -40px;
+  width: 200px;
+  z-index: 5000;
+}
+
+.ColorBlock{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  display: block;
+  background: white;
+  width: 1600px;
+  height: 1.5in;
+  z-index: 4000;
+}
+
+#dot1{
+opacity: 100;
+position:absolute; 
+right:420px;
+top:380px; 
+z-index:15;
+transform-origin:50% 50%;
+  transform:scale(3);
+  width:15px;
+  height:15px;
+  background-size: 20px 20px;
+  background-position: -40px;
+  animation: blick 2s infinite ease-in-out;
+z-index: 24;
+}
+
+#dot1.complete {
+opacity: 0;
+display: none;
+}
+
+@keyframes blick{
+  from {
+    display: block;
+    right:420px;
+    top:380px; 
+  }
+
+ from {
+    right:420px;
+    top:380px; 
+  }
+
+ 10% {
+    
+  }
+
+20% {
+  }
+
+30% {
+  }
+
+40% {
+  }
+
+  50% {
+    right:400px;
+    top:402px; 
+  }
+
+60% {
+    right:400px;
+    top:402px; 
+  }
+
+  70% {
+    right:400px;
+    top:402px; 
+  }
+
+80% {
+  }
+
+  90% {
+    
+  }
+
+to {
+  opacity: 1;
+  }
+}
+
+#NearlyHit{
+  display: none;
+  transform: scale(1.3);
+  display: block;
+  position: fixed;
+  right: 380px;
+  bottom: 140px;
+  width: 900px;
+  height: 600px;
+  z-index: 4;
+  opacity: 0;
+}
+#NearlyHit.show{
+  /*display: block;*/
+  opacity: 1;
+  animation: sprout .4s linear
+}
+@keyframes sprout {
+  from {
+    transform:scale(1);;
+  }
+  10% {
+transform:scale(0.25);
+  }
+
+  40% {
+transform:scale(0.5);
+  }
+
+  50% {
+transform:scale(0.75)
+  }
+
+  60% {
+transform:scale(0.85)
+  }
+
+  80% {
+  }
+
+   90% {
+transform:scale(1);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+.Header{
+  display: none;
+  position: absolute;
+  left: 1000px;
+  top: 70px;
+  font-family: Charter;
+  width: 340px;
+  font-size: 120pt;
+  color: rgb( 24, 36, 54);
+  z-index: 10;
+}
+.Header.show{
+  display: block;
+}
+.Subheader{
+  display: none;
+  position: absolute;
+  left: 354px;
+  top: -8px;
+  font-family: Charter;
+  width: 340px;
+  font-size: 45pt;
+  color: rgb( 24, 36, 54);
+  z-index: 10;
+}
+.Subheader.show{
+  display: block;
+}
+.Des2{
+    display: none;
+    position: absolute;
+    left: 1028px;
+    top: 411px;
+    font-family: Mrs Eaves OT;
+    width: 300px;
+    font-size: 14pt;
+    color: rgb( 24, 36, 54);
+    z-index: 15;
+}
+
+.Des2.show{
+  display: block;
+}
+
+.Des1{
+  display: none;
+  position: absolute;
+  left: 360px;
+  top: 134px;
+  font-family: Mrs Eaves OT;
+  width: 340px;
+  font-size: 14pt;
+  color: rgb( 24, 36, 54);
+  z-index: 14;
+}
+
+.Des1.show{
+  display: block;
+}
+
+.outline{
+  display: block;
+  position: absolute;
+  left: 200px;
+  top: 200px;
+  z-index: 5;
+}
+
+.dashSet {
+  position:absolute; 
+}
+.dashSet.complete {
+  display: none;
+}
+.dash {
+  display: block;
+  position:absolute;
+  transform-origin:50% 50%;
+  transform:scale(3);
+  width:20px;
+  height:20px;
+  background:url("Resources/InteractiveSymbol_P2.png");
+  background-size: 20px 20px;
+  background-position: -40px;
+}
+.dash.complete {
+  background:url("Resources/InteractiveSymbol_P2.png");
+  background-size: 20px 60px;
+  background-position: -40px;
+}
+body {
+  cursor: url('Resources/Cursor_02.png') -2.3 8, auto !important;
+  cursor: url('Resources/Cursor_02.png'), pointer !important;  
+
+}
+
+#onlySmol {
+  color: red;
+  z-index: 18;
+  display:none;
+}
+
+@media only screen and (max-width: 400px) {
+  #onlySmol {
+    display: block;
+
+  }
+  #big {
+    display: none;
+  }
+}
+
+</style>
+    
+
+
+
+</head>  
+<body>
+
+<div id="onlySmol">
+<img id="Un" src="Resources/Colorfield.jpg"/>
+<div class="Header3"><p><strong>1940</strong></p></div>
+<div class="Subheader4"><p><strong>UNTITLED</strong></p></div>
+<div class="Des3">Born 1879 to a family of musicians in Switzerland, Klee soon picked up painting and joined the Kandinsky’s expressionist group, Blaue Reiter (Blue Rider), applying cubist and fauvist principles.</p></div>
+<p class="Des4">Ater his trip to Tunisia, Klee departed from traditional forms, instead gesturing towards color as a representative composition. His expressive titles pushed towards poetic, announcing a prevelant message to audiences, whether comedic or lonesome.</p>
+
+<style>
+
+#Un{
+  width: 300px;
+  height: 150px;
+  z-index: 20px;
+}
+
+.Header3{
+  font-family: Charter;
+  font-size: 45px;
+  position: absolute;
+}
+
+.Subheader4{
+  font-family: Charter;
+  font-size: 45px;
+  position: absolute;
+}
+
+.Des3
+</style>
+</div>
+  
+  </div>
+
+<div id='big'>
+<div id="First">
+      <img id="Untitled" src="Resources/Colorfield.jpg"/>
+      <img id="NearlyHit" src="Resources/NearlyHit-01.png"/>
+      <div class="Header"><p><strong>1940</strong></p></div>
+      <div class="Subheader"><p><strong>UNTITLED</strong></p></div>
+      <div class="Des1">Born 1879 to a family of musicians in Switzerland, Klee soon picked up painting and joined the Kandinsky’s expressionist group, Blaue Reiter (Blue Rider), applying cubist and fauvist principles.</p></div>
+      <div class="Des2">In his early years, Klee found influence in the works of Braque and Picasso. His paintings adopted these trendy styles through formal expressions of buildings and landscapes.</p></div>
+      <div class="Dash" src="Resources/InteractiveSymbol_P2.png"/>
+     <a class="button_01", href="https://control-alt-rock.github.io/interactive2/Final/Final2SPSU2019.html"></a>
+
+    <div class="dashSet" style="position:absolute; right:330px;top:234px; z-index:15;;">
+      <div class="dash" style="position:absolute;top:185px;left:-66px;z-index:6;">
+      </div>
+
+      <div id="dot1"></div>
+
+</div>
+
+</div>
+
+
+
+<script>
+  let dashSets = document.querySelectorAll('.dashSet')
+  let dot1 = document.querySelectorAll('.Dot1')
+
+for(let i = 0; i < dashSets.length; i++){
+  let theseDashes = dashSets[i].querySelectorAll('.dash')
+  
+  let dashesComplete = 0
+  let hasBeenDone = false
+  
+  for(let d = 0; d< theseDashes.length; d++){
+    theseDashes[d].addEventListener('pointerenter',function(){
+      
+      
+      // if this dash isn't complete, we're just
+      // checking it off, so we should add to our dash count
+   if(!theseDashes[d].classList.contains('complete')){
+        dashesComplete ++
+      }
+      
+      // a dash done
+   theseDashes[d].classList.add('complete')
+      
+   if(dashesComplete == theseDashes.length){
+   // all dashes in this set done
+   // dashSets[i].classList.add('complete')
+        if(!hasBeenDone) dothiswhendone()
+          hasBeenDone = true
+        let un = document.querySelector('#Untitled')
+        let Des1 = document.querySelector('.Des1')
+        let Des2 = document.querySelector('.Des2')
+        let Dot1 = document.querySelector('#dot1.complete')
+        let none = document.querySelector('.dashSet.complete')
+        let Sub = document.querySelector('.Header.show')
+        let Head = document.querySelector('.Subheader.show')
+        let Face = document.querySelector('#NearlyHit')
+        let b1 = document.querySelector('.button_01')
+      }
+    })
+
+  function dothiswhendone(){
+
+
+
+    dashSets[0].style.display ='none'
+   
+
+  document.getElementById("Untitled").animate([
+  // keyframes
+  { transform: 'scale(1) translateY(0px) translateX(0px)' }, 
+  { transform: 'scale(4) translateY(-200px) translateX(-120px)'}
+], { 
+  // timing options
+  duration: 1800,
+  iterations: 1,
+  fill:'forwards'
+
+})
+
+setTimeout(function(){
+    let Dot1 = document.querySelector('#dot1')
+    Dot1.classList.add('complete')
+    console.log("Aye");
+    },
+    0);
+
+   setTimeout(function(){
+    let Des1 = document.querySelector('.Des1')
+    Des1.classList.add('show')
+    console.log("Goodbye");
+    },
+    1800);
+
+   setTimeout(function(){
+    let Des2 = document.querySelector('.Des2')
+    Des2.classList.add('show')
+    console.log("OhnoOhno");
+    },
+    1800);
+
+   setTimeout(function(){
+    let Head = document.querySelector('.Subheader')
+    Head.classList.add('show')
+    console.log("Yousay");
+    },
+    1800);
+
+    setTimeout(function(){
+    let Sub = document.querySelector('.Header')
+    Sub.classList.add('show')
+    console.log("Isay");
+    },
+    1800);
+
+    setTimeout(function(){
+    let Face = document.querySelector('#NearlyHit')
+    Face.classList.add('show')
+    console.log("Sayhah");
+    },
+    2800);
+
+    setTimeout(function(){
+    let b1 = document.querySelector('.button_01')
+    b1.classList.add('show')
+    console.log("Idon'tknow");
+    },
+    2800);
+}
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>artistic ability</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body>
+<div id='big'>
+<div id="Third">
+  <p class="Des1">Klee produced a prolific 10,000 works while teaching at the Bauhaus in both Weimar and Dessau. The artist strayed from drawing off  model, instead assimilating pieces from a series of geometric components. Virtuously, to this day, he is considered a crucial innovator of abstraction in the early 20th century.</p>
+   <div class="Header"><p><strong>1930</strong></p></div>
+   <div class="Subheader"><p><strong>BLTEN IN DËR NACHT</strong></p></div>
+   <div class="Subheader_02"><p><strong>(BLOSSOMS IN THE NIGHT)</strong></p></div>
+     
+      <img id="BlteninderNachtBlossomsintheNight" src="Resources/Blossom.png"/></div>
+
+      <p class="Caption_Header"><strong>SIGNS OF LIFE</strong></p>
+    <img id="Caption_Subheader" src="Resources/Info.png"/>
+    
+    <div class="ColorBlock"></div>
+
+      <div id="dot1"></div>
+</div>
+</div>
+     
+
+    <div class="dashSet" style="left: 140px; top: 240px;position:absolute;z-index:6;">
+      <div class="dash" style="position:absolute;">
+
+        <img id="dot1" src="Resources/InteractiveSymbol_P1.png"/>
+      </div>
+      </div>
+      </div>
+     
+</div>
+
+<style>
+
+body{
+  overflow: hidden;
+}
+
+#BlteninderNachtBlossomsintheNight {
+ display: block;
+  position: fixed;
+  right: 0.5px;
+  bottom: 0.5px;
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+}
+.Header{
+  display: none;
+  position: absolute;
+  left: 940px;
+  top: 260px;
+  font-family: Charter;
+  width: 340px;
+  font-size: 120pt;
+  color: rgb(255, 230, 178);
+  z-index: 10;
+}
+.Header.show{
+  display: block;
+}
+.Subheader{
+  display: none;
+  position: absolute;
+  left: 100px;
+  top: 20px;
+  font-family: Charter;
+  line-height: 1.02;
+  width: 340px;
+  font-size: 45pt;
+  color: rgb(255, 230, 178);
+  z-index: 10;
+}
+.Subheader.show{
+  display: block;
+}
+.Subheader_02{
+  display: none;
+  position: absolute;
+  left: 94px;
+  top: 162px;
+  font-family: Charter;
+  width: 800px;
+  font-size: 30pt;
+  color: rgb(255, 230, 178);
+  z-index: 10;
+}
+.Subheader_02.show{
+  display: block;
+}
+.Des2{
+    display: none;
+    position: absolute;
+    left: 760px;
+    top: 281px;
+    font-family: Mrs Eaves OT;
+    width: 300px;
+    font-size: 14pt;
+    line-height: 1.2em;
+    color: rgb(255, 230, 178);
+    z-index: 15;
+}
+.Snippers{
+font-size: 12pt;
+color: yellow;
+opacity: 1;
+position: absolute;
+left: -106px;
+top: -40px;
+transform: rotate(55deg);
+}
+
+
+.Caption_Header{
+  font-family: Charter;
+  font-size: 26pt;
+  color: black;
+  position: absolute;
+  bottom: 54px;
+  right: 400px;
+  z-index: 5000;
+}
+
+#Caption_Subheader{
+  position: absolute;
+  bottom: 34px;
+  right: 120px;
+  width: 200px;
+  z-index: 5000;
+}
+
+.ColorBlock{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  display: block;
+  background: white;
+  width: 1600px;
+  height: 1.5in;
+  z-index: 4000;
+}
+
+.dash {
+  display: block;
+  position:absolute;
+  transform-origin:50% 50%;
+  transform:scale(3);
+  width:20px;
+  height:20px;
+  background:url("Resources/InteractiveSymbol_P2.png");
+  background-size: 20px 20px;
+  background-position: -40px;
+}
+
+.dash.complete {
+  background:url("Resources/InteractiveSymbol_P2.png");
+  background-size: 20px 60px;
+  background-position: -40px;
+}
+
+.dashSet {
+  position:absolute; 
+}
+
+.dashSet.complete {
+  display: none;
+}
+
+#dot1{
+opacity: 100;
+position:absolute; 
+left:-13px;
+top:-12px;
+z-index:15;
+transform-origin:50% 50%;
+  width:15px;
+  height:15px;
+  background-size: 20px 20px;
+  background-position: -40px;
+  animation: blick 2s infinite ease-in-out;
+z-index: 24;
+}
+
+#dot1.complete {
+opacity: 0;
+display: none;
+}
+
+@keyframes blick{
+  from {
+    display: block;
+    left:-13px;
+    top:-12px;
+  }
+
+ from {
+    left:-13px;
+    top:-12px;  
+  }
+
+ 10% {
+    
+  }
+
+20% {
+  }
+
+30% {
+  }
+
+40% {
+  }
+
+  50% {
+    left:-5px;
+    top:-4px;
+  }
+
+60% {
+    left:-5px;
+    top:-4px;
+  }
+
+  70% {
+    left:-5px;
+    top:-4px;
+  }
+
+80% {
+  }
+
+  90% {
+    
+  }
+
+to {
+  opacity: 1;
+  }
+}
+
+
+.Des2.show{
+  display: block;
+}
+
+.Des1{
+  display: none;
+  position: absolute;
+  left: 100px;
+  top: 264px;
+  font-family: Mrs Eaves OT;
+  width: 350px;
+  font-size: 14pt;
+  line-height: 1.2em;
+  color: rgb(255, 230, 178);
+  z-index: 14;
+}
+
+.Des1.show{
+  display: block;
+}
+
+.outline{
+  display: block;
+  position: absolute;
+  left: 200px;
+  top: 200px;
+  z-index: 5;
+}
+
+body {
+  cursor: url('Resources/Cursor_02.png') -2.3 8, auto;
+}
+#onlySmol {
+  color: red;
+  z-index: 18;
+  display:none;
+}
+
+@media only screen and (max-width: 400px) {
+  #onlySmol {
+    display: block;
+
+  }
+  #big {
+    display: none;
+  }
+  }
+</style>
+</head>
+</div>
+<body>
+<div id="onlySmol">
+
+<img id="Blossom" src="Resources/Blossom.png"/></div>
+<p class="Des3">Klee produced a prolific 10,000 works while teaching at the Bauhaus in both Weimar and Dessau. The artist strayed from drawing off  model, instead assimilating pieces from a series of geometric components. Virtuously, to this day, he is considered a crucial innovator of abstraction in the early 20th century.</p>
+<div class="Header3"><p><strong>1930</strong></p></div>
+<div class="Subheader4"><p><strong>Blten in dër Nacht</strong></p></div>
+<div class="Subheader_03"><p><strong>Blossoms in the Night</strong></p></div>
+
+</div>
+<style>
+
+#Blossom{
+  width: 80px;
+  height: 60px;
+  z-index: 20px;
+}
+</style>
+
+
+<script>
+  let dashSets = document.querySelectorAll('.dashSet')
+
+for(let i = 0; i < dashSets.length; i++){
+  let theseDashes = dashSets[i].querySelectorAll('.dash')
+  
+  let dashesComplete = 0
+  let hasBeenDone = false
+  
+  for(let d = 0; d< theseDashes.length; d++){
+    theseDashes[d].addEventListener('pointerenter',function(){
+      
+      
+      // if this dash isn't complete, we're just
+      // checking it off, so we should add to our dash count
+   if(!theseDashes[d].classList.contains('complete')){
+        dashesComplete ++
+      }
+      
+      // a dash done
+   theseDashes[d].classList.add('complete')
+      
+   if(dashesComplete == theseDashes.length){
+   // all dashes in this set done
+   // dashSets[i].classList.add('complete')
+        if(!hasBeenDone) dothiswhendone()
+          hasBeenDone = true
+        let blossom = document.querySelector('#BlteninderNachtBlossomsintheNight')
+        let Des1 = document.querySelector('.Des1')
+        let Des2 = document.querySelector('.Des2')
+        let none = document.querySelector('.dashSet.complete')
+        let Sub = document.querySelector('.Header.show')
+        let Head = document.querySelector('.Subheader.show')
+        let Head2 = document.querySelector('.Subheader_02.show')
+        let ex = document.querySelector('#Exhibition')
+        let ex1 = document.querySelector('.Ex1')
+        let ex2 = document.querySelector('.Ex2')
+        let ex12 = document.querySelector('.Ex12')
+
+      }
+    })
+
+  function dothiswhendone(){
+
+
+
+
+    dashSets[0].style.display ='none'
+
+  document.getElementById('BlteninderNachtBlossomsintheNight').animate([
+  // keyframes
+  { transform: 'scale(1) translateY(0px) translateX(0px)' }, 
+  { transform: 'scale(3) translateY(100px) translateX(348px)'}
+], { 
+  // timing options
+  duration: 1800,
+  iterations: 1,
+  fill:'forwards'
+
+})
+
+   setTimeout(function(){
+    let Des1 = document.querySelector('.Des1')
+    Des1.classList.add('show')
+    console.log("Goodbye");
+    },
+    1800);
+
+   setTimeout(function(){
+    let Head = document.querySelector('.Subheader')
+    Head.classList.add('show')
+    console.log("Yousay");
+    },
+    1800);
+
+   setTimeout(function(){
+    let Head2 = document.querySelector('.Subheader_02')
+    Head2.classList.add('show')
+    console.log("Why");
+    },
+    1800);
+
+    setTimeout(function(){
+    let Sub = document.querySelector('.Header')
+    Sub.classList.add('show')
+    console.log("Isay");
+    },
+    1800);
+
+    setTimeout(function(){
+    let ex = document.querySelector('#Exhibition')
+    ex.classList.add('show')
+    console.log("chugga");
+    },
+    3200);
+
+    setTimeout(function(){
+    let ex1 = document.querySelector('.Ex1')
+    ex1.classList.add('show')
+    console.log("flugga");
+    },
+    4200);
+
+    setTimeout(function(){
+    let ex2 = document.querySelector('.Ex2')
+    ex2.classList.add('show')
+    console.log("frugga");
+    },
+    3200);
+
+    setTimeout(function(){
+    let ex12 = document.querySelector('.Ex12')
+    ex12.classList.add('show')
+    console.log("fucka");
+    },
+    6200);
+}
+}
+}
+</script>
+</body>
+</html>
