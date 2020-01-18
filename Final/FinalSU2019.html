@@ -50,6 +50,8 @@ body{
   border: 1px;
   border-radius: 100px;
   z-index: 18;
+  cursor: url('Resources/Cursor_03-01.png') -2.3 8, pointer;
+    cursor: url('Resources/Cursor_03-01.png') -2.3 8, auto;
 }
 .button_01.show{
   display: block;
@@ -61,14 +63,14 @@ body{
   font-size: 26pt;
   color: black;
   position: absolute;
-  bottom: 54px;
+  bottom:36px;
   right: 240px;
   z-index: 5000;
 }
 
 #Caption_Subheader{
   position: absolute;
-  bottom: 34px;
+  bottom: 18px;
   right: -40px;
   width: 200px;
   z-index: 5000;
@@ -81,7 +83,7 @@ body{
   display: block;
   background: white;
   width: 1600px;
-  height: 1.5in;
+  height: 1.25in;
   z-index: 4000;
 }
 
@@ -188,22 +190,23 @@ transform:scale(0.5);
   }
 
   50% {
-transform:scale(0.75)
+transform:scale(1)
   }
 
   60% {
-transform:scale(0.85)
+transform:scale(1.1)
   }
 
   80% {
+    transform:scale(1.2)
   }
 
    90% {
-transform:scale(1);
+transform:scale(1.3);
   }
 
   to {
-    transform: scale(1);
+    transform: scale(1.3);
   }
 }
 .Header{
